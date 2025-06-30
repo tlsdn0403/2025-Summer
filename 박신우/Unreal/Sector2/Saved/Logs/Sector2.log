@@ -1812,3 +1812,603 @@ LogConfig: Set CVar [[r.VRS.ContrastAdaptiveShading:1]]
 [2025.06.30-12.07.20:044][ 35]LogContentValidation: 	/Script/InputBlueprintNodes.EnhancedInputUserWidgetValidator
 [2025.06.30-12.07.20:044][ 35]AssetCheck: /Game/StarterContent/Maps/Minimal_Default 에셋 유효성 검사 중
 [2025.06.30-12.07.20:044][ 35]AssetCheck: /Game/StarterContent/Maps/BP_Projectile 에셋 유효성 검사 중
+[2025.06.30-12.08.21:307][329]LogAudioMixer: Warning: FMixerPlatformXAudio2::OnCriticalError: 0x88880001: UNKNOWN
+[2025.06.30-12.08.21:333][330]LogAudioMixer: Display: FMixerPlatformXAudio2: Changing default audio render device to new device: Role=Console, DeviceName=Speaker(Realtek(R) Audio), InstanceID=1
+[2025.06.30-12.08.21:333][330]LogAudioMixer: Display: Attempt to swap audio render device to new device: '{0.0.0.00000000}.{1cd25ab2-4bb3-4076-b074-ef08f4540fb5}', because: 'FMixerPlatformXAudio2::OnDefaultRenderDeviceChanged', force=1
+[2025.06.30-12.08.21:657][330]LogAudioMixer: Display: FMixerPlatformXAudio2::PreDeviceSwap - Starting swap to [{0.0.0.00000000}.{1cd25ab2-4bb3-4076-b074-ef08f4540fb5}]
+[2025.06.30-12.08.21:657][330]LogAudioMixer: Display: FMixerPlatformXAudio2::EnqueueAsyncDeviceSwap - enqueuing async device swap
+[2025.06.30-12.08.21:657][330]LogAudioMixer: Display: FMixerPlatformXAudio2::PerformDeviceSwap - AsyncTask Start. Because=FMixerPlatformXAudio2::OnDefaultRenderDeviceChanged
+[2025.06.30-12.08.23:326][335]LogAudioMixer: Display: FMixerPlatformXAudio2::PostDeviceSwap - successful Swap new Device is (NumChannels=2, SampleRate=48000, DeviceID={0.0.0.00000000}.{1cd25ab2-4bb3-4076-b074-ef08f4540fb5}, Name=Speaker(Realtek(R) Audio)), Reason=FMixerPlatformXAudio2::OnDefaultRenderDeviceChanged, InstanceID=1, DurationMS=1365.95
+[2025.06.30-12.08.23:326][335]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=1
+[2025.06.30-12.08.23:326][335]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=1
+[2025.06.30-12.08.23:329][335]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=1
+[2025.06.30-12.08.24:997][340]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 1353.040283
+[2025.06.30-12.08.25:998][343]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.06.30-12.08.25:998][343]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 1353.708374, Update Interval: 322.762543
+[2025.06.30-12.08.50:326][262]LogDebuggerCommands: Repeating last play command: 선택된 뷰포트
+[2025.06.30-12.08.50:335][262]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2025.06.30-12.08.50:335][262]LogPlayLevel: Display: Creating online subsystem for client :Context_19
+[2025.06.30-12.08.50:338][262]LogOnline: OSS: Created online subsystem instance for: :Context_19
+[2025.06.30-12.08.50:363][263]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2025.06.30-12.08.50:369][263]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005322s)
+[2025.06.30-12.08.50:369][263]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.005384s)
+[2025.06.30-12.08.50:403][263]LogUObjectHash: Compacting FUObjectHashTables data took   1.54ms
+[2025.06.30-12.08.50:407][263]LogChaosDD: Creating Chaos Debug Draw Scene for world Minimal_Default
+[2025.06.30-12.08.50:410][263]LogPlayLevel: PIE: World Init took: (0.002227s)
+[2025.06.30-12.08.50:411][263]LogAudio: Display: Creating Audio Device:                 Id: 13, Scope: Unique, Realtime: True
+[2025.06.30-12.08.50:411][263]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2025.06.30-12.08.50:411][263]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2025.06.30-12.08.50:411][263]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2025.06.30-12.08.50:411][263]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2025.06.30-12.08.50:411][263]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2025.06.30-12.08.50:411][263]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2025.06.30-12.08.50:411][263]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2025.06.30-12.08.50:411][263]LogAudio: Display: AudioDevice MaxSources: 32
+[2025.06.30-12.08.50:411][263]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2025.06.30-12.08.50:411][263]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2025.06.30-12.08.50:411][263]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2025.06.30-12.08.50:414][263]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2025.06.30-12.08.50:830][263]LogAudioMixer: Display: Using Audio Hardware Device Speaker(Realtek(R) Audio)
+[2025.06.30-12.08.50:830][263]LogAudioMixer: Display: Initializing Sound Submixes...
+[2025.06.30-12.08.50:830][263]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2025.06.30-12.08.50:830][263]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2025.06.30-12.08.50:831][263]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=13
+[2025.06.30-12.08.50:831][263]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=13
+[2025.06.30-12.08.50:833][263]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=13
+[2025.06.30-12.08.50:833][263]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=13
+[2025.06.30-12.08.50:833][263]LogInit: FAudioDevice initialized with ID 13.
+[2025.06.30-12.08.50:833][263]LogAudio: Display: Audio Device (ID: 13) registered with world 'Minimal_Default'.
+[2025.06.30-12.08.50:833][263]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 13
+[2025.06.30-12.08.50:839][263]LogLoad: Game class is 'GameModeBase'
+[2025.06.30-12.08.50:840][263]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 60) at 2025.06.30-21.08.50
+[2025.06.30-12.08.50:840][263]LogWorld: Bringing up level for play took: 0.001545
+[2025.06.30-12.08.50:843][263]PIE: 서버가 로그인했습니다.
+[2025.06.30-12.08.50:845][263]PIE: 에디터에서 플레이 총 시작 시간 0.511초입니다.
+[2025.06.30-12.09.19:228][955]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.06.30-12.09.19:228][955]LogWorld: BeginTearingDown for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2025.06.30-12.09.19:228][955]LogWorld: UWorld::CleanupWorld for Minimal_Default, bSessionEnded=true, bCleanupResources=true
+[2025.06.30-12.09.19:229][955]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.06.30-12.09.19:230][955]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2025.06.30-12.09.19:237][955]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.06.30-12.09.19:275][955]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2025.06.30-12.09.19:275][955]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 13
+[2025.06.30-12.09.19:275][955]LogAudioMixer: Display: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=13, StreamState=4
+[2025.06.30-12.09.19:277][955]LogAudioMixer: Display: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=13, StreamState=2
+[2025.06.30-12.09.19:286][955]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.06.30-12.09.19:289][955]LogUObjectHash: Compacting FUObjectHashTables data took   2.03ms
+[2025.06.30-12.09.19:382][956]LogPlayLevel: Display: Destroying online subsystem :Context_19
+[2025.06.30-12.14.05:071][ 85]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 1693.112915
+[2025.06.30-12.14.06:069][ 88]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.06.30-12.14.06:070][ 89]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 1693.777344, Update Interval: 339.259003
+[2025.06.30-12.16.34:451][534]LogAudioMixer: Display: FMixerPlatformXAudio2: Changing default audio render device to new device: Role=Console, DeviceName=헤드폰(신우의 Buds2 Pro), InstanceID=1
+[2025.06.30-12.16.34:451][534]LogAudioMixer: Display: Attempt to swap audio render device to new device: '{0.0.0.00000000}.{09030e81-f530-44e8-940a-3e8c9282ab57}', because: 'FMixerPlatformXAudio2::OnDefaultRenderDeviceChanged', force=1
+[2025.06.30-12.16.34:756][534]LogAudioMixer: Display: FMixerPlatformXAudio2::PreDeviceSwap - Starting swap to [{0.0.0.00000000}.{09030e81-f530-44e8-940a-3e8c9282ab57}]
+[2025.06.30-12.16.34:756][534]LogAudioMixer: Display: FMixerPlatformXAudio2::EnqueueAsyncDeviceSwap - enqueuing async device swap
+[2025.06.30-12.16.34:756][534]LogAudioMixer: Display: FMixerPlatformXAudio2::PerformDeviceSwap - AsyncTask Start. Because=FMixerPlatformXAudio2::OnDefaultRenderDeviceChanged
+[2025.06.30-12.16.35:091][535]LogAudioMixer: Display: FMixerPlatformXAudio2::PostDeviceSwap - successful Swap new Device is (NumChannels=2, SampleRate=48000, DeviceID={0.0.0.00000000}.{09030e81-f530-44e8-940a-3e8c9282ab57}, Name=헤드폰(신우의 Buds2 Pro)), Reason=FMixerPlatformXAudio2::OnDefaultRenderDeviceChanged, InstanceID=1, DurationMS=174.09
+[2025.06.30-12.16.35:091][535]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=1
+[2025.06.30-12.16.35:091][535]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=1
+[2025.06.30-12.16.35:095][535]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=1
+[2025.06.30-12.16.40:892][553]LogAudioMixer: Display: FMixerPlatformXAudio2: Changing default audio render device to new device: Role=Console, DeviceName=Speaker(Realtek(R) Audio), InstanceID=1
+[2025.06.30-12.16.40:892][553]LogAudioMixer: Display: Attempt to swap audio render device to new device: '{0.0.0.00000000}.{1cd25ab2-4bb3-4076-b074-ef08f4540fb5}', because: 'FMixerPlatformXAudio2::OnDefaultRenderDeviceChanged', force=1
+[2025.06.30-12.16.41:089][553]LogAudioMixer: Display: FMixerPlatformXAudio2::PreDeviceSwap - Starting swap to [{0.0.0.00000000}.{1cd25ab2-4bb3-4076-b074-ef08f4540fb5}]
+[2025.06.30-12.16.41:089][553]LogAudioMixer: Display: FMixerPlatformXAudio2::EnqueueAsyncDeviceSwap - enqueuing async device swap
+[2025.06.30-12.16.41:089][553]LogAudioMixer: Display: FMixerPlatformXAudio2::PerformDeviceSwap - AsyncTask Start. Because=FMixerPlatformXAudio2::OnDefaultRenderDeviceChanged
+[2025.06.30-12.16.42:759][558]LogAudioMixer: Display: FMixerPlatformXAudio2::PostDeviceSwap - successful Swap new Device is (NumChannels=2, SampleRate=48000, DeviceID={0.0.0.00000000}.{1cd25ab2-4bb3-4076-b074-ef08f4540fb5}, Name=Speaker(Realtek(R) Audio)), Reason=FMixerPlatformXAudio2::OnDefaultRenderDeviceChanged, InstanceID=1, DurationMS=1409.51
+[2025.06.30-12.16.42:759][558]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=1
+[2025.06.30-12.16.42:759][558]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=1
+[2025.06.30-12.16.42:762][558]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=1
+[2025.06.30-12.16.43:901][562]LogAudioMixer: Display: FMixerPlatformXAudio2: Changing default audio render device to new device: Role=Console, DeviceName=헤드폰(신우의 Buds2 Pro), InstanceID=1
+[2025.06.30-12.16.43:901][562]LogAudioMixer: Display: Attempt to swap audio render device to new device: '{0.0.0.00000000}.{09030e81-f530-44e8-940a-3e8c9282ab57}', because: 'FMixerPlatformXAudio2::OnDefaultRenderDeviceChanged', force=1
+[2025.06.30-12.16.44:092][562]LogAudioMixer: Display: FMixerPlatformXAudio2::PreDeviceSwap - Starting swap to [{0.0.0.00000000}.{09030e81-f530-44e8-940a-3e8c9282ab57}]
+[2025.06.30-12.16.44:092][562]LogAudioMixer: Display: FMixerPlatformXAudio2::EnqueueAsyncDeviceSwap - enqueuing async device swap
+[2025.06.30-12.16.44:092][562]LogAudioMixer: Display: FMixerPlatformXAudio2::PerformDeviceSwap - AsyncTask Start. Because=FMixerPlatformXAudio2::OnDefaultRenderDeviceChanged
+[2025.06.30-12.16.44:426][563]LogAudioMixer: Display: FMixerPlatformXAudio2::PostDeviceSwap - successful Swap new Device is (NumChannels=2, SampleRate=48000, DeviceID={0.0.0.00000000}.{09030e81-f530-44e8-940a-3e8c9282ab57}, Name=헤드폰(신우의 Buds2 Pro)), Reason=FMixerPlatformXAudio2::OnDefaultRenderDeviceChanged, InstanceID=1, DurationMS=256.19
+[2025.06.30-12.16.44:426][563]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=1
+[2025.06.30-12.16.44:426][563]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=1
+[2025.06.30-12.16.44:430][563]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=1
+[2025.06.30-12.16.45:102][566]LogAudioMixer: Display: FMixerPlatformXAudio2: Changing default audio render device to new device: Role=Console, DeviceName=Speaker(Realtek(R) Audio), InstanceID=1
+[2025.06.30-12.16.45:102][566]LogAudioMixer: Display: Attempt to swap audio render device to new device: '{0.0.0.00000000}.{1cd25ab2-4bb3-4076-b074-ef08f4540fb5}', because: 'FMixerPlatformXAudio2::OnDefaultRenderDeviceChanged', force=1
+[2025.06.30-12.16.45:424][566]LogAudioMixer: Display: FMixerPlatformXAudio2::PreDeviceSwap - Starting swap to [{0.0.0.00000000}.{1cd25ab2-4bb3-4076-b074-ef08f4540fb5}]
+[2025.06.30-12.16.45:424][566]LogAudioMixer: Display: FMixerPlatformXAudio2::EnqueueAsyncDeviceSwap - enqueuing async device swap
+[2025.06.30-12.16.45:424][566]LogAudioMixer: Display: FMixerPlatformXAudio2::PerformDeviceSwap - AsyncTask Start. Because=FMixerPlatformXAudio2::OnDefaultRenderDeviceChanged
+[2025.06.30-12.16.47:760][573]LogAudioMixer: Display: FMixerPlatformXAudio2::PostDeviceSwap - successful Swap new Device is (NumChannels=2, SampleRate=48000, DeviceID={0.0.0.00000000}.{1cd25ab2-4bb3-4076-b074-ef08f4540fb5}, Name=Speaker(Realtek(R) Audio)), Reason=FMixerPlatformXAudio2::OnDefaultRenderDeviceChanged, InstanceID=1, DurationMS=2158.94
+[2025.06.30-12.16.47:761][573]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=1
+[2025.06.30-12.16.47:761][573]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=1
+[2025.06.30-12.16.47:763][573]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=1
+[2025.06.30-12.17.48:608][755]LogUObjectHash: Compacting FUObjectHashTables data took   1.50ms
+[2025.06.30-12.17.48:646][755]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/StarterContent/Maps/Minimal_Default_Auto2
+[2025.06.30-12.17.48:648][755]LogSavePackage: Moving '../../../../../../Users/tlsdn/Desktop/2025-Summer/박신우/Unreal/Sector2/Saved/Minimal_Default_Auto2DCFDEF2A46C6E85DB1D6919FFABCFFC1.tmp' to '../../../../../../Users/tlsdn/Desktop/2025-Summer/박신우/Unreal/Sector2/Saved/Autosaves/Game/StarterContent/Maps/Minimal_Default_Auto2.umap'
+[2025.06.30-12.17.48:652][755]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/StarterContent/Maps/Minimal_Default' took 0.081
+[2025.06.30-12.17.48:652][755]LogFileHelpers: Editor autosave (incl. sublevels & external actors) for all levels took 0.081
+[2025.06.30-12.20.42:788][278]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 2090.829834
+[2025.06.30-12.20.43:787][281]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.06.30-12.20.43:787][281]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 2091.496338, Update Interval: 337.713562
+[2025.06.30-12.21.35:386][104]LogSlate: Took 0.001269 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2025.06.30-12.22.27:603][295]LogUObjectHash: Compacting FUObjectHashTables data took   1.39ms
+[2025.06.30-12.22.31:691][295]LogSlate: Window '콘텐츠 저장' being destroyed
+[2025.06.30-12.22.31:711][295]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.06.30-12.22.31:912][295]LogUObjectHash: Compacting FUObjectHashTables data took   0.83ms
+[2025.06.30-12.22.31:946][295]LogSavePackage: Moving output files for package: /Game/StarterContent/Maps/Minimal_Default
+[2025.06.30-12.22.31:948][295]LogSavePackage: Moving '../../../../../../Users/tlsdn/Desktop/2025-Summer/박신우/Unreal/Sector2/Saved/Minimal_DefaultED60151E445FDD4B6FD32D8291882B81.tmp' to '../../../../../../Users/tlsdn/Desktop/2025-Summer/박신우/Unreal/Sector2/Content/StarterContent/Maps/Minimal_Default.umap'
+[2025.06.30-12.22.31:966][295]LogFileHelpers: 모든 파일이 이미 저장되었습니다.
+[2025.06.30-12.22.31:966][295]LogFileHelpers: Saving map 'Minimal_Default' took 0.116
+[2025.06.30-12.22.32:127][295]LogFileHelpers: InternalPromptForCheckoutAndSave took 416.261 ms (total: 749.938 ms)
+[2025.06.30-12.22.32:127][295]LogStreaming: Display: FlushAsyncLoading(680): 1 QueuedPackages, 0 AsyncPackages
+[2025.06.30-12.22.32:416][295]LogChaosDD: Creating Chaos Debug Draw Scene for world Showcase
+[2025.06.30-12.22.32:436][295]LogAssetEditorSubsystem: Opening Asset editor for World /Game/IndustryPropsPack6/Maps/Showcase.Showcase
+[2025.06.30-12.22.32:436][295]Cmd: MAP LOAD FILE="../../../../../../Users/tlsdn/Desktop/2025-Summer/박신우/Unreal/Sector2/Content/IndustryPropsPack6/Maps/Showcase.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=4
+[2025.06.30-12.22.32:446][295]LogTexture: Display: 텍스처 빌드 중: /Game/IndustryPropsPack6/Textures/T_Barrel01_N.T_Barrel01_N(TFO_BC5, 2048x2048 x1x1x1)(예상 필요 메모리: 382.499988MB), 인코딩 속도: Fast
+[2025.06.30-12.22.32:477][295]LogTexture: Display: 텍스처 빌드 중: /Game/IndustryPropsPack6/Textures/T_Barrel01_D.T_Barrel01_D(TFO_AutoDXT, 2048x2048 x1x1x1)(예상 필요 메모리: 288.999984MB), 인코딩 속도: Fast
+[2025.06.30-12.22.32:480][295]LogTexture: Display: 텍스처 빌드 중: /Game/IndustryPropsPack6/Textures/T_Barrel01_SRM.T_Barrel01_SRM(TFO_AutoDXT, 2048x2048 x1x1x1)(예상 필요 메모리: 288.999984MB), 인코딩 속도: Fast
+[2025.06.30-12.22.32:510][295]LogTexture: Display: 텍스처 빌드 중: /Game/IndustryPropsPack6/Textures/T_Box01_D.T_Box01_D(TFO_AutoDXT, 2048x2048 x1x1x1)(예상 필요 메모리: 288.999984MB), 인코딩 속도: Fast
+[2025.06.30-12.22.32:554][295]LogWorld: UWorld::CleanupWorld for World_4, bSessionEnded=true, bCleanupResources=true
+[2025.06.30-12.22.32:554][295]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.06.30-12.22.32:615][295]LogWorld: UWorld::CleanupWorld for Minimal_Default, bSessionEnded=true, bCleanupResources=true
+[2025.06.30-12.22.32:615][295]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.06.30-12.22.32:654][295]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2025.06.30-12.22.32:660][295]LogUObjectHash: Compacting FUObjectHashTables data took   2.27ms
+[2025.06.30-12.22.32:682][295]LogStaticMesh: Display: 스태틱 메시가 준비 되기를 기다리는 중 1/31 (/Game/IndustryPropsPack6/Meshes/SM_Tarp01)...
+[2025.06.30-12.22.32:688][295]LogStaticMesh: Display: SM_Newspaper02스태틱 메시 빌드 중(필요 메모리 예상: 0.578818MB)...
+[2025.06.30-12.22.32:688][295]LogStaticMesh: Display: SM_CartonGarbage05스태틱 메시 빌드 중(필요 메모리 예상: 0.36099MB)...
+[2025.06.30-12.22.32:688][295]LogStaticMesh: Display: SM_Newspaper03스태틱 메시 빌드 중(필요 메모리 예상: 0.841441MB)...
+[2025.06.30-12.22.32:696][295]LogStaticMesh: Display: SM_Pallet01스태틱 메시 빌드 중(필요 메모리 예상: 1.837045MB)...
+[2025.06.30-12.22.32:701][295]LogStaticMesh: Display: SM_Tarp01스태틱 메시 빌드 중(필요 메모리 예상: 2.715309MB)...
+[2025.06.30-12.22.32:703][295]LogStaticMesh: Display: SM_Barrel01스태틱 메시 빌드 중(필요 메모리 예상: 3.021932MB)...
+[2025.06.30-12.22.32:732][295]LogStaticMesh: Built static mesh [0.04s] /Game/IndustryPropsPack6/Meshes/SM_CartonGarbage05.SM_CartonGarbage05
+[2025.06.30-12.22.32:752][295]LogStaticMesh: Display: SM_CartonGarbage09스태틱 메시 빌드 중(필요 메모리 예상: 1.509888MB)...
+[2025.06.30-12.22.32:758][295]LogStaticMesh: Display: SM_Tarp02스태틱 메시 빌드 중(필요 메모리 예상: 2.140223MB)...
+[2025.06.30-12.22.32:760][295]LogStaticMesh: Built static mesh [0.07s] /Game/IndustryPropsPack6/Meshes/SM_Newspaper02.SM_Newspaper02
+[2025.06.30-12.22.32:788][295]LogStaticMesh: Display: SM_Hose01스태틱 메시 빌드 중(필요 메모리 예상: 2.542789MB)...
+[2025.06.30-12.22.32:791][295]LogStaticMesh: Built static mesh [0.10s] /Game/IndustryPropsPack6/Meshes/SM_Newspaper03.SM_Newspaper03
+[2025.06.30-12.22.32:798][295]LogStaticMesh: Display: SM_Newspaper01스태틱 메시 빌드 중(필요 메모리 예상: 0.215432MB)...
+[2025.06.30-12.22.32:822][295]LogStaticMesh: Built static mesh [0.02s] /Game/IndustryPropsPack6/Meshes/SM_Newspaper01.SM_Newspaper01
+[2025.06.30-12.22.32:855][295]LogStaticMesh: Display: SM_CartonGarbage04스태틱 메시 빌드 중(필요 메모리 예상: 0.150845MB)...
+[2025.06.30-12.22.32:863][295]LogStaticMesh: Display: SM_Box02스태틱 메시 빌드 중(필요 메모리 예상: 5.059308MB)...
+[2025.06.30-12.22.32:868][295]LogStaticMesh: Built static mesh [0.01s] /Game/IndustryPropsPack6/Meshes/SM_CartonGarbage04.SM_CartonGarbage04
+[2025.06.30-12.22.32:871][295]LogStaticMesh: Display: SM_Barrel02스태틱 메시 빌드 중(필요 메모리 예상: 2.409341MB)...
+[2025.06.30-12.22.32:874][295]LogStaticMesh: Display: SM_CartonGarbage03스태틱 메시 빌드 중(필요 메모리 예상: 0.202107MB)...
+[2025.06.30-12.22.32:893][295]LogStaticMesh: Built static mesh [0.02s] /Game/IndustryPropsPack6/Meshes/SM_CartonGarbage03.SM_CartonGarbage03
+[2025.06.30-12.22.32:900][295]LogStaticMesh: Display: SM_CartonGarbage02스태틱 메시 빌드 중(필요 메모리 예상: 0.262069MB)...
+[2025.06.30-12.22.32:922][295]LogStaticMesh: Built static mesh [0.02s] /Game/IndustryPropsPack6/Meshes/SM_CartonGarbage02.SM_CartonGarbage02
+[2025.06.30-12.22.32:929][295]LogStaticMesh: Display: SM_CartonGarbage01스태틱 메시 빌드 중(필요 메모리 예상: 0.216814MB)...
+[2025.06.30-12.22.32:948][295]LogStaticMesh: Built static mesh [0.25s] /Game/IndustryPropsPack6/Meshes/SM_Pallet01.SM_Pallet01
+[2025.06.30-12.22.32:954][295]LogStaticMesh: Built static mesh [0.03s] /Game/IndustryPropsPack6/Meshes/SM_CartonGarbage01.SM_CartonGarbage01
+[2025.06.30-12.22.32:955][295]LogStaticMesh: Display: SM_Rack02스태틱 메시 빌드 중(필요 메모리 예상: 0.369127MB)...
+[2025.06.30-12.22.32:965][295]LogStaticMesh: Display: SM_Rack01스태틱 메시 빌드 중(필요 메모리 예상: 1.342247MB)...
+[2025.06.30-12.22.32:990][295]LogStaticMesh: Built static mesh [0.03s] /Game/IndustryPropsPack6/Meshes/SM_Rack02.SM_Rack02
+[2025.06.30-12.22.32:994][295]LogStaticMesh: Display: SM_CartonBox01스태틱 메시 빌드 중(필요 메모리 예상: 0.045822MB)...
+[2025.06.30-12.22.32:998][295]LogStaticMesh: Built static mesh [0.00s] /Game/IndustryPropsPack6/Meshes/SM_CartonBox01.SM_CartonBox01
+[2025.06.30-12.22.33:003][295]LogStaticMesh: Display: SM_CartonBox02스태틱 메시 빌드 중(필요 메모리 예상: 0.10788MB)...
+[2025.06.30-12.22.33:003][295]LogStaticMesh: Built static mesh [0.25s] /Game/IndustryPropsPack6/Meshes/SM_CartonGarbage09.SM_CartonGarbage09
+[2025.06.30-12.22.33:011][295]LogStaticMesh: Built static mesh [0.01s] /Game/IndustryPropsPack6/Meshes/SM_CartonBox02.SM_CartonBox02
+[2025.06.30-12.22.33:011][295]LogStaticMesh: Display: SM_CartonGarbage06스태틱 메시 빌드 중(필요 메모리 예상: 0.335475MB)...
+[2025.06.30-12.22.33:019][295]LogStaticMesh: Display: SM_CartonGarbage07스태틱 메시 빌드 중(필요 메모리 예상: 0.590961MB)...
+[2025.06.30-12.22.33:042][295]LogStaticMesh: Built static mesh [0.03s] /Game/IndustryPropsPack6/Meshes/SM_CartonGarbage06.SM_CartonGarbage06
+[2025.06.30-12.22.33:051][295]LogStaticMesh: Display: SM_CartonGarbage08스태틱 메시 빌드 중(필요 메모리 예상: 0.465298MB)...
+[2025.06.30-12.22.33:057][295]LogStaticMesh: Built static mesh [0.30s] /Game/IndustryPropsPack6/Meshes/SM_Tarp02.SM_Tarp02
+[2025.06.30-12.22.33:064][295]LogStaticMesh: Display: SM_CartonBox03스태틱 메시 빌드 중(필요 메모리 예상: 0.118841MB)...
+[2025.06.30-12.22.33:078][295]LogStaticMesh: Built static mesh [0.01s] /Game/IndustryPropsPack6/Meshes/SM_CartonBox03.SM_CartonBox03
+[2025.06.30-12.22.33:082][295]LogStaticMesh: Built static mesh [0.12s] /Game/IndustryPropsPack6/Meshes/SM_Rack01.SM_Rack01
+[2025.06.30-12.22.33:088][295]LogStaticMesh: Built static mesh [0.39s] /Game/IndustryPropsPack6/Meshes/SM_Tarp01.SM_Tarp01
+[2025.06.30-12.22.33:097][295]LogStaticMesh: Display: 스태틱 메시가 준비 되기를 기다리는 중 19/31 (/Game/IndustryPropsPack6/Meshes/SM_Barrel01)...
+[2025.06.30-12.22.33:125][295]LogStaticMesh: Built static mesh [0.11s] /Game/IndustryPropsPack6/Meshes/SM_CartonGarbage07.SM_CartonGarbage07
+[2025.06.30-12.22.33:126][295]LogStaticMesh: Built static mesh [0.08s] /Game/IndustryPropsPack6/Meshes/SM_CartonGarbage08.SM_CartonGarbage08
+[2025.06.30-12.22.33:127][295]LogStaticMesh: Display: SM_Box01스태틱 메시 빌드 중(필요 메모리 예상: 5.913954MB)...
+[2025.06.30-12.22.33:132][295]LogStaticMesh: Display: SM_WaterTank01스태틱 메시 빌드 중(필요 메모리 예상: 6.44442MB)...
+[2025.06.30-12.22.33:141][295]LogStaticMesh: Display: SM_TrafficBarrel01스태틱 메시 빌드 중(필요 메모리 예상: 1.697682MB)...
+[2025.06.30-12.22.33:148][295]LogStaticMesh: Display: SM_Barrel03스태틱 메시 빌드 중(필요 메모리 예상: 2.355668MB)...
+[2025.06.30-12.22.33:155][295]LogStaticMesh: Built static mesh [0.37s] /Game/IndustryPropsPack6/Meshes/SM_Hose01.SM_Hose01
+[2025.06.30-12.22.33:168][295]LogStaticMesh: Display: SM_Barrel04스태틱 메시 빌드 중(필요 메모리 예상: 14.560574MB)...
+[2025.06.30-12.22.33:218][295]LogStaticMesh: Built static mesh [0.52s] /Game/IndustryPropsPack6/Meshes/SM_Barrel01.SM_Barrel01
+[2025.06.30-12.22.33:228][295]LogStaticMesh: Display: SM_Box03스태틱 메시 빌드 중(필요 메모리 예상: 10.783585MB)...
+[2025.06.30-12.22.33:229][295]LogStaticMesh: Display: 스태틱 메시가 준비 되기를 기다리는 중 23/31 (/Game/IndustryPropsPack6/Meshes/SM_Box02)...
+[2025.06.30-12.22.33:255][295]LogStaticMesh: Built static mesh [0.38s] /Game/IndustryPropsPack6/Meshes/SM_Barrel02.SM_Barrel02
+[2025.06.30-12.22.33:400][295]LogStaticMesh: Built static mesh [0.26s] /Game/IndustryPropsPack6/Meshes/SM_TrafficBarrel01.SM_TrafficBarrel01
+[2025.06.30-12.22.33:512][295]LogStaticMesh: Built static mesh [0.36s] /Game/IndustryPropsPack6/Meshes/SM_Barrel03.SM_Barrel03
+[2025.06.30-12.22.33:535][295]LogTexture: Display: 텍스처 빌드 중: /Game/IndustryPropsPack6/Textures/T_Box01_N.T_Box01_N(TFO_BC5, 2048x2048 x1x1x1)(예상 필요 메모리: 382.499988MB), 인코딩 속도: Fast
+[2025.06.30-12.22.33:573][295]LogStaticMesh: Built static mesh [0.71s] /Game/IndustryPropsPack6/Meshes/SM_Box02.SM_Box02
+[2025.06.30-12.22.33:598][295]LogStaticMesh: Display: 스태틱 메시가 준비 되기를 기다리는 중 27/31 (/Game/IndustryPropsPack6/Meshes/SM_Barrel04)...
+[2025.06.30-12.22.33:652][295]LogTexture: Display: 텍스처 빌드 중: /Game/IndustryPropsPack6/Textures/T_Box01_SRM.T_Box01_SRM(TFO_AutoDXT, 2048x2048 x1x1x1)(예상 필요 메모리: 288.999984MB), 인코딩 속도: Fast
+[2025.06.30-12.22.33:740][295]LogTexture: Display: 텍스처 빌드 중: /Game/IndustryPropsPack6/Textures/T_Cartonbox01_D.T_Cartonbox01_D(TFO_AutoDXT, 2048x2048 x1x1x1)(예상 필요 메모리: 288.999984MB), 인코딩 속도: Fast
+[2025.06.30-12.22.33:791][295]LogTexture: Display: 텍스처 빌드 중: /Game/IndustryPropsPack6/Textures/T_Cartonbox01_N.T_Cartonbox01_N(TFO_BC5, 2048x2048 x1x1x1)(예상 필요 메모리: 382.499988MB), 인코딩 속도: Fast
+[2025.06.30-12.22.33:939][295]LogTexture: Display: 텍스처 빌드 중: /Game/IndustryPropsPack6/Textures/T_Hose_D.T_Hose_D(TFO_AutoDXT, 256x256 x1x1x1)(예상 필요 메모리: 11.333209MB), 인코딩 속도: Fast
+[2025.06.30-12.22.33:949][295]LogTexture: Display: 텍스처 빌드 중: /Game/IndustryPropsPack6/Textures/T_Hose_N.T_Hose_N(TFO_BC5, 256x256 x1x1x1)(예상 필요 메모리: 19.499759MB), 인코딩 속도: Fast
+[2025.06.30-12.22.33:949][295]LogTexture: Display: 텍스처 빌드 중: /Game/IndustryPropsPack6/Textures/T_Hose_SRM.T_Hose_SRM(TFO_AutoDXT, 256x256 x1x1x1)(예상 필요 메모리: 11.333209MB), 인코딩 속도: Fast
+[2025.06.30-12.22.33:965][295]LogTexture: Display: 텍스처 빌드 중: /Game/IndustryPropsPack6/Textures/T_Cartonbox01_SRM.T_Cartonbox01_SRM(TFO_AutoDXT, 2048x2048 x1x1x1)(예상 필요 메모리: 288.999984MB), 인코딩 속도: Fast
+[2025.06.30-12.22.33:990][295]LogTexture: Display: 텍스처 빌드 중: /Game/IndustryPropsPack6/Textures/T_Newspaper01_N.T_Newspaper01_N(TFO_BC5, 1024x1024 x1x1x1)(예상 필요 메모리: 214.499988MB), 인코딩 속도: Fast
+[2025.06.30-12.22.33:993][295]LogTexture: Display: 텍스처 빌드 중: /Game/IndustryPropsPack6/Textures/T_Newspaper01_D.T_Newspaper01_D(TFO_AutoDXT, 1024x1024 x1x1x1)(예상 필요 메모리: 125.083323MB), 인코딩 속도: Fast
+[2025.06.30-12.22.34:030][295]LogStaticMesh: Built static mesh [0.90s] /Game/IndustryPropsPack6/Meshes/SM_Box01.SM_Box01
+[2025.06.30-12.22.34:149][295]LogTexture: Display: 텍스처 빌드 중: /Game/IndustryPropsPack6/Textures/T_Rack_D.T_Rack_D(TFO_AutoDXT, 1024x1024 x1x1x1)(예상 필요 메모리: 125.083323MB), 인코딩 속도: Fast
+[2025.06.30-12.22.34:152][295]LogTexture: Display: 텍스처 빌드 중: /Game/IndustryPropsPack6/Textures/T_Rack_N.T_Rack_N(TFO_BC5, 1024x1024 x1x1x1)(예상 필요 메모리: 214.499988MB), 인코딩 속도: Fast
+[2025.06.30-12.22.34:154][295]LogTexture: Display: 텍스처 빌드 중: /Game/IndustryPropsPack6/Textures/T_Newspaper01_SRM.T_Newspaper01_SRM(TFO_AutoDXT, 1024x1024 x1x1x1)(예상 필요 메모리: 125.083323MB), 인코딩 속도: Fast
+[2025.06.30-12.22.34:164][295]LogTexture: Display: 텍스처 빌드 중: /Game/IndustryPropsPack6/Textures/T_Rack_SRM.T_Rack_SRM(TFO_AutoDXT, 1024x1024 x1x1x1)(예상 필요 메모리: 125.083323MB), 인코딩 속도: Fast
+[2025.06.30-12.22.34:207][295]LogStaticMesh: Built static mesh [1.08s] /Game/IndustryPropsPack6/Meshes/SM_WaterTank01.SM_WaterTank01
+[2025.06.30-12.22.34:342][295]LogTexture: Display: 텍스처 빌드 중: /Game/IndustryPropsPack6/Textures/T_Tarp01_SRM.T_Tarp01_SRM(TFO_AutoDXT, 2048x2048 x1x1x1)(예상 필요 메모리: 288.999984MB), 인코딩 속도: Fast
+[2025.06.30-12.22.34:380][295]LogTexture: Display: 텍스처 빌드 중: /Game/IndustryPropsPack6/Textures/T_Tarp02_D.T_Tarp02_D(TFO_AutoDXT, 2048x2048 x1x1x1)(예상 필요 메모리: 288.999984MB), 인코딩 속도: Fast
+[2025.06.30-12.22.34:403][295]LogTexture: Display: 텍스처 빌드 중: /Game/IndustryPropsPack6/Textures/T_Tarp01_N.T_Tarp01_N(TFO_BC5, 2048x2048 x1x1x1)(예상 필요 메모리: 382.499988MB), 인코딩 속도: Fast
+[2025.06.30-12.22.34:597][295]LogTexture: Display: 텍스처 빌드 중: /Game/IndustryPropsPack6/Textures/BaseTextures/BB_D.BB_D(TFO_AutoDXT, 8x8 x1x1x1)(예상 필요 메모리: 1.010053MB), 인코딩 속도: Fast
+[2025.06.30-12.22.34:597][295]LogTexture: Display: 텍스처 빌드 중: /Game/IndustryPropsPack6/Textures/BaseTextures/B_N.B_N(TFO_BC5, 8x8 x1x1x1)(예상 필요 메모리: 1.017997MB), 인코딩 속도: Fast
+[2025.06.30-12.22.34:598][295]LogTexture: Display: 텍스처 빌드 중: /Game/IndustryPropsPack6/Textures/BaseTextures/BG_D.BG_D(TFO_AutoDXT, 8x8 x1x1x1)(예상 필요 메모리: 1.010053MB), 인코딩 속도: Fast
+[2025.06.30-12.22.34:600][295]LogTexture: Display: 텍스처 빌드 중: /Game/IndustryPropsPack6/Textures/BaseTextures/T_MASK1.T_MASK1(TFO_AutoDXT, 256x256 x1x1x1)(예상 필요 메모리: 11.333209MB), 인코딩 속도: Fast
+[2025.06.30-12.22.34:635][295]LogTexture: Display: 텍스처 빌드 중: /Game/IndustryPropsPack6/Textures/T_TrafficBarrel01_N.T_TrafficBarrel01_N(TFO_BC5, 2048x2048 x1x1x1)(예상 필요 메모리: 382.499988MB), 인코딩 속도: Fast
+[2025.06.30-12.22.34:680][295]LogTexture: Display: 텍스처 빌드 중: /Game/IndustryPropsPack6/Textures/T_TrafficBarrel01_D.T_TrafficBarrel01_D(TFO_AutoDXT, 2048x2048 x1x1x1)(예상 필요 메모리: 288.999984MB), 인코딩 속도: Fast
+[2025.06.30-12.22.34:708][295]LogTexture: Display: 텍스처 빌드 중: /Game/IndustryPropsPack6/Textures/T_TrafficBarrel01_SRM.T_TrafficBarrel01_SRM(TFO_AutoDXT, 2048x2048 x1x1x1)(예상 필요 메모리: 288.999984MB), 인코딩 속도: Fast
+[2025.06.30-12.22.34:873][295]LogTexture: Display: 텍스처 빌드 중: /Game/IndustryPropsPack6/Textures/BaseTextures/T_MASK2.T_MASK2(TFO_AutoDXT, 2048x2048 x1x1x1)(예상 필요 메모리: 288.999984MB), 인코딩 속도: Fast
+[2025.06.30-12.22.34:951][295]LogTexture: Display: 텍스처 빌드 중: /Game/IndustryPropsPack6/Textures/T_WaterTank01_D.T_WaterTank01_D(TFO_AutoDXT, 2048x2048 x1x1x1)(예상 필요 메모리: 288.999984MB), 인코딩 속도: Fast
+[2025.06.30-12.22.34:988][295]LogTexture: Display: 텍스처 빌드 중: /Game/IndustryPropsPack6/Textures/T_Tarp01_D.T_Tarp01_D(TFO_AutoDXT, 2048x2048 x1x1x1)(예상 필요 메모리: 288.999984MB), 인코딩 속도: Fast
+[2025.06.30-12.22.35:010][295]LogStaticMesh: Built static mesh [1.78s] /Game/IndustryPropsPack6/Meshes/SM_Box03.SM_Box03
+[2025.06.30-12.22.35:214][295]LogTexture: Display: 텍스처 빌드 중: /Game/IndustryPropsPack6/Textures/T_WaterTank01_N.T_WaterTank01_N(TFO_BC5, 2048x2048 x1x1x1)(예상 필요 메모리: 382.499988MB), 인코딩 속도: Fast
+[2025.06.30-12.22.35:261][295]LogTexture: Display: 텍스처 빌드 중: /Game/IndustryPropsPack6/Textures/T_WaterTank01_SRM.T_WaterTank01_SRM(TFO_AutoDXT, 2048x2048 x1x1x1)(예상 필요 메모리: 288.999984MB), 인코딩 속도: Fast
+[2025.06.30-12.22.35:830][295]LogStaticMesh: Built static mesh [2.66s] /Game/IndustryPropsPack6/Meshes/SM_Barrel04.SM_Barrel04
+[2025.06.30-12.22.36:630][295]LogWorld: UWorld::CleanupWorld for Showcase, bSessionEnded=true, bCleanupResources=true
+[2025.06.30-12.22.36:630][295]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.06.30-12.22.36:678][295]LogUObjectHash: Compacting FUObjectHashTables data took   1.30ms
+[2025.06.30-12.22.36:710][295]LogUObjectHash: Compacting FUObjectHashTables data took   1.46ms
+[2025.06.30-12.22.36:725][295]LogAudio: Display: Audio Device (ID: 1) registered with world 'Showcase'.
+[2025.06.30-12.22.36:728][295]LogChaosDD: Creating Chaos Debug Draw Scene for world Showcase
+[2025.06.30-12.22.36:773][295]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2025.06.30-12.22.36:810][295]LogUObjectHash: Compacting FUObjectHashTables data took   1.31ms
+[2025.06.30-12.22.36:822][295]Cmd: MAP CHECKDEP NOCLEARLOG
+[2025.06.30-12.22.36:822][295]MapCheck: 맵 체크 완료: 오류 0 회, 경고 0 회, 소요 시간 0.101ms.
+[2025.06.30-12.22.37:000][295]LogContentValidation: Display: Starting to validate 1 assets
+[2025.06.30-12.22.37:000][295]LogContentValidation: Enabled validators:
+[2025.06.30-12.22.37:000][295]LogContentValidation: 	/Script/DataValidation.EditorValidator_Material
+[2025.06.30-12.22.37:000][295]LogContentValidation: 	/Script/DataValidation.DirtyFilesChangelistValidator
+[2025.06.30-12.22.37:000][295]LogContentValidation: 	/Script/DataValidation.EditorValidator_Localization
+[2025.06.30-12.22.37:000][295]LogContentValidation: 	/Script/DataValidation.PackageFileValidator
+[2025.06.30-12.22.37:000][295]LogContentValidation: 	/Script/DataValidation.WorldPartitionChangelistValidator
+[2025.06.30-12.22.37:000][295]LogContentValidation: 	/Script/InputBlueprintNodes.EnhancedInputUserWidgetValidator
+[2025.06.30-12.22.37:063][295]LogUObjectHash: Compacting FUObjectHashTables data took   0.70ms
+[2025.06.30-12.22.37:447][296]LogSlate: Took 0.000831 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2025.06.30-12.22.52:981][ 59]Cmd: SELECT NONE
+[2025.06.30-12.23.05:314][736]LogUObjectHash: Compacting FUObjectHashTables data took   1.66ms
+[2025.06.30-12.23.05:318][736]LogStreaming: Display: FlushAsyncLoading(682): 1 QueuedPackages, 0 AsyncPackages
+[2025.06.30-12.23.05:370][736]LogChaosDD: Creating Chaos Debug Draw Scene for world Minimal_Default
+[2025.06.30-12.23.05:373][736]LogAssetEditorSubsystem: Opening Asset editor for World /Game/StarterContent/Maps/Minimal_Default.Minimal_Default
+[2025.06.30-12.23.05:373][736]Cmd: MAP LOAD FILE="../../../../../../Users/tlsdn/Desktop/2025-Summer/박신우/Unreal/Sector2/Content/StarterContent/Maps/Minimal_Default.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=4
+[2025.06.30-12.23.05:409][736]LogWorld: UWorld::CleanupWorld for Showcase, bSessionEnded=true, bCleanupResources=true
+[2025.06.30-12.23.05:409][736]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.06.30-12.23.05:445][736]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2025.06.30-12.23.05:451][736]LogUObjectHash: Compacting FUObjectHashTables data took   1.67ms
+[2025.06.30-12.23.05:453][736]LogWorld: UWorld::CleanupWorld for Minimal_Default, bSessionEnded=true, bCleanupResources=true
+[2025.06.30-12.23.05:453][736]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.06.30-12.23.05:491][736]LogUObjectHash: Compacting FUObjectHashTables data took   1.91ms
+[2025.06.30-12.23.05:659][736]LogUObjectHash: Compacting FUObjectHashTables data took   1.68ms
+[2025.06.30-12.23.05:692][736]LogAudio: Display: Audio Device (ID: 1) registered with world 'Minimal_Default'.
+[2025.06.30-12.23.05:692][736]LogChaosDD: Creating Chaos Debug Draw Scene for world Minimal_Default
+[2025.06.30-12.23.05:712][736]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2025.06.30-12.23.05:748][736]LogUObjectHash: Compacting FUObjectHashTables data took   1.47ms
+[2025.06.30-12.23.05:759][736]Cmd: MAP CHECKDEP NOCLEARLOG
+[2025.06.30-12.23.05:761][736]MapCheck: 맵 체크 완료: 오류 0 회, 경고 0 회, 소요 시간 0.08ms.
+[2025.06.30-12.23.20:024][521]Cmd: SELECT NONE
+[2025.06.30-12.24.25:282][909]LogActorFactory: Actor Factory attempting to spawn StaticMesh /Game/IndustryPropsPack6/Meshes/SM_Barrel01.SM_Barrel01
+[2025.06.30-12.24.25:282][909]LogActorFactory: Actor Factory attempting to spawn StaticMesh /Game/IndustryPropsPack6/Meshes/SM_Barrel01.SM_Barrel01
+[2025.06.30-12.24.25:284][909]LogActorFactory: Actor Factory spawned StaticMesh /Game/IndustryPropsPack6/Meshes/SM_Barrel01.SM_Barrel01 as actor: StaticMeshActor /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.StaticMeshActor_2
+[2025.06.30-12.24.27:974][ 44]LogUObjectHash: Compacting FUObjectHashTables data took   1.10ms
+[2025.06.30-12.24.27:978][ 44]LogEditorActor: Deleted 0 Actors (0.040 secs)
+[2025.06.30-12.24.27:987][ 44]LogActorFactory: Actor Factory attempting to spawn StaticMesh /Game/IndustryPropsPack6/Meshes/SM_Barrel01.SM_Barrel01
+[2025.06.30-12.24.27:987][ 44]LogActorFactory: Actor Factory attempting to spawn StaticMesh /Game/IndustryPropsPack6/Meshes/SM_Barrel01.SM_Barrel01
+[2025.06.30-12.24.27:989][ 44]LogActorFactory: Actor Factory spawned StaticMesh /Game/IndustryPropsPack6/Meshes/SM_Barrel01.SM_Barrel01 as actor: StaticMeshActor /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.StaticMeshActor_3
+[2025.06.30-12.24.29:541][121]Cmd: SELECT NONE
+[2025.06.30-12.24.30:933][201]Cmd: SELECT NONE
+[2025.06.30-12.24.34:323][396]LogDebuggerCommands: Repeating last play command: 선택된 뷰포트
+[2025.06.30-12.24.34:332][396]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2025.06.30-12.24.34:333][396]LogPlayLevel: Display: Creating online subsystem for client :Context_20
+[2025.06.30-12.24.34:337][396]LogOnline: OSS: Created online subsystem instance for: :Context_20
+[2025.06.30-12.24.34:360][397]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2025.06.30-12.24.34:368][397]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007530s)
+[2025.06.30-12.24.34:368][397]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.007592s)
+[2025.06.30-12.24.34:401][397]LogUObjectHash: Compacting FUObjectHashTables data took   1.58ms
+[2025.06.30-12.24.34:403][397]LogChaosDD: Creating Chaos Debug Draw Scene for world Minimal_Default
+[2025.06.30-12.24.34:406][397]LogPlayLevel: PIE: World Init took: (0.002148s)
+[2025.06.30-12.24.34:407][397]LogAudio: Display: Creating Audio Device:                 Id: 14, Scope: Unique, Realtime: True
+[2025.06.30-12.24.34:407][397]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2025.06.30-12.24.34:407][397]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2025.06.30-12.24.34:407][397]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2025.06.30-12.24.34:407][397]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2025.06.30-12.24.34:407][397]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2025.06.30-12.24.34:407][397]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2025.06.30-12.24.34:407][397]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2025.06.30-12.24.34:407][397]LogAudio: Display: AudioDevice MaxSources: 32
+[2025.06.30-12.24.34:407][397]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2025.06.30-12.24.34:407][397]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2025.06.30-12.24.34:407][397]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2025.06.30-12.24.34:409][397]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2025.06.30-12.24.34:831][397]LogAudioMixer: Display: Using Audio Hardware Device Speaker(Realtek(R) Audio)
+[2025.06.30-12.24.34:832][397]LogAudioMixer: Display: Initializing Sound Submixes...
+[2025.06.30-12.24.34:832][397]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2025.06.30-12.24.34:832][397]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2025.06.30-12.24.34:833][397]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=14
+[2025.06.30-12.24.34:833][397]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=14
+[2025.06.30-12.24.34:836][397]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=14
+[2025.06.30-12.24.34:836][397]LogInit: FAudioDevice initialized with ID 14.
+[2025.06.30-12.24.34:836][397]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=14
+[2025.06.30-12.24.34:836][397]LogAudio: Display: Audio Device (ID: 14) registered with world 'Minimal_Default'.
+[2025.06.30-12.24.34:836][397]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 14
+[2025.06.30-12.24.34:842][397]LogLoad: Game class is 'GameModeBase'
+[2025.06.30-12.24.34:843][397]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 60) at 2025.06.30-21.24.34
+[2025.06.30-12.24.34:843][397]LogWorld: Bringing up level for play took: 0.001368
+[2025.06.30-12.24.34:845][397]PIE: 서버가 로그인했습니다.
+[2025.06.30-12.24.34:848][397]PIE: 에디터에서 플레이 총 시작 시간 0.516초입니다.
+[2025.06.30-12.24.39:106][637]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.06.30-12.24.39:106][637]LogWorld: BeginTearingDown for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2025.06.30-12.24.39:107][637]LogWorld: UWorld::CleanupWorld for Minimal_Default, bSessionEnded=true, bCleanupResources=true
+[2025.06.30-12.24.39:107][637]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.06.30-12.24.39:112][637]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2025.06.30-12.24.39:119][637]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.06.30-12.24.39:159][637]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2025.06.30-12.24.39:159][637]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 14
+[2025.06.30-12.24.39:159][637]LogAudioMixer: Display: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=14, StreamState=4
+[2025.06.30-12.24.39:162][637]LogAudioMixer: Display: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=14, StreamState=2
+[2025.06.30-12.24.39:166][637]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.06.30-12.24.39:169][637]LogUObjectHash: Compacting FUObjectHashTables data took   1.95ms
+[2025.06.30-12.24.39:221][638]LogPlayLevel: Display: Destroying online subsystem :Context_20
+[2025.06.30-12.24.54:103][903]LogActorFactory: Actor Factory attempting to spawn StaticMesh /Game/IndustryPropsPack6/Meshes/SM_Box01.SM_Box01
+[2025.06.30-12.24.54:103][903]LogActorFactory: Actor Factory attempting to spawn StaticMesh /Game/IndustryPropsPack6/Meshes/SM_Box01.SM_Box01
+[2025.06.30-12.24.54:103][903]LogActorFactory: Actor Factory spawned StaticMesh /Game/IndustryPropsPack6/Meshes/SM_Box01.SM_Box01 as actor: StaticMeshActor /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.StaticMeshActor_4
+[2025.06.30-12.24.57:288][ 73]LogUObjectHash: Compacting FUObjectHashTables data took   1.54ms
+[2025.06.30-12.24.57:291][ 73]LogEditorActor: Deleted 0 Actors (0.038 secs)
+[2025.06.30-12.24.58:521][143]Cmd: SELECT NONE
+[2025.06.30-12.24.58:806][159]LogShaderCompilers: Display: ================================================
+[2025.06.30-12.24.58:806][159]LogShaderCompilers: Display: === FShaderJobCache stats ===
+[2025.06.30-12.24.58:806][159]LogShaderCompilers: Display: Total job queries 547, among them cache hits 45 (8.23%), DDC hits 295 (53.93%), Duplicates 76 (13.89%)
+[2025.06.30-12.24.58:806][159]LogShaderCompilers: Display: Tracking 426 distinct input hashes that result in 243 distinct outputs (57.04%)
+[2025.06.30-12.24.58:806][159]LogShaderCompilers: Display: RAM used: 3.07 MiB of 819.20 MiB budget. Usage: 0.37%
+[2025.06.30-12.24.58:806][159]LogShaderCompilers: Display: === Shader Compilation stats ===
+[2025.06.30-12.24.58:806][159]LogShaderCompilers: Display: Shaders Compiled: 131
+[2025.06.30-12.24.58:806][159]LogShaderCompilers: Display: Jobs assigned 131, completed 131 (100%)
+[2025.06.30-12.24.58:806][159]LogShaderCompilers: Display: Average time worker was idle: 1.23 s
+[2025.06.30-12.24.58:806][159]LogShaderCompilers: Display: Time job spent in pending queue: average 8.59 s, longest 17.29 s
+[2025.06.30-12.24.58:806][159]LogShaderCompilers: Display: Job execution time: average 1.22 s, max 2.70 s
+[2025.06.30-12.24.58:806][159]LogShaderCompilers: Display: Job life time (pending + execution): average 9.80 s, max 18.14
+[2025.06.30-12.24.58:815][159]LogShaderCompilers: Display: Shader code size: total 931.367 KiB, numShaders 152, average 6.127 KiB, min 1.727 KiB, max 9.926 KiB
+[2025.06.30-12.24.58:816][159]LogShaderCompilers: Display: Time at least one job was in flight (either pending or executed): 30.29 s
+[2025.06.30-12.24.58:816][159]LogShaderCompilers: Display: Mutex wait stall in FShaderJobCache::SubmitJobs:  0.04%
+[2025.06.30-12.24.58:816][159]LogShaderCompilers: Display: Jobs were issued in 131 batches (only local compilation was used), average 1.00 jobs/batch
+[2025.06.30-12.24.58:816][159]LogShaderCompilers: Display: Average processing rate: 4.32 jobs/sec
+[2025.06.30-12.24.58:816][159]LogShaderCompilers: Display: Total thread time: 143.317 s
+[2025.06.30-12.24.58:816][159]LogShaderCompilers: Display: Total thread preprocess time: 13.749 s
+[2025.06.30-12.24.58:816][159]LogShaderCompilers: Display: Percentage time preprocessing: 9.59%
+[2025.06.30-12.24.58:816][159]LogShaderCompilers: Display: Effective parallelization: 4.73 (times faster than compiling all shaders on one thread). Compare with number of workers: 8 - 0.591351
+[2025.06.30-12.24.58:816][159]LogShaderCompilers: Display: Top 5 most expensive shader types by average time:
+[2025.06.30-12.24.58:816][159]LogShaderCompilers: Display:                                                 FDepthOnlyPS (compiled   14 times, average 1.64 sec, max 1.74 sec, min 1.51 sec)
+[2025.06.30-12.24.58:816][159]LogShaderCompilers: Display:                                 TBasePassPSFNoLightMapPolicy (compiled   14 times, average 1.28 sec, max 1.45 sec, min 1.08 sec)
+[2025.06.30-12.24.58:816][159]LogShaderCompilers: Display:                                                  FVelocityPS (compiled    7 times, average 1.11 sec, max 1.22 sec, min 0.93 sec)
+[2025.06.30-12.24.58:816][159]LogShaderCompilers: Display:                                          TDepthOnlyVS<false> (compiled   14 times, average 0.90 sec, max 1.02 sec, min 0.84 sec)
+[2025.06.30-12.24.58:816][159]LogShaderCompilers: Display:             TShadowDepthVSVertexShadowDepth_VirtualShadowMap (compiled   14 times, average 0.83 sec, max 0.95 sec, min 0.70 sec)
+[2025.06.30-12.24.58:816][159]LogShaderCompilers: Display: Top 5 shader types by total compile time:
+[2025.06.30-12.24.58:816][159]LogShaderCompilers: Display:                                                 FDepthOnlyPS - 16.01% of total time (compiled   14 times, average 1.64 sec, max 1.74 sec, min 1.51 sec)
+[2025.06.30-12.24.58:816][159]LogShaderCompilers: Display:                                 TBasePassPSFNoLightMapPolicy - 12.55% of total time (compiled   14 times, average 1.28 sec, max 1.45 sec, min 1.08 sec)
+[2025.06.30-12.24.58:816][159]LogShaderCompilers: Display:                                          TDepthOnlyVS<false> - 8.84% of total time (compiled   14 times, average 0.90 sec, max 1.02 sec, min 0.84 sec)
+[2025.06.30-12.24.58:816][159]LogShaderCompilers: Display:             TShadowDepthVSVertexShadowDepth_VirtualShadowMap - 8.15% of total time (compiled   14 times, average 0.83 sec, max 0.95 sec, min 0.70 sec)
+[2025.06.30-12.24.58:816][159]LogShaderCompilers: Display:                                 TBasePassVSFNoLightMapPolicy - 8.12% of total time (compiled   14 times, average 0.83 sec, max 0.92 sec, min 0.67 sec)
+[2025.06.30-12.24.58:816][159]LogShaderCompilers: Display: === Material stats ===
+[2025.06.30-12.24.58:816][159]LogShaderCompilers: Display: Materials Cooked:        0
+[2025.06.30-12.24.58:816][159]LogShaderCompilers: Display: Materials Translated:    163
+[2025.06.30-12.24.58:816][159]LogShaderCompilers: Display: Material Total Translate Time: 0.17 s
+[2025.06.30-12.24.58:816][159]LogShaderCompilers: Display: Material Translation Only: 0.08 s (44%)
+[2025.06.30-12.24.58:816][159]LogShaderCompilers: Display: Material DDC Serialization Only: 0.00 s (1%)
+[2025.06.30-12.24.58:816][159]LogShaderCompilers: Display: Material Cache Hits: 25 (15%)
+[2025.06.30-12.24.58:816][159]LogShaderCompilers: Display: ================================================
+[2025.06.30-12.25.05:772][532]LogActorFactory: Actor Factory attempting to spawn StaticMesh /Game/IndustryPropsPack6/Meshes/SM_Box03.SM_Box03
+[2025.06.30-12.25.05:772][532]LogActorFactory: Actor Factory attempting to spawn StaticMesh /Game/IndustryPropsPack6/Meshes/SM_Box03.SM_Box03
+[2025.06.30-12.25.05:773][532]LogActorFactory: Actor Factory spawned StaticMesh /Game/IndustryPropsPack6/Meshes/SM_Box03.SM_Box03 as actor: StaticMeshActor /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.StaticMeshActor_5
+[2025.06.30-12.25.06:842][589]LogUObjectHash: Compacting FUObjectHashTables data took   1.33ms
+[2025.06.30-12.25.06:844][589]LogEditorActor: Deleted 0 Actors (0.040 secs)
+[2025.06.30-12.25.06:852][589]LogActorFactory: Actor Factory attempting to spawn StaticMesh /Game/IndustryPropsPack6/Meshes/SM_Box03.SM_Box03
+[2025.06.30-12.25.06:852][589]LogActorFactory: Actor Factory attempting to spawn StaticMesh /Game/IndustryPropsPack6/Meshes/SM_Box03.SM_Box03
+[2025.06.30-12.25.06:854][589]LogActorFactory: Actor Factory spawned StaticMesh /Game/IndustryPropsPack6/Meshes/SM_Box03.SM_Box03 as actor: StaticMeshActor /Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.StaticMeshActor_6
+[2025.06.30-12.25.38:695][425]Cmd: EDIT COPY
+[2025.06.30-12.25.38:977][441]Cmd: EDIT PASTE
+[2025.06.30-12.25.43:944][726]Cmd: EDIT PASTE
+[2025.06.30-12.25.47:179][901]LogDebuggerCommands: Repeating last play command: 선택된 뷰포트
+[2025.06.30-12.25.47:189][901]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2025.06.30-12.25.47:189][901]LogPlayLevel: Display: Creating online subsystem for client :Context_21
+[2025.06.30-12.25.47:193][901]LogOnline: OSS: Created online subsystem instance for: :Context_21
+[2025.06.30-12.25.47:222][902]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2025.06.30-12.25.47:229][902]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006953s)
+[2025.06.30-12.25.47:229][902]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.007043s)
+[2025.06.30-12.25.47:265][902]LogUObjectHash: Compacting FUObjectHashTables data took   1.50ms
+[2025.06.30-12.25.47:268][902]LogChaosDD: Creating Chaos Debug Draw Scene for world Minimal_Default
+[2025.06.30-12.25.47:270][902]LogPlayLevel: PIE: World Init took: (0.002107s)
+[2025.06.30-12.25.47:270][902]LogAudio: Display: Creating Audio Device:                 Id: 15, Scope: Unique, Realtime: True
+[2025.06.30-12.25.47:270][902]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2025.06.30-12.25.47:270][902]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2025.06.30-12.25.47:271][902]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2025.06.30-12.25.47:271][902]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2025.06.30-12.25.47:271][902]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2025.06.30-12.25.47:271][902]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2025.06.30-12.25.47:271][902]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2025.06.30-12.25.47:271][902]LogAudio: Display: AudioDevice MaxSources: 32
+[2025.06.30-12.25.47:271][902]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2025.06.30-12.25.47:271][902]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2025.06.30-12.25.47:271][902]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2025.06.30-12.25.47:274][902]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2025.06.30-12.25.47:700][902]LogAudioMixer: Display: Using Audio Hardware Device Speaker(Realtek(R) Audio)
+[2025.06.30-12.25.47:700][902]LogAudioMixer: Display: Initializing Sound Submixes...
+[2025.06.30-12.25.47:700][902]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2025.06.30-12.25.47:700][902]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2025.06.30-12.25.47:701][902]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=15
+[2025.06.30-12.25.47:701][902]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=15
+[2025.06.30-12.25.47:704][902]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=15
+[2025.06.30-12.25.47:704][902]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=15
+[2025.06.30-12.25.47:704][902]LogInit: FAudioDevice initialized with ID 15.
+[2025.06.30-12.25.47:704][902]LogAudio: Display: Audio Device (ID: 15) registered with world 'Minimal_Default'.
+[2025.06.30-12.25.47:704][902]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 15
+[2025.06.30-12.25.47:709][902]LogLoad: Game class is 'GameModeBase'
+[2025.06.30-12.25.47:710][902]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 60) at 2025.06.30-21.25.47
+[2025.06.30-12.25.47:711][902]LogWorld: Bringing up level for play took: 0.002057
+[2025.06.30-12.25.47:713][902]PIE: 서버가 로그인했습니다.
+[2025.06.30-12.25.47:716][902]PIE: 에디터에서 플레이 총 시작 시간 0.527초입니다.
+[2025.06.30-12.25.53:957][267]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.06.30-12.25.53:957][267]LogWorld: BeginTearingDown for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2025.06.30-12.25.53:957][267]LogWorld: UWorld::CleanupWorld for Minimal_Default, bSessionEnded=true, bCleanupResources=true
+[2025.06.30-12.25.53:957][267]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.06.30-12.25.53:961][267]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2025.06.30-12.25.53:968][267]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.06.30-12.25.54:005][267]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.06.30-12.25.54:005][267]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 15
+[2025.06.30-12.25.54:005][267]LogAudioMixer: Display: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=15, StreamState=4
+[2025.06.30-12.25.54:007][267]LogAudioMixer: Display: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=15, StreamState=2
+[2025.06.30-12.25.54:020][267]LogUObjectHash: Compacting FUObjectHashTables data took   1.64ms
+[2025.06.30-12.25.54:123][268]LogPlayLevel: Display: Destroying online subsystem :Context_21
+[2025.06.30-12.25.59:554][562]Cmd: SELECT NONE
+[2025.06.30-12.26.00:987][645]LogDebuggerCommands: Repeating last play command: 선택된 뷰포트
+[2025.06.30-12.26.00:998][645]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2025.06.30-12.26.00:998][645]LogPlayLevel: Display: Creating online subsystem for client :Context_22
+[2025.06.30-12.26.01:001][645]LogOnline: OSS: Created online subsystem instance for: :Context_22
+[2025.06.30-12.26.01:023][646]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2025.06.30-12.26.01:029][646]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005804s)
+[2025.06.30-12.26.01:029][646]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.005889s)
+[2025.06.30-12.26.01:065][646]LogUObjectHash: Compacting FUObjectHashTables data took   1.58ms
+[2025.06.30-12.26.01:068][646]LogChaosDD: Creating Chaos Debug Draw Scene for world Minimal_Default
+[2025.06.30-12.26.01:070][646]LogPlayLevel: PIE: World Init took: (0.002507s)
+[2025.06.30-12.26.01:071][646]LogAudio: Display: Creating Audio Device:                 Id: 16, Scope: Unique, Realtime: True
+[2025.06.30-12.26.01:072][646]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2025.06.30-12.26.01:072][646]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2025.06.30-12.26.01:072][646]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2025.06.30-12.26.01:072][646]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2025.06.30-12.26.01:072][646]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2025.06.30-12.26.01:072][646]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2025.06.30-12.26.01:072][646]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2025.06.30-12.26.01:072][646]LogAudio: Display: AudioDevice MaxSources: 32
+[2025.06.30-12.26.01:072][646]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2025.06.30-12.26.01:072][646]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2025.06.30-12.26.01:072][646]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2025.06.30-12.26.01:075][646]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2025.06.30-12.26.01:531][646]LogAudioMixer: Display: Using Audio Hardware Device Speaker(Realtek(R) Audio)
+[2025.06.30-12.26.01:531][646]LogAudioMixer: Display: Initializing Sound Submixes...
+[2025.06.30-12.26.01:531][646]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2025.06.30-12.26.01:531][646]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2025.06.30-12.26.01:533][646]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=16
+[2025.06.30-12.26.01:533][646]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=16
+[2025.06.30-12.26.01:536][646]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=16
+[2025.06.30-12.26.01:536][646]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=16
+[2025.06.30-12.26.01:536][646]LogInit: FAudioDevice initialized with ID 16.
+[2025.06.30-12.26.01:536][646]LogAudio: Display: Audio Device (ID: 16) registered with world 'Minimal_Default'.
+[2025.06.30-12.26.01:536][646]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 16
+[2025.06.30-12.26.01:541][646]LogLoad: Game class is 'GameModeBase'
+[2025.06.30-12.26.01:543][646]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 60) at 2025.06.30-21.26.01
+[2025.06.30-12.26.01:543][646]LogWorld: Bringing up level for play took: 0.001874
+[2025.06.30-12.26.01:545][646]PIE: 서버가 로그인했습니다.
+[2025.06.30-12.26.01:548][646]PIE: 에디터에서 플레이 총 시작 시간 0.551초입니다.
+[2025.06.30-12.26.07:531][996]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.06.30-12.26.07:531][996]LogWorld: BeginTearingDown for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2025.06.30-12.26.07:531][996]LogWorld: UWorld::CleanupWorld for Minimal_Default, bSessionEnded=true, bCleanupResources=true
+[2025.06.30-12.26.07:532][996]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.06.30-12.26.07:535][996]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2025.06.30-12.26.07:541][996]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.06.30-12.26.07:577][996]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.06.30-12.26.07:578][996]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 16
+[2025.06.30-12.26.07:578][996]LogAudioMixer: Display: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=16, StreamState=4
+[2025.06.30-12.26.07:581][996]LogAudioMixer: Display: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=16, StreamState=2
+[2025.06.30-12.26.07:592][996]LogUObjectHash: Compacting FUObjectHashTables data took   1.68ms
+[2025.06.30-12.26.07:642][997]LogPlayLevel: Display: Destroying online subsystem :Context_22
+[2025.06.30-12.26.52:259][182]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 2460.300537
+[2025.06.30-12.26.53:258][185]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.06.30-12.26.53:258][185]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 2460.965820, Update Interval: 310.177307
+[2025.06.30-12.27.42:916][425]LogUObjectHash: Compacting FUObjectHashTables data took   2.07ms
+[2025.06.30-12.27.42:923][425]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.06.30-12.27.43:110][425]LogUObjectHash: Compacting FUObjectHashTables data took   1.05ms
+[2025.06.30-12.27.43:151][425]LogSavePackage: Moving output files for package: /Game/StarterContent/Maps/Minimal_Default
+[2025.06.30-12.27.43:153][425]LogSavePackage: Moving '../../../../../../Users/tlsdn/Desktop/2025-Summer/박신우/Unreal/Sector2/Saved/Minimal_DefaultF4265B1E4051832CA52AE39192CD262F.tmp' to '../../../../../../Users/tlsdn/Desktop/2025-Summer/박신우/Unreal/Sector2/Content/StarterContent/Maps/Minimal_Default.umap'
+[2025.06.30-12.27.43:170][425]LogFileHelpers: 모든 파일이 이미 저장되었습니다.
+[2025.06.30-12.27.43:170][425]LogFileHelpers: Saving map 'Minimal_Default' took 0.135
+[2025.06.30-12.27.43:197][425]LogFileHelpers: InternalPromptForCheckoutAndSave took 274.916 ms (total: 1.02 sec)
+[2025.06.30-12.27.43:335][425]LogContentValidation: Display: Starting to validate 1 assets
+[2025.06.30-12.27.43:335][425]LogContentValidation: Enabled validators:
+[2025.06.30-12.27.43:335][425]LogContentValidation: 	/Script/DataValidation.EditorValidator_Material
+[2025.06.30-12.27.43:335][425]LogContentValidation: 	/Script/DataValidation.DirtyFilesChangelistValidator
+[2025.06.30-12.27.43:335][425]LogContentValidation: 	/Script/DataValidation.EditorValidator_Localization
+[2025.06.30-12.27.43:335][425]LogContentValidation: 	/Script/DataValidation.PackageFileValidator
+[2025.06.30-12.27.43:335][425]LogContentValidation: 	/Script/DataValidation.WorldPartitionChangelistValidator
+[2025.06.30-12.27.43:335][425]LogContentValidation: 	/Script/InputBlueprintNodes.EnhancedInputUserWidgetValidator
+[2025.06.30-12.27.43:336][425]AssetCheck: /Game/StarterContent/Maps/Minimal_Default 에셋 유효성 검사 중
+[2025.06.30-12.27.44:622][500]Cmd: SELECT NONE
+[2025.06.30-12.27.45:841][571]Cmd: SELECT NONE
+[2025.06.30-12.27.46:809][626]LogUObjectHash: Compacting FUObjectHashTables data took   0.80ms
+[2025.06.30-12.27.46:874][626]LogStall: Shutdown...
+[2025.06.30-12.27.46:874][626]LogStall: Shutdown complete.
+[2025.06.30-12.27.46:920][626]LogWorld: UWorld::CleanupWorld for World_5, bSessionEnded=true, bCleanupResources=true
+[2025.06.30-12.27.46:920][626]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.06.30-12.27.46:999][626]LogSlate: Window 'Sector2 - 언리얼 에디터' being destroyed
+[2025.06.30-12.27.47:258][626]LogUObjectHash: Compacting FUObjectHashTables data took   1.38ms
+[2025.06.30-12.27.47:275][626]Cmd: QUIT_EDITOR
+[2025.06.30-12.27.47:275][627]LogCore: Engine exit requested (reason: UUnrealEdEngine::CloseEditor())
+[2025.06.30-12.27.47:286][627]LogCore: Engine exit requested (reason: EngineExit() was called; note: exit was already requested)
+[2025.06.30-12.27.47:287][627]LogStaticMesh: Abandoning remaining async distance field tasks for shutdown
+[2025.06.30-12.27.47:289][627]LogStaticMesh: Abandoning remaining async card representation tasks for shutdown
+[2025.06.30-12.27.47:292][627]LogWorld: UWorld::CleanupWorld for Minimal_Default, bSessionEnded=true, bCleanupResources=true
+[2025.06.30-12.27.47:292][627]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.06.30-12.27.47:323][627]LogStylusInput: Shutting down StylusInput subsystem.
+[2025.06.30-12.27.47:326][627]LogTedsSettings: UTedsSettingsEditorSubsystem::Deinitialize
+[2025.06.30-12.27.47:332][627]LogLevelSequenceEditor: LevelSequenceEditor subsystem deinitialized.
+[2025.06.30-12.27.47:345][627]LogWorld: UWorld::CleanupWorld for World_2, bSessionEnded=true, bCleanupResources=true
+[2025.06.30-12.27.47:345][627]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.06.30-12.27.47:349][627]LogWorld: UWorld::CleanupWorld for World_1, bSessionEnded=true, bCleanupResources=true
+[2025.06.30-12.27.47:349][627]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.06.30-12.27.47:355][627]LogWorld: UWorld::CleanupWorld for World_3, bSessionEnded=true, bCleanupResources=true
+[2025.06.30-12.27.47:355][627]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.06.30-12.27.47:359][627]LogWorld: UWorld::CleanupWorld for World_6, bSessionEnded=true, bCleanupResources=true
+[2025.06.30-12.27.47:359][627]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.06.30-12.27.47:374][627]LogRuntimeTelemetry: Recording EnginePreExit events
+[2025.06.30-12.27.47:374][627]LogStudioTelemetry: Ended StudioTelemetry Session
+[2025.06.30-12.27.47:380][627]LogAnalytics: Display: [UEEditor.Rocket.Release] AnalyticsET::EndSession
+[2025.06.30-12.27.48:185][627]LogAudio: Display: Beginning Audio Device Manager Shutdown (Module: AudioMixerXAudio2)...
+[2025.06.30-12.27.48:185][627]LogAudio: Display: Destroying 1 Remaining Audio Device(s)...
+[2025.06.30-12.27.48:185][627]LogAudio: Display: Audio Device unregistered from world 'Minimal_Default'.
+[2025.06.30-12.27.48:185][627]LogAudio: Display: Shutting down audio device while 1 references to it are still alive. For more information, compile with INSTRUMENT_AUDIODEVICE_HANDLES.
+[2025.06.30-12.27.48:185][627]LogAudioMixer: Display: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=1, StreamState=4
+[2025.06.30-12.27.48:187][627]LogAudioMixer: Display: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=1, StreamState=2
+[2025.06.30-12.27.48:197][627]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID -1
+[2025.06.30-12.27.48:197][627]LogAudio: Display: Audio Device Manager Shutdown
+[2025.06.30-12.27.48:204][627]LogWindowsTextInputMethodSystem: Activated input method: 한국어(대한민국) - Microsoft 입력기 (TSF IME).
+[2025.06.30-12.27.48:211][627]LogSlate: Slate User Destroyed.  User Index 0, Is Virtual User: 0
+[2025.06.30-12.27.48:211][627]LogExit: Preparing to exit.
+[2025.06.30-12.27.48:297][627]LogUObjectHash: Compacting FUObjectHashTables data took   1.41ms
+[2025.06.30-12.27.48:305][627]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/add_controls_for_selected_PY.add_controls_for_selected_options' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.06.30-12.27.48:306][627]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/add_controls_for_selected_PY.add_controls_for_selected' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.06.30-12.27.48:307][627]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/add_null_above_selected_PY.add_null_above_selected' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.06.30-12.27.48:307][627]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/align_items_PY.align_translation_rotation' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.06.30-12.27.48:307][627]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/align_items_PY.align_translation_all' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.06.30-12.27.48:307][627]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/align_items_PY.align_translation_x' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.06.30-12.27.48:307][627]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/align_items_PY.align_translation_y' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.06.30-12.27.48:307][627]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/align_items_PY.align_translation_z' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.06.30-12.27.48:307][627]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/align_items_PY.align_rotation' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.06.30-12.27.48:307][627]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/align_items_PY.align_scale' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.06.30-12.27.48:307][627]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/rename_items_PY.search_replace_name_dialog' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.06.30-12.27.48:307][627]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/rename_items_PY.search_replace_entry' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.06.30-12.27.48:307][627]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/rename_items_PY.add_prefix_dialog' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.06.30-12.27.48:307][627]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/rename_items_PY.add_prefix_entry' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.06.30-12.27.48:307][627]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/rename_items_PY.add_suffix_dialog' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.06.30-12.27.48:307][627]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/rename_items_PY.add_suffix_entry' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.06.30-12.27.48:307][627]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/rename_items_PY.do_rename_dialog' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.06.30-12.27.48:307][627]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/rename_items_PY.do_rename_entry' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.06.30-12.27.48:307][627]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/set_bone_reference_pose_PY.set_bone_reference_pose' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.06.30-12.27.48:307][627]LogPython: Display: Object '/ControlRig/Python/ControlRigWorkflows/workflow_fbik_import_ik_rig_PY.import_ik_rig_options' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.06.30-12.27.48:307][627]LogPython: Display: Object '/ControlRig/Python/RigHierarchy/add_controls_for_selected_PY.ControlOutputFormat' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2025.06.30-12.27.49:323][627]LogEditorDataStorage: Deinitializing
+[2025.06.30-12.27.49:599][627]LogDemo: Cleaned up 0 splitscreen connections, owner deletion: enabled
+[2025.06.30-12.27.49:665][627]LogExit: Editor shut down
+[2025.06.30-12.27.49:672][627]LogExit: Transaction tracking system shut down
+[2025.06.30-12.27.50:292][627]LogExit: Object subsystem successfully closed.
+[2025.06.30-12.27.50:351][627]LogShaderCompilers: Display: Shaders left to compile 0
+[2025.06.30-12.27.50:764][627]LogMemoryProfiler: Shutdown
+[2025.06.30-12.27.50:765][627]LogNetworkingProfiler: Shutdown
+[2025.06.30-12.27.50:765][627]LoadingProfiler: Shutdown
+[2025.06.30-12.27.50:766][627]LogTimingProfiler: Shutdown
+[2025.06.30-12.27.50:773][627]LogChaosVDEditor: [FChaosVDExtensionsManager::UnRegisterExtension] UnRegistering CVD Extension [FChaosVDGenericDebugDrawExtension] ...
+[2025.06.30-12.27.50:773][627]LogChaosVDEditor: [FChaosVDExtensionsManager::UnRegisterExtension] UnRegistering CVD Extension [FChaosVDAccelerationStructuresExtension] ...
+[2025.06.30-12.27.51:200][627]LogChaosDD: Chaos Debug Draw Shutdown
+[2025.06.30-12.27.51:209][627]RenderDocPlugin: plugin has been unloaded.
+[2025.06.30-12.27.51:251][627]LogHttp: Warning: [FHttpManager::Shutdown] Unbinding delegates for 1 outstanding Http Requests:
+[2025.06.30-12.27.51:251][627]LogHttp: Warning: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B4683ACCC-4328-1311-8FD4-D3B0D087B1FF%7D&AppID=UEEditor.Rocket.Release&AppVersion=5.6.0-43139311%2B%2B%2BUE5%2BRelease-5.6&UserID=af3eb98347ccb02d89c0048017df4019%7C3affc8ba824742b4b8ac2c16a09f1fab%7Ce17c4e1b-2351-4b2a-ac1f-92b02b10e7b8&AppEnvironment=datacollector-binary&UploadType=eteventstream] refs=[2] status=Processing
+[2025.06.30-12.27.52:303][627]LogEOSShared: FEOSSDKManager::Shutdown EOS_Shutdown Result=[EOS_Success]
+[2025.06.30-12.27.52:303][627]LogNFORDenoise: NFORDenoise function shutting down
+[2025.06.30-12.27.52:318][627]LogIris: FNetObjectFactoryRegistry::UnregisterFactory is unregistering factory: None name: NetActorFactory id: 0
+[2025.06.30-12.27.52:318][627]LogIris: FNetObjectFactoryRegistry::UnregisterFactory is unregistering factory: None name: NetSubObjectFactory id: 1
+[2025.06.30-12.27.52:318][627]LogPakFile: Destroying PakPlatformFile
+[2025.06.30-12.27.52:678][627]LogD3D12RHI: ~FD3D12DynamicRHI
+[2025.06.30-12.27.52:719][627]LogExit: Exiting.
+[2025.06.30-12.27.52:756][627]Log file closed, 06/30/25 21:27:52
