@@ -30,5 +30,5 @@ public:
 	float MyFloat = 0.99;
 
 	UPROPERTY(EditAnywhere)
-	bool MyBool = true;
+	bool MyBool = false;
 };
