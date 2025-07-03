@@ -1,0 +1,9 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.Sector3.gen.cpp.obj": [
+			"MovingPlatform.gen.cpp.obj",
+			"Sector3.init.gen.cpp.obj"
+		]
+	}
+}

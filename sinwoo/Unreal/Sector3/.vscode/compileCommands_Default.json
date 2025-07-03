@@ -1,0 +1,42 @@
+[
+	{
+		"file": "C:\\Users\\tlsdn\\Desktop\\2025-Summer\\박신우\\Unreal\\Sector3\\Source\\Sector3\\MovingPlatform.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\tlsdn\\Desktop\\2025-Summer\\박신우\\Unreal\\Sector3\\.vscode\\compileCommands_Default\\Sector3.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\tlsdn\\Desktop\\2025-Summer\\박신우\\Unreal\\Sector3\\Source\\Sector3\\MovingPlatform.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\tlsdn\\Desktop\\2025-Summer\\박신우\\Unreal\\Sector3\\.vscode\\compileCommands_Default\\Sector3.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\tlsdn\\Desktop\\2025-Summer\\박신우\\Unreal\\Sector3\\Source\\Sector3\\Sector3.Build.cs",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\tlsdn\\Desktop\\2025-Summer\\박신우\\Unreal\\Sector3\\.vscode\\compileCommands_Default\\Sector3.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\tlsdn\\Desktop\\2025-Summer\\박신우\\Unreal\\Sector3\\Source\\Sector3\\Sector3.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\tlsdn\\Desktop\\2025-Summer\\박신우\\Unreal\\Sector3\\.vscode\\compileCommands_Default\\Sector3.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\tlsdn\\Desktop\\2025-Summer\\박신우\\Unreal\\Sector3\\Source\\Sector3\\Sector3.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\tlsdn\\Desktop\\2025-Summer\\박신우\\Unreal\\Sector3\\.vscode\\compileCommands_Default\\Sector3.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Source"
+	}
+]
