@@ -282,9 +282,9 @@
 /I "Editor/SceneDepthPickerMode/Public"
 /I "../Intermediate/Build/Win64/UnrealEditor/Inc/AnimationEditMode/UHT"
 /I "Editor/AnimationEditMode/Public"
-/I "C:/Users/tlsdn/Desktop/2025-Summer/박신우/Unreal/Sector3/Intermediate/Build/Win64/UnrealEditor/Inc/Sector3/UHT"
-/I "C:/Users/tlsdn/Desktop/2025-Summer/박신우/Unreal/Sector3/Source"
-/I "C:/Users/tlsdn/Desktop/2025-Summer/박신우/Unreal/Sector3/Intermediate/Build/Win64/x64/Sector3Editor/Development/UnrealEd"
+/I "C:/Users/tlsdn/Desktop/2025-Summer/sinwoo/Unreal/Sector3/Intermediate/Build/Win64/UnrealEditor/Inc/Sector3/UHT"
+/I "C:/Users/tlsdn/Desktop/2025-Summer/sinwoo/Unreal/Sector3/Source"
+/I "C:/Users/tlsdn/Desktop/2025-Summer/sinwoo/Unreal/Sector3/Intermediate/Build/Win64/x64/Sector3Editor/Development/UnrealEd"
 /external:W0
 /external:I "ThirdParty/GuidelinesSupportLibrary/GSL-1144/include"
 /external:I "ThirdParty/AtomicQueue"

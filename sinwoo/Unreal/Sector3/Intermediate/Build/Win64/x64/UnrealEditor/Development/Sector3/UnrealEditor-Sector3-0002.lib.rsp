@@ -1,0 +1,15 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-Sector3-0002.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:/Users/tlsdn/Desktop/2025-Summer/sinwoo/Unreal/Sector3/Intermediate/Build/Win64/x64/Sector3Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.InclOrderUnreal5_3.h.obj"
+"C:/Users/tlsdn/Desktop/2025-Summer/sinwoo/Unreal/Sector3/Intermediate/Build/Win64/x64/UnrealEditor/Development/Sector3/Module.Sector3.gen.cpp.obj"
+"C:/Users/tlsdn/Desktop/2025-Summer/sinwoo/Unreal/Sector3/Intermediate/Build/Win64/x64/UnrealEditor/Development/Sector3/MovingPlatform.cpp.obj"
+"C:/Users/tlsdn/Desktop/2025-Summer/sinwoo/Unreal/Sector3/Intermediate/Build/Win64/x64/UnrealEditor/Development/Sector3/Sector3.cpp.obj"
+"C:/Users/tlsdn/Desktop/2025-Summer/sinwoo/Unreal/Sector3/Intermediate/Build/Win64/x64/UnrealEditor/Development/Sector3/PerModuleInline.gen.cpp.obj"
+"C:/Users/tlsdn/Desktop/2025-Summer/sinwoo/Unreal/Sector3/Intermediate/Build/Win64/x64/UnrealEditor/Development/Sector3/Default.rc2.res"
+/OUT:"C:/Users/tlsdn/Desktop/2025-Summer/sinwoo/Unreal/Sector3/Intermediate/Build/Win64/x64/UnrealEditor/Development/Sector3/UnrealEditor-Sector3-0002.lib"

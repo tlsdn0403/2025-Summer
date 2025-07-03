@@ -19,7 +19,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 // ********** Begin Class AMovingPlatform **********************************************************
 SECTOR3_API UClass* Z_Construct_UClass_AMovingPlatform_NoRegister();
 
-#define FID_Users_tlsdn_Desktop_2025_Summer_____Unreal_Sector3_Source_Sector3_MovingPlatform_h_12_INCLASS_NO_PURE_DECLS \
+#define FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Sector3_Source_Sector3_MovingPlatform_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAMovingPlatform(); \
 	friend struct Z_Construct_UClass_AMovingPlatform_Statics; \
@@ -30,7 +30,7 @@ public: \
 	DECLARE_SERIALIZER(AMovingPlatform)
 
 
-#define FID_Users_tlsdn_Desktop_2025_Summer_____Unreal_Sector3_Source_Sector3_MovingPlatform_h_12_ENHANCED_CONSTRUCTORS \
+#define FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Sector3_Source_Sector3_MovingPlatform_h_12_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	AMovingPlatform(AMovingPlatform&&) = delete; \
 	AMovingPlatform(const AMovingPlatform&) = delete; \
@@ -40,12 +40,12 @@ public: \
 	NO_API virtual ~AMovingPlatform();
 
 
-#define FID_Users_tlsdn_Desktop_2025_Summer_____Unreal_Sector3_Source_Sector3_MovingPlatform_h_9_PROLOG
-#define FID_Users_tlsdn_Desktop_2025_Summer_____Unreal_Sector3_Source_Sector3_MovingPlatform_h_12_GENERATED_BODY \
+#define FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Sector3_Source_Sector3_MovingPlatform_h_9_PROLOG
+#define FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Sector3_Source_Sector3_MovingPlatform_h_12_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_tlsdn_Desktop_2025_Summer_____Unreal_Sector3_Source_Sector3_MovingPlatform_h_12_INCLASS_NO_PURE_DECLS \
-	FID_Users_tlsdn_Desktop_2025_Summer_____Unreal_Sector3_Source_Sector3_MovingPlatform_h_12_ENHANCED_CONSTRUCTORS \
+	FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Sector3_Source_Sector3_MovingPlatform_h_12_INCLASS_NO_PURE_DECLS \
+	FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Sector3_Source_Sector3_MovingPlatform_h_12_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -55,6 +55,6 @@ class AMovingPlatform;
 // ********** End Class AMovingPlatform ************************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_tlsdn_Desktop_2025_Summer_____Unreal_Sector3_Source_Sector3_MovingPlatform_h
+#define CURRENT_FILE_ID FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Sector3_Source_Sector3_MovingPlatform_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

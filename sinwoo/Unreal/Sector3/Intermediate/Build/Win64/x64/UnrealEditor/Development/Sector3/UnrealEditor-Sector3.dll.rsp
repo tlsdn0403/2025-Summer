@@ -36,12 +36,12 @@
 /FUNCTIONPADMIN:6
 /NOIMPLIB
 /NOEXP
-"C:/Users/tlsdn/Desktop/2025-Summer/박신우/Unreal/Sector3/Intermediate/Build/Win64/x64/Sector3Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.InclOrderUnreal5_3.h.obj"
-"C:/Users/tlsdn/Desktop/2025-Summer/박신우/Unreal/Sector3/Intermediate/Build/Win64/x64/UnrealEditor/Development/Sector3/Module.Sector3.gen.cpp.obj"
-"C:/Users/tlsdn/Desktop/2025-Summer/박신우/Unreal/Sector3/Intermediate/Build/Win64/x64/UnrealEditor/Development/Sector3/MovingPlatform.cpp.obj"
-"C:/Users/tlsdn/Desktop/2025-Summer/박신우/Unreal/Sector3/Intermediate/Build/Win64/x64/UnrealEditor/Development/Sector3/Sector3.cpp.obj"
-"C:/Users/tlsdn/Desktop/2025-Summer/박신우/Unreal/Sector3/Intermediate/Build/Win64/x64/UnrealEditor/Development/Sector3/PerModuleInline.gen.cpp.obj"
-"C:/Users/tlsdn/Desktop/2025-Summer/박신우/Unreal/Sector3/Intermediate/Build/Win64/x64/UnrealEditor/Development/Sector3/Default.rc2.res"
+"C:/Users/tlsdn/Desktop/2025-Summer/sinwoo/Unreal/Sector3/Intermediate/Build/Win64/x64/Sector3Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.InclOrderUnreal5_3.h.obj"
+"C:/Users/tlsdn/Desktop/2025-Summer/sinwoo/Unreal/Sector3/Intermediate/Build/Win64/x64/UnrealEditor/Development/Sector3/Module.Sector3.gen.cpp.obj"
+"C:/Users/tlsdn/Desktop/2025-Summer/sinwoo/Unreal/Sector3/Intermediate/Build/Win64/x64/UnrealEditor/Development/Sector3/MovingPlatform.cpp.obj"
+"C:/Users/tlsdn/Desktop/2025-Summer/sinwoo/Unreal/Sector3/Intermediate/Build/Win64/x64/UnrealEditor/Development/Sector3/Sector3.cpp.obj"
+"C:/Users/tlsdn/Desktop/2025-Summer/sinwoo/Unreal/Sector3/Intermediate/Build/Win64/x64/UnrealEditor/Development/Sector3/PerModuleInline.gen.cpp.obj"
+"C:/Users/tlsdn/Desktop/2025-Summer/sinwoo/Unreal/Sector3/Intermediate/Build/Win64/x64/UnrealEditor/Development/Sector3/Default.rc2.res"
 "../Intermediate/Build/Win64/x64/UnrealEditor/Development/Engine/UnrealEditor-Engine.lib"
 "../Intermediate/Build/Win64/x64/UnrealEditor/Development/Core/UnrealEditor-Core.lib"
 "../Intermediate/Build/Win64/x64/UnrealEditor/Development/CoreUObject/UnrealEditor-CoreUObject.lib"
@@ -71,6 +71,6 @@
 "synchronization.lib"
 "dwmapi.lib"
 "imm32.lib"
-/OUT:"C:/Users/tlsdn/Desktop/2025-Summer/박신우/Unreal/Sector3/Binaries/Win64/UnrealEditor-Sector3.dll"
-/PDB:"C:/Users/tlsdn/Desktop/2025-Summer/박신우/Unreal/Sector3/Binaries/Win64/UnrealEditor-Sector3.pdb"
+/OUT:"C:/Users/tlsdn/Desktop/2025-Summer/sinwoo/Unreal/Sector3/Binaries/Win64/UnrealEditor-Sector3.dll"
+/PDB:"C:/Users/tlsdn/Desktop/2025-Summer/sinwoo/Unreal/Sector3/Binaries/Win64/UnrealEditor-Sector3.pdb"
 /ignore:4078

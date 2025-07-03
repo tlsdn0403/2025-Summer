@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\tlsdn\\desktop\\2025-summer\\sinwoo\\unreal\\sector3\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\sector3\\permoduleinline.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\tlsdn\\desktop\\2025-summer\\sinwoo\\unreal\\sector3\\intermediate\\build\\win64\\x64\\sector3editor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.inclorderunreal5_3.h.pch",
+        "Includes": [
+            "c:\\users\\tlsdn\\desktop\\2025-summer\\sinwoo\\unreal\\sector3\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\sector3\\definitions.sector3.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\source\\runtime\\core\\public\\hal\\permoduleinline.inl"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
