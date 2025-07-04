@@ -13,6 +13,7 @@ void AMovingPlatform::BeginPlay()
 {
 	Super::BeginPlay();
 	
+	SetActorLocation(FVector(-14440.000000,-2120.000000,4050.000000)); 
 }
 
 
