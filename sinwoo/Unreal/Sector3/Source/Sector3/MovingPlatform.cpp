@@ -13,7 +13,6 @@ void AMovingPlatform::BeginPlay()
 {
 	Super::BeginPlay();
 	
-	SetActorLocation(FVector(-14440.000000,-2120.000000,4050.000000)); 
 }
 
 
@@ -22,5 +21,8 @@ void AMovingPlatform::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	FVector CurrentLocation = GetActorLocation();  //엑터의 위치 가져옴
+	CurrentLocation.X += 1.0f;
+	SetActorLocation(CurrentLocation);
 }
 
