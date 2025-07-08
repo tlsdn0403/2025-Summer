@@ -1,9 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\tlsdn\\Desktop\\2025 winter\\2025Winter\\baekjoon\\",
+  "WorkspaceRootPath": "C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\baekjoon\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7BE46255-DEB5-4BE2-AC47-559E15633D71}|baekjoon.vcxproj|C:\\Users\\tlsdn\\Desktop\\2025 winter\\2025Winter\\baekjoon\\baekjoon15977.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{7BE46255-DEB5-4BE2-AC47-559E15633D71}|baekjoon.vcxproj|C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\baekjoon\\baekjoon1920.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7BE46255-DEB5-4BE2-AC47-559E15633D71}|baekjoon.vcxproj|solutionrelative:baekjoon1920.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BE46255-DEB5-4BE2-AC47-559E15633D71}|baekjoon.vcxproj|C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\baekjoon\\baekjoon15977.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{7BE46255-DEB5-4BE2-AC47-559E15633D71}|baekjoon.vcxproj|solutionrelative:baekjoon15977.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
@@ -86,19 +90,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "baekjoon1920.cpp",
+              "DocumentMoniker": "C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\baekjoon\\baekjoon1920.cpp",
+              "RelativeDocumentMoniker": "baekjoon1920.cpp",
+              "ToolTip": "C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\baekjoon\\baekjoon1920.cpp",
+              "RelativeToolTip": "baekjoon1920.cpp",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-07-08T14:27:54.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "baekjoon15977.cpp",
-              "DocumentMoniker": "C:\\Users\\tlsdn\\Desktop\\2025 winter\\2025Winter\\baekjoon\\baekjoon15977.cpp",
+              "DocumentMoniker": "C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\baekjoon\\baekjoon15977.cpp",
               "RelativeDocumentMoniker": "baekjoon15977.cpp",
-              "ToolTip": "C:\\Users\\tlsdn\\Desktop\\2025 winter\\2025Winter\\baekjoon\\baekjoon15977.cpp",
+              "ToolTip": "C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\baekjoon\\baekjoon15977.cpp",
               "RelativeToolTip": "baekjoon15977.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-01T04:02:50.773Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "utility",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\include\\utility",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\include\\utility",

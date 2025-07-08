@@ -13,10 +13,19 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="소스 파일\back tracking">
+      <UniqueIdentifier>{ffc5dadc-519e-4c3e-ba14-195d01f8a90b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\search">
+      <UniqueIdentifier>{0268c659-f335-4bc4-a3cd-d1cd914f1b16}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="baekjoon15977.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\back tracking</Filter>
+    </ClCompile>
+    <ClCompile Include="baekjoon1920.cpp">
+      <Filter>소스 파일\search</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
