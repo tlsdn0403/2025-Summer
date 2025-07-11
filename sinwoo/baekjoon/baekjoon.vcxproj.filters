@@ -19,6 +19,9 @@
     <Filter Include="소스 파일\search">
       <UniqueIdentifier>{0268c659-f335-4bc4-a3cd-d1cd914f1b16}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\sorting">
+      <UniqueIdentifier>{9a9fad71-379b-47f6-9896-4cabe8563a29}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="baekjoon15977.cpp">
@@ -26,6 +29,15 @@
     </ClCompile>
     <ClCompile Include="baekjoon1920.cpp">
       <Filter>소스 파일\search</Filter>
+    </ClCompile>
+    <ClCompile Include="baekjoon2750.cpp">
+      <Filter>소스 파일\sorting</Filter>
+    </ClCompile>
+    <ClCompile Include="baekhoon11399.cpp">
+      <Filter>소스 파일\sorting</Filter>
+    </ClCompile>
+    <ClCompile Include="baekjoon1181.cpp">
+      <Filter>소스 파일\sorting</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
