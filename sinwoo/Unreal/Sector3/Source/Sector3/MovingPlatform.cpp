@@ -13,6 +13,9 @@ void AMovingPlatform::BeginPlay()
 {
 	Super::BeginPlay();
 	StartLocation = GetActorLocation();		// 시작 위치 저장
+
+
+	UE_LOG(LogTemp, Display, TEXT("Move distance : %f"), MoveDistance); //로그 카테고리 , 로그 레벨 , 출력해야 할 텍스트
 }
 
 
@@ -32,7 +35,8 @@ void AMovingPlatform::moveRightAndLeft(float DeltaTime)
 	DistanceMoved = FVector::Distance(StartLocation, CurrentLocation); // 현재 위치와 시작 위치 사이의 거리 계산
 	if(DistanceMoved > MoveDistance)
 	{
-		
+		float OverDistance = DistanceMoved - MoveDistance; // 이동 거리를 초과한 거리 계산
+		UE_LOG(LogTemp, Display, TEXT("Over Distance : %f"), OverDistance); // 초과 거리 로그 출력
 		StartLocation += PlatformVelocity.GetSafeNormal() * MoveDistance;		// 시작 위치 저장
 		SetActorLocation(StartLocation); // 시작 위치로 다시 이동
 		PlatformVelocity = - PlatformVelocity;
