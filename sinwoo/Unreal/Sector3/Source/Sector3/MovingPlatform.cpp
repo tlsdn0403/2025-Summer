@@ -24,6 +24,7 @@ void AMovingPlatform::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 	moveRightAndLeft(DeltaTime); //플랫폼 이동 함수 호출
+	rotatePlatform(DeltaTime); //플랫폼 회전 함수 호출
 }
 
 void AMovingPlatform::moveRightAndLeft(float DeltaTime)
@@ -37,8 +38,14 @@ void AMovingPlatform::moveRightAndLeft(float DeltaTime)
 	{
 		float OverDistance = DistanceMoved - MoveDistance; // 이동 거리를 초과한 거리 계산
 		UE_LOG(LogTemp, Display, TEXT("Over Distance : %f"), OverDistance); // 초과 거리 로그 출력
+		
 		StartLocation += PlatformVelocity.GetSafeNormal() * MoveDistance;		// 시작 위치 저장
 		SetActorLocation(StartLocation); // 시작 위치로 다시 이동
 		PlatformVelocity = - PlatformVelocity;
 	}
+}
+
+void AMovingPlatform::rotatePlatform(float DeltaTime)
+{
+	AddActorLocalRotation(RotationVelocity * DeltaTime); // 로컬회전값을 현재 회전값에 더함
 }
