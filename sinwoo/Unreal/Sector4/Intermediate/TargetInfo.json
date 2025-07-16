@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "Sector4",
+			"Path": "..\\Source\\Sector4.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "Sector4Editor",
+			"Path": "..\\Source\\Sector4Editor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
