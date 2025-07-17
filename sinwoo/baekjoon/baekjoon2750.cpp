@@ -10,6 +10,7 @@ int main()
     vector<int> v;
 
     cin >> num;
+    v.reserve(num);
     for (int i = 0; i < num; ++i) {
         int sortNum{};
         cin >> sortNum;

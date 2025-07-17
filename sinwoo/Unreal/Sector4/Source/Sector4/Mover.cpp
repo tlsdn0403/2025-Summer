@@ -1,17 +1,15 @@
-// Fill out your copyright notice in the Description page of Project Settings.
 
 
 #include "Mover.h"
+#include "Math/UnrealMathUtility.h"
 
+using namespace UE::Math;
 
-// Sets default values for this component's properties
 UMover::UMover()
 {
 	// Set this component to be initialized when the game starts, and to be ticked every frame.  You can turn these features
 	// off to improve performance if you don't need them.
 	PrimaryComponentTick.bCanEverTick = true;
-
-	// ...
 }
 
 
@@ -21,7 +19,8 @@ void UMover::BeginPlay()
 	Super::BeginPlay();
 
 	// ...
-	
+	OriginalLocation = GetOwner()->GetActorLocation();
+
 }
 
 
@@ -29,13 +28,16 @@ void UMover::BeginPlay()
 void UMover::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
+	if(ShouldMove)
+	{
+		FVector CurrentLocation = GetOwner()->GetActorLocation();
 
-	AActor* Owner = GetOwner();  // 컴포넌트를 소유한 엑터의 주소를 보유한 객체
+		FVector TargetLocation = OriginalLocation + MoveOffset;
+		float speed = FVector::Distance(CurrentLocation , TargetLocation) / MoveTime;
+		
+		GetOwner()->SetActorLocation(FMath::VInterpConstantTo(CurrentLocation , TargetLocation , DeltaTime , speed));
+	}
 
-	FVector MyLocation = Owner->GetActorLocation();  // 엑터의 위치를 가져오는 함수 호출
 
-	FString LocationS = MyLocation.ToCompactString();  // 엑터의 위치를 문자열로 변환하는 함수 호출
-	UE_LOG(LogTemp, Display, TEXT("Mover is ticking! Owner: %s"), *LocationS);
-	// ...
 }
 
