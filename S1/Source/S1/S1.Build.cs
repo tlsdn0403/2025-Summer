@@ -17,6 +17,7 @@ public class S1 : ModuleRules
 			"S1/",
 			"S1/Network/",
 		});
+
 		// Uncomment if you are using Slate UI
 		// PrivateDependencyModuleNames.AddRange(new string[] { "Slate", "SlateCore" });
 		

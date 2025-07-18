@@ -2166,6 +2166,12 @@
     <ClCompile Include="..\..\Source\S1\S1.h">
       <Filter>Source\S1</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\S1\S1GameModeBase.cpp">
+      <Filter>Source\S1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\S1\S1GameModeBase.h">
+      <Filter>Source\S1</Filter>
+    </ClCompile>
     <Filter Include="Source\S1\Network">
       <UniqueIdentifier>{7122B395-06A5-3824-8672-244187FC4E19}</UniqueIdentifier>
     </Filter>

@@ -927,6 +927,7 @@
 #  undef PROTOBUF_has_builtin_DEFINED_
 #endif
 
+
 #ifdef _MSC_VER
 #pragma warning(disable: 4800)
 #pragma warning(disable: 4459)
