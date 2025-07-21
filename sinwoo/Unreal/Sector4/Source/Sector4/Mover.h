@@ -5,7 +5,8 @@
 #include "Mover.generated.h"
 
 
- class SECTOR4_API UMover : public UActorComponent
+UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
+class SECTOR4_API UMover : public UActorComponent
 {
 	GENERATED_BODY()
 
