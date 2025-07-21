@@ -1,0 +1,19 @@
+{
+  "targets": {
+    "Sector4Editor": {
+      "targetType": "Editor",
+      "targetPath": "C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\Source\\Sector4Editor.Target.cs",
+      "projectPath": "C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\Sector4.uproject",
+      "configurations": [
+        "Development"
+      ],
+      "platforms": [
+        "Win64"
+      ],
+      "architectures": [],
+      "configurationsAndPlatforms": [
+        "Development-Win64"
+      ]
+    }
+  }
+}
