@@ -1,8 +1,192 @@
 [
 	{
+		"file": "C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\Source\\Sector4\\.vs\\ProjectSettings.json",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\.vscode\\compileCommands_Default\\Sector4.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\Source\\Sector4\\.vs\\Sector4\\CopilotIndices\\17.14.878.3237\\CodeChunks.db",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\.vscode\\compileCommands_Default\\Sector4.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\Source\\Sector4\\.vs\\Sector4\\CopilotIndices\\17.14.878.3237\\SemanticSymbols.db",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\.vscode\\compileCommands_Default\\Sector4.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\Source\\Sector4\\.vs\\Sector4\\CopilotIndices\\17.14.878.3237\\전자 필기장 열기.onetoc2",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\.vscode\\compileCommands_Default\\Sector4.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\Source\\Sector4\\.vs\\Sector4\\CopilotIndices\\전자 필기장 열기.onetoc2",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\.vscode\\compileCommands_Default\\Sector4.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\Source\\Sector4\\.vs\\Sector4\\FileContentIndex\\d703470f-58dd-452f-a06e-a35005050fca.vsidx",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\.vscode\\compileCommands_Default\\Sector4.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\Source\\Sector4\\.vs\\Sector4\\FileContentIndex\\전자 필기장 열기.onetoc2",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\.vscode\\compileCommands_Default\\Sector4.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\Source\\Sector4\\.vs\\Sector4\\v17\\.wsuo",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\.vscode\\compileCommands_Default\\Sector4.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\Source\\Sector4\\.vs\\Sector4\\v17\\Browse.VC.db",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\.vscode\\compileCommands_Default\\Sector4.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\Source\\Sector4\\.vs\\Sector4\\v17\\DocumentLayout.json",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\.vscode\\compileCommands_Default\\Sector4.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\Source\\Sector4\\.vs\\Sector4\\v17\\ipch\\AutoPCH\\baf9b57c58c50ac5\\MOVER.ipch",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\.vscode\\compileCommands_Default\\Sector4.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\Source\\Sector4\\.vs\\Sector4\\v17\\ipch\\AutoPCH\\baf9b57c58c50ac5\\전자 필기장 열기.onetoc2",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\.vscode\\compileCommands_Default\\Sector4.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\Source\\Sector4\\.vs\\Sector4\\v17\\ipch\\AutoPCH\\bd0f10280222962f\\GRABBER.ipch",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\.vscode\\compileCommands_Default\\Sector4.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\Source\\Sector4\\.vs\\Sector4\\v17\\ipch\\AutoPCH\\bd0f10280222962f\\전자 필기장 열기.onetoc2",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\.vscode\\compileCommands_Default\\Sector4.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\Source\\Sector4\\.vs\\Sector4\\v17\\ipch\\AutoPCH\\전자 필기장 열기.onetoc2",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\.vscode\\compileCommands_Default\\Sector4.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\Source\\Sector4\\.vs\\Sector4\\v17\\ipch\\전자 필기장 열기.onetoc2",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\.vscode\\compileCommands_Default\\Sector4.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\Source\\Sector4\\.vs\\Sector4\\v17\\전자 필기장 열기.onetoc2",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\.vscode\\compileCommands_Default\\Sector4.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\Source\\Sector4\\.vs\\Sector4\\전자 필기장 열기.onetoc2",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\.vscode\\compileCommands_Default\\Sector4.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\Source\\Sector4\\.vs\\VSWorkspaceState.json",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\.vscode\\compileCommands_Default\\Sector4.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\Source\\Sector4\\.vs\\slnx.sqlite",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\.vscode\\compileCommands_Default\\Sector4.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\Source\\Sector4\\.vs\\전자 필기장 열기.onetoc2",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\.vscode\\compileCommands_Default\\Sector4.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\Source\\Sector4\\Grabber.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\.vscode\\compileCommands_Default\\Sector4.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\Source\\Sector4\\Grabber.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\.vscode\\compileCommands_Default\\Sector4.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Source"
+	},
+	{
 		"file": "C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\Source\\Sector4\\Mover.cpp",
 		"arguments": [
-			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
 			"@C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\.vscode\\compileCommands_Default\\Sector4.1.rsp"
 		],
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Source"
@@ -10,7 +194,7 @@
 	{
 		"file": "C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\Source\\Sector4\\Mover.h",
 		"arguments": [
-			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
 			"@C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\.vscode\\compileCommands_Default\\Sector4.1.rsp"
 		],
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Source"
@@ -18,7 +202,7 @@
 	{
 		"file": "C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\Source\\Sector4\\Sector4.Build.cs",
 		"arguments": [
-			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
 			"@C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\.vscode\\compileCommands_Default\\Sector4.1.rsp"
 		],
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Source"
@@ -26,7 +210,7 @@
 	{
 		"file": "C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\Source\\Sector4\\Sector4.cpp",
 		"arguments": [
-			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
 			"@C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\.vscode\\compileCommands_Default\\Sector4.1.rsp"
 		],
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Source"
@@ -34,7 +218,7 @@
 	{
 		"file": "C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\Source\\Sector4\\Sector4.h",
 		"arguments": [
-			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
 			"@C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\.vscode\\compileCommands_Default\\Sector4.1.rsp"
 		],
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Source"
@@ -42,7 +226,7 @@
 	{
 		"file": "C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\Source\\Sector4\\전자 필기장 열기.onetoc2",
 		"arguments": [
-			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
 			"@C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\.vscode\\compileCommands_Default\\Sector4.1.rsp"
 		],
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Source"
