@@ -18,9 +18,73 @@ SECTOR4_API UClass* Z_Construct_UClass_UGrabber_NoRegister();
 UPackage* Z_Construct_UPackage__Script_Sector4();
 // ********** End Cross Module References **********************************************************
 
+// ********** Begin Class UGrabber Function Grabed *************************************************
+struct Z_Construct_UFunction_UGrabber_Grabed_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Grabber.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UGrabber_Grabed_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UGrabber, nullptr, "Grabed", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGrabber_Grabed_Statics::Function_MetaDataParams), Z_Construct_UFunction_UGrabber_Grabed_Statics::Function_MetaDataParams)},  };
+UFunction* Z_Construct_UFunction_UGrabber_Grabed()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UGrabber_Grabed_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UGrabber::execGrabed)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->Grabed();
+	P_NATIVE_END;
+}
+// ********** End Class UGrabber Function Grabed ***************************************************
+
+// ********** Begin Class UGrabber Function Release ************************************************
+struct Z_Construct_UFunction_UGrabber_Release_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Grabber.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UGrabber_Release_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UGrabber, nullptr, "Release", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGrabber_Release_Statics::Function_MetaDataParams), Z_Construct_UFunction_UGrabber_Release_Statics::Function_MetaDataParams)},  };
+UFunction* Z_Construct_UFunction_UGrabber_Release()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UGrabber_Release_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UGrabber::execRelease)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->Release();
+	P_NATIVE_END;
+}
+// ********** End Class UGrabber Function Release **************************************************
+
 // ********** Begin Class UGrabber *****************************************************************
 void UGrabber::StaticRegisterNativesUGrabber()
 {
+	UClass* Class = UGrabber::StaticClass();
+	static const FNameNativePtrPair Funcs[] = {
+		{ "Grabed", &UGrabber::execGrabed },
+		{ "Release", &UGrabber::execRelease },
+	};
+	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 }
 FClassRegistrationInfo Z_Registration_Info_UClass_UGrabber;
 UClass* UGrabber::GetPrivateStaticClass()
@@ -74,6 +138,11 @@ struct Z_Construct_UClass_UGrabber_Statics
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_grabRadius;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
+	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
+		{ &Z_Construct_UFunction_UGrabber_Grabed, "Grabed" }, // 3230418107
+		{ &Z_Construct_UFunction_UGrabber_Release, "Release" }, // 2135617456
+	};
+	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UGrabber>::IsAbstract,
 	};
@@ -96,11 +165,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UGrabber_Statics::Class
 	"Engine",
 	&StaticCppClassTypeInfo,
 	DependentSingletons,
-	nullptr,
+	FuncInfo,
 	Z_Construct_UClass_UGrabber_Statics::PropPointers,
 	nullptr,
 	UE_ARRAY_COUNT(DependentSingletons),
-	0,
+	UE_ARRAY_COUNT(FuncInfo),
 	UE_ARRAY_COUNT(Z_Construct_UClass_UGrabber_Statics::PropPointers),
 	0,
 	0x00B000A4u,
@@ -122,10 +191,10 @@ UGrabber::~UGrabber() {}
 struct Z_CompiledInDeferFile_FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Sector4_Source_Sector4_Grabber_h__Script_Sector4_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UGrabber, UGrabber::StaticClass, TEXT("UGrabber"), &Z_Registration_Info_UClass_UGrabber, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UGrabber), 1429182928U) },
+		{ Z_Construct_UClass_UGrabber, UGrabber::StaticClass, TEXT("UGrabber"), &Z_Registration_Info_UClass_UGrabber, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UGrabber), 3287304244U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Sector4_Source_Sector4_Grabber_h__Script_Sector4_1941676207(TEXT("/Script/Sector4"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Sector4_Source_Sector4_Grabber_h__Script_Sector4_3310684925(TEXT("/Script/Sector4"),
 	Z_CompiledInDeferFile_FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Sector4_Source_Sector4_Grabber_h__Script_Sector4_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Sector4_Source_Sector4_Grabber_h__Script_Sector4_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

@@ -17,6 +17,11 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin Class UGrabber *****************************************************************
+#define FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Sector4_Source_Sector4_Grabber_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execGrabed); \
+	DECLARE_FUNCTION(execRelease);
+
+
 SECTOR4_API UClass* Z_Construct_UClass_UGrabber_NoRegister();
 
 #define FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Sector4_Source_Sector4_Grabber_h_13_INCLASS_NO_PURE_DECLS \
@@ -44,6 +49,7 @@ public: \
 #define FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Sector4_Source_Sector4_Grabber_h_13_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
+	FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Sector4_Source_Sector4_Grabber_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
 	FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Sector4_Source_Sector4_Grabber_h_13_INCLASS_NO_PURE_DECLS \
 	FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Sector4_Source_Sector4_Grabber_h_13_ENHANCED_CONSTRUCTORS \
 private: \

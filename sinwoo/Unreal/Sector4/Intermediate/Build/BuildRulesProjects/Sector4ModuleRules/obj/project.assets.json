@@ -6991,11 +6991,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\Intermediate\\Build\\BuildRulesProjects\\Sector4ModuleRules\\Sector4ModuleRules.csproj",
+      "projectUniqueName": "c:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\Intermediate\\Build\\BuildRulesProjects\\Sector4ModuleRules\\Sector4ModuleRules.csproj",
       "projectName": "Sector4ModuleRules",
-      "projectPath": "C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\Intermediate\\Build\\BuildRulesProjects\\Sector4ModuleRules\\Sector4ModuleRules.csproj",
+      "projectPath": "c:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\Intermediate\\Build\\BuildRulesProjects\\Sector4ModuleRules\\Sector4ModuleRules.csproj",
       "packagesPath": "C:\\Users\\tlsdn\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\Intermediate\\Build\\BuildRulesProjects\\Sector4ModuleRules\\obj\\",
+      "outputPath": "c:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\Unreal\\Sector4\\Intermediate\\Build\\BuildRulesProjects\\Sector4ModuleRules\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -7016,17 +7016,17 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Intermediate\\Build\\BuildRulesProjects\\UE5ProgramRules\\UE5ProgramRules.csproj": {
-              "projectPath": "C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Intermediate\\Build\\BuildRulesProjects\\UE5ProgramRules\\UE5ProgramRules.csproj"
+            "c:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Intermediate\\Build\\BuildRulesProjects\\UE5ProgramRules\\UE5ProgramRules.csproj": {
+              "projectPath": "c:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Intermediate\\Build\\BuildRulesProjects\\UE5ProgramRules\\UE5ProgramRules.csproj"
             },
-            "C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Intermediate\\Build\\BuildRulesProjects\\UE5Rules\\UE5Rules.csproj": {
-              "projectPath": "C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Intermediate\\Build\\BuildRulesProjects\\UE5Rules\\UE5Rules.csproj"
+            "c:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Intermediate\\Build\\BuildRulesProjects\\UE5Rules\\UE5Rules.csproj": {
+              "projectPath": "c:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Intermediate\\Build\\BuildRulesProjects\\UE5Rules\\UE5Rules.csproj"
             },
-            "C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Source\\Programs\\Shared\\EpicGames.Build\\EpicGames.Build.csproj": {
-              "projectPath": "C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Source\\Programs\\Shared\\EpicGames.Build\\EpicGames.Build.csproj"
+            "c:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Source\\Programs\\Shared\\EpicGames.Build\\EpicGames.Build.csproj": {
+              "projectPath": "c:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Source\\Programs\\Shared\\EpicGames.Build\\EpicGames.Build.csproj"
             },
-            "C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Source\\Programs\\UnrealBuildTool\\UnrealBuildTool.csproj": {
-              "projectPath": "C:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Source\\Programs\\UnrealBuildTool\\UnrealBuildTool.csproj"
+            "c:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Source\\Programs\\UnrealBuildTool\\UnrealBuildTool.csproj": {
+              "projectPath": "c:\\Program Files\\Epic Games\\UE_5.6\\Engine\\Source\\Programs\\UnrealBuildTool\\UnrealBuildTool.csproj"
             }
           }
         }
