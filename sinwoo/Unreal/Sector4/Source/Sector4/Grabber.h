@@ -35,6 +35,7 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void Release();
 
+	void SetHitComponent(UPrimitiveComponent* Component){ HitComponent = Component; }  // HitComponent ¼³Á¤
 private:
 	UPROPERTY(EditAnywhere)
 	float MaxGrabDistance = 400;
@@ -45,5 +46,5 @@ private:
 	UPROPERTY(EditAnywhere)
 	float HoldDistance = 200;
 
-
+	UPrimitiveComponent* HitComponent = nullptr;
 };

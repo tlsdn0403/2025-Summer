@@ -29,10 +29,12 @@ void UGrabber::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompone
 
 		return;
 	}
+	if(PhysicsHandle->GrabbedComponent != nullptr) {  //잡고있는 물건이 있을 때
 
-	FVector TargetLocation = GetComponentLocation() + GetForwardVector() * HoldDistance;
-
-	PhysicsHandle->SetTargetLocationAndRotation(TargetLocation, GetComponentRotation());
+		FVector TargetLocation = GetComponentLocation() + GetForwardVector() * HoldDistance;
+		PhysicsHandle->SetTargetLocationAndRotation(TargetLocation, GetComponentRotation());
+	}
+	
 }
 
 void UGrabber::Grab()
@@ -58,12 +60,15 @@ void UGrabber::Grab()
 		Sphere);
 	if (HasHit)
 	{
+		SetHitComponent(HitResult.GetComponent()); // HitComponent 설정
+		HitComponent->WakeAllRigidBodies();
+
 		DrawDebugSphere(GetWorld(), HitResult.Location, 10, 10, FColor::Green, false, 5);
 		DrawDebugSphere(GetWorld(), HitResult.ImpactPoint, 10, 10, FColor::Red, false, 5);
 		AActor* HitActor = HitResult.GetActor();
 
 		PhysicsHandle->GrabComponentAtLocationWithRotation(
-			HitResult.GetComponent(),
+			HitComponent,
 			NAME_None,
 			HitResult.ImpactPoint,
 			GetComponentRotation()	
@@ -75,10 +80,15 @@ void UGrabber::Grab()
 
 void UGrabber::Release()
 {
+	UPhysicsHandleComponent* PhysicsHandle = GetPhysicsHandle();
+	if (PhysicsHandle == nullptr && HitComponent == nullptr) {
+		return;
+	}
+	if(PhysicsHandle->GrabbedComponent != nullptr) {
+		PhysicsHandle->ReleaseComponent();
+	}
 
-	UE_LOG(LogTemp, Display, TEXT("Released grabber"));
-
-
+	HitComponent = nullptr; // HitComponent 초기화
 }
 
 UPhysicsHandleComponent* UGrabber::GetPhysicsHandle() const
