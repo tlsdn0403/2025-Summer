@@ -36,6 +36,9 @@ public:
 	void Release();
 
 	void SetHitComponent(UPrimitiveComponent* Component){ HitComponent = Component; }  // HitComponent ¼³Á¤
+
+	bool GetGrabAbleInReach(FHitResult& OutHit) const;	
+
 private:
 	UPROPERTY(EditAnywhere)
 	float MaxGrabDistance = 400;

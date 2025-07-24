@@ -45,19 +45,8 @@ void UGrabber::Grab()
 	}
 
 
-	FVector Start = GetComponentLocation();
-	FVector End = Start + GetForwardVector() * MaxGrabDistance;
-	DrawDebugLine(GetWorld(), Start, End, FColor::Red);
-	DrawDebugSphere(GetWorld(), End, 10, 10, FColor::Blue, false, 5);
-
-	FCollisionShape Sphere = FCollisionShape::MakeSphere(GrabRadius);
 	FHitResult HitResult;
-	bool HasHit = GetWorld()->SweepSingleByChannel(
-		HitResult,
-		Start, End,
-		FQuat::Identity,
-		ECC_GameTraceChannel2,
-		Sphere);
+	bool HasHit = GetGrabAbleInReach(HitResult);
 	if (HasHit)
 	{
 		SetHitComponent(HitResult.GetComponent()); // HitComponent 설정
@@ -89,6 +78,23 @@ void UGrabber::Release()
 	}
 
 	HitComponent = nullptr; // HitComponent 초기화
+}
+
+bool UGrabber::GetGrabAbleInReach(FHitResult& OutHit) const
+{
+	FVector Start = GetComponentLocation();
+	FVector End = Start + GetForwardVector() * MaxGrabDistance;
+	DrawDebugLine(GetWorld(), Start, End, FColor::Red);
+	DrawDebugSphere(GetWorld(), End, 10, 10, FColor::Blue, false, 5);
+
+	FCollisionShape Sphere = FCollisionShape::MakeSphere(GrabRadius);
+	FHitResult HitResult;
+	return GetWorld()->SweepSingleByChannel(
+		OutHit,
+		Start, End,
+		FQuat::Identity,
+		ECC_GameTraceChannel2,
+		Sphere);
 }
 
 UPhysicsHandleComponent* UGrabber::GetPhysicsHandle() const
