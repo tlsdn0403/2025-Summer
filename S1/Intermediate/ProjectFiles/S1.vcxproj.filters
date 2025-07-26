@@ -2166,6 +2166,12 @@
     <ClCompile Include="..\..\Source\S1\S1.h">
       <Filter>Source\S1</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\S1\S1GameInstance.cpp">
+      <Filter>Source\S1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\S1\S1GameInstance.h">
+      <Filter>Source\S1</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\S1\S1GameModeBase.cpp">
       <Filter>Source\S1</Filter>
     </ClCompile>
@@ -2191,6 +2197,18 @@
       <Filter>Source\S1\Network</Filter>
     </None>
     <ClCompile Include="..\..\Source\S1\Network\Enum.pb.h">
+      <Filter>Source\S1\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\S1\Network\NetworkWorker.cpp">
+      <Filter>Source\S1\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\S1\Network\NetworkWorker.h">
+      <Filter>Source\S1\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\S1\Network\PacketSession.cpp">
+      <Filter>Source\S1\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\S1\Network\PacketSession.h">
       <Filter>Source\S1\Network</Filter>
     </ClCompile>
     <None Include="..\..\Source\S1\Network\Protocol.pb.cc">
