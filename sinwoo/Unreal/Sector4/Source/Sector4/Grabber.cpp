@@ -23,10 +23,9 @@ void UGrabber::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompone
 
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
-	UPhysicsHandleComponent* PhysicsHandle = GetPhysicsHandle();
+	UPhysicsHandleComponent* PhysicsHandle = GetPhysicsHandle(); // 엑터에 붙어있는 오브젝트를 가져온다.
 	if (PhysicsHandle == nullptr)
 	{
-
 		return;
 	}
 	if(PhysicsHandle->GrabbedComponent != nullptr) {  //잡고있는 물건이 있을 때
