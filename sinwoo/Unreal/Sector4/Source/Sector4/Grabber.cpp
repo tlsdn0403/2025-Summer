@@ -5,7 +5,7 @@
 // Sets default values for this component's properties
 UGrabber::UGrabber()
 {
-	PrimaryComponentTick.bCanEverTick = true;
+	PrimaryComponentTick.bCanEverTick = true;  //기본적으로 틱 함수를 가능하게 한다.
 
 }
 

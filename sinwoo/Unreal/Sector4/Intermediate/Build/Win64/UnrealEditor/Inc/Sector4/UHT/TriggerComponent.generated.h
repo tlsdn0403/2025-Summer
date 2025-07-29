@@ -31,14 +31,12 @@ public: \
 
 
 #define FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Sector4_Source_Sector4_TriggerComponent_h_15_ENHANCED_CONSTRUCTORS \
-	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API UTriggerComponent(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UTriggerComponent(UTriggerComponent&&) = delete; \
 	UTriggerComponent(const UTriggerComponent&) = delete; \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UTriggerComponent); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UTriggerComponent); \
-	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UTriggerComponent) \
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UTriggerComponent) \
 	NO_API virtual ~UTriggerComponent();
 
 

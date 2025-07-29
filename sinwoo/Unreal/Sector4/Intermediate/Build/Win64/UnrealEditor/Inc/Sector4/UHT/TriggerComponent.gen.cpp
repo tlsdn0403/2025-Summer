@@ -99,7 +99,6 @@ UClass* Z_Construct_UClass_UTriggerComponent()
 	}
 	return Z_Registration_Info_UClass_UTriggerComponent.OuterSingleton;
 }
-UTriggerComponent::UTriggerComponent(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
 DEFINE_VTABLE_PTR_HELPER_CTOR(UTriggerComponent);
 UTriggerComponent::~UTriggerComponent() {}
 // ********** End Class UTriggerComponent **********************************************************
