@@ -51,9 +51,8 @@ void UGrabber::Grab()
 		SetHitComponent(HitResult.GetComponent()); // HitComponent 설정
 		HitComponent->WakeAllRigidBodies();
 
-		DrawDebugSphere(GetWorld(), HitResult.Location, 10, 10, FColor::Green, false, 5);
-		DrawDebugSphere(GetWorld(), HitResult.ImpactPoint, 10, 10, FColor::Red, false, 5);
 		AActor* HitActor = HitResult.GetActor();
+		HitActor->Tags.Add("Grabbed");  // HitActor에 "Grabbed" 태그 추가
 
 		PhysicsHandle->GrabComponentAtLocationWithRotation(
 			HitComponent,
@@ -73,6 +72,8 @@ void UGrabber::Release()
 		return;
 	}
 	if(PhysicsHandle->GrabbedComponent != nullptr) {
+		PhysicsHandle->GrabbedComponent->GetOwner()->Tags.Remove("Grabbed");  // HitActor에서 "Grabbed" 태그 제거
+
 		PhysicsHandle->ReleaseComponent();
 	}
 

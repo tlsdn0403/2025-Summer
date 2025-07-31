@@ -20,12 +20,28 @@ void UTriggerComponent::BeginPlay()
 void UTriggerComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
+	CheckIsOverlapped();
+}
+
+
+void UTriggerComponent::SetMover(UMover* NewMover)
+{
+	Mover = NewMover;  // Mover 설정
+}
+
+
+void UTriggerComponent::CheckIsOverlapped()
+{
 	AActor* isOverlaped = GetAcceptableActor();  // 틱 마다 오버랩된 엑터를 확인
-	if(isOverlaped) {
+	if (isOverlaped) {
 		UPrimitiveComponent* Component = Cast<UPrimitiveComponent>(isOverlaped->GetRootComponent());  // 오버랩된 엑터의 루트 컴포넌트를 가져온다 
 		if (Component != nullptr)
 		{
 			Component->SetSimulatePhysics(false);  // 물리 시뮬레이션을 비활성화한다.
+		}
+		if(isOverlaped->ActorHasTag("Grabbed"))  // "Grabbed" 태그가 있는 엑터는 무시한다.
+		{
+			return;
 		}
 		isOverlaped->AttachToComponent(this, FAttachmentTransformRules::KeepWorldTransform);  // 오버랩된 엑터를 나한테 붙인다.
 
@@ -34,11 +50,6 @@ void UTriggerComponent::TickComponent(float DeltaTime, ELevelTick TickType, FAct
 	else {
 		Mover->SetShouldMove(false);  //없으면 거짓
 	}
-}
-
-void UTriggerComponent::SetMover(UMover* NewMover)
-{
-	Mover = NewMover;  // Mover 설정
 }
 
 AActor* UTriggerComponent::GetAcceptableActor() const

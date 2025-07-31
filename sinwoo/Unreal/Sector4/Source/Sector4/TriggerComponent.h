@@ -29,7 +29,7 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void SetMover(UMover* NewMover);
 
-	
+	void CheckIsOverlapped();
 
 private:
 	UPROPERTY(EditAnywhere)
