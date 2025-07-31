@@ -1,5 +1,5 @@
 // Fill out your copyright notice in the Description page of Project Settings.
-
+// 문이 열리는 트리거 컴포넌트
 
 #include "TriggerComponent.h"
 
@@ -16,11 +16,19 @@ void UTriggerComponent::BeginPlay()
 
 	UE_LOG(LogTemp, Display, TEXT("TriggerComponent BeginPlay!"));
 }
+
 void UTriggerComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 	AActor* isOverlaped = GetAcceptableActor();  // 틱 마다 오버랩된 엑터를 확인
 	if(isOverlaped) {
+		UPrimitiveComponent* Component = Cast<UPrimitiveComponent>(isOverlaped->GetRootComponent());  // 오버랩된 엑터의 루트 컴포넌트를 가져온다 
+		if (Component != nullptr)
+		{
+			Component->SetSimulatePhysics(false);  // 물리 시뮬레이션을 비활성화한다.
+		}
+		isOverlaped->AttachToComponent(this, FAttachmentTransformRules::KeepWorldTransform);  // 오버랩된 엑터를 나한테 붙인다.
+
 		Mover->SetShouldMove(true);  //엑터가 오버랩되면 참으로 설정
 	}
 	else {
