@@ -15,8 +15,15 @@ public:
 
 	void Run();
 
+	void Recv();
+
 	void Disconnect();
 
 public:
 	class FSocket* Socket;
+
+	TSharedPtr<class RecvWorker> RecvWorkerThread;
+	TSharedPtr<class SendWorker> SendWorkerThread;
+
+	TQueue<TArray<uint8>> RecvPacketQueue;
 };
