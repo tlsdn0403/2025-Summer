@@ -7,6 +7,7 @@
 #include "BasePawn.generated.h"
 
 class UCapsuleComponent;
+class UStaticMeshComponent;
 UCLASS()
 class TOONTANKS_API ABasePawn : public APawn
 {
@@ -23,6 +24,16 @@ protected:
 private:
 	UPROPERTY()
 	UCapsuleComponent* CapsuleComp; 
+
+	UPROPERTY()
+	UStaticMeshComponent* BaseMesh;	
+
+	UPROPERTY()
+	UStaticMeshComponent* TurretMesh;
+
+	UPROPERTY()
+	USceneComponent* ProjectileSpawnPoint;
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
