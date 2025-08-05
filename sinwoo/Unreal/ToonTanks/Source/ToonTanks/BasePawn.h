@@ -8,6 +8,7 @@
 
 class UCapsuleComponent;
 class UStaticMeshComponent;
+class USceneComponent;
 UCLASS()
 class TOONTANKS_API ABasePawn : public APawn
 {
