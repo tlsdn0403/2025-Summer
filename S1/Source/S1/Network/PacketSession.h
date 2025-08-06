@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "S1.h"
 
 /**
  * 
@@ -15,7 +16,10 @@ public:
 
 	void Run();
 
-	void Recv();
+	UFUNCTION(BlueprintCallable)
+	void HandleRecvPackets();
+
+	void SendPacket(SendBufferRef SendBuffer);
 
 	void Disconnect();
 
@@ -26,4 +30,5 @@ public:
 	TSharedPtr<class SendWorker> SendWorkerThread;
 
 	TQueue<TArray<uint8>> RecvPacketQueue;
+	TQueue<SendBufferRef> SendPacketQueue;
 };

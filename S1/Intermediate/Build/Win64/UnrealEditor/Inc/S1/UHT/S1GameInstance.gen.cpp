@@ -74,6 +74,35 @@ DEFINE_FUNCTION(US1GameInstance::execDisconnectToGameServer)
 }
 // End Class US1GameInstance Function DisconnectToGameServer
 
+// Begin Class US1GameInstance Function HandleRecvPackets
+struct Z_Construct_UFunction_US1GameInstance_HandleRecvPackets_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "S1GameInstance.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_US1GameInstance_HandleRecvPackets_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_US1GameInstance, nullptr, "HandleRecvPackets", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_US1GameInstance_HandleRecvPackets_Statics::Function_MetaDataParams), Z_Construct_UFunction_US1GameInstance_HandleRecvPackets_Statics::Function_MetaDataParams) };
+UFunction* Z_Construct_UFunction_US1GameInstance_HandleRecvPackets()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_US1GameInstance_HandleRecvPackets_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(US1GameInstance::execHandleRecvPackets)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->HandleRecvPackets();
+	P_NATIVE_END;
+}
+// End Class US1GameInstance Function HandleRecvPackets
+
 // Begin Class US1GameInstance
 void US1GameInstance::StaticRegisterNativesUS1GameInstance()
 {
@@ -81,6 +110,7 @@ void US1GameInstance::StaticRegisterNativesUS1GameInstance()
 	static const FNameNativePtrPair Funcs[] = {
 		{ "ConnectToGameServer", &US1GameInstance::execConnectToGameServer },
 		{ "DisconnectToGameServer", &US1GameInstance::execDisconnectToGameServer },
+		{ "HandleRecvPackets", &US1GameInstance::execHandleRecvPackets },
 	};
 	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 }
@@ -104,6 +134,7 @@ struct Z_Construct_UClass_US1GameInstance_Statics
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
 		{ &Z_Construct_UFunction_US1GameInstance_ConnectToGameServer, "ConnectToGameServer" }, // 1251048783
 		{ &Z_Construct_UFunction_US1GameInstance_DisconnectToGameServer, "DisconnectToGameServer" }, // 384657011
+		{ &Z_Construct_UFunction_US1GameInstance_HandleRecvPackets, "HandleRecvPackets" }, // 1532575019
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -152,10 +183,10 @@ US1GameInstance::~US1GameInstance() {}
 struct Z_CompiledInDeferFile_FID_Users_0412j_2025_Summer_2025_Summer_S1_Source_S1_S1GameInstance_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_US1GameInstance, US1GameInstance::StaticClass, TEXT("US1GameInstance"), &Z_Registration_Info_UClass_US1GameInstance, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(US1GameInstance), 2605006226U) },
+		{ Z_Construct_UClass_US1GameInstance, US1GameInstance::StaticClass, TEXT("US1GameInstance"), &Z_Registration_Info_UClass_US1GameInstance, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(US1GameInstance), 894391891U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_0412j_2025_Summer_2025_Summer_S1_Source_S1_S1GameInstance_h_111444463(TEXT("/Script/S1"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_0412j_2025_Summer_2025_Summer_S1_Source_S1_S1GameInstance_h_2002497460(TEXT("/Script/S1"),
 	Z_CompiledInDeferFile_FID_Users_0412j_2025_Summer_2025_Summer_S1_Source_S1_S1GameInstance_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_0412j_2025_Summer_2025_Summer_S1_Source_S1_S1GameInstance_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
