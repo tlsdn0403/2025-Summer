@@ -5,7 +5,7 @@
 #include "GameFramework/SpringArmComponent.h"
 #include "Camera/CameraComponent.h"
 #include "Components/InputComponent.h"
-
+#include "Kismet/GameplayStatics.h"
 
 ATank::ATank()
 {
@@ -25,6 +25,10 @@ void ATank::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 }
 void ATank::Move(float Value)
 {
+	FVector DeltaLocation(0.f);
+	double DeltaTime = UGameplayStatics::GetWorldDeltaSeconds(this); // 현재 월드의 델타 시간을 가져옴
+	DeltaLocation.X = Value * DeltaTime * ATank::TankSpeed;  // Value는 입력 값, DeltaTime은 프레임 간 시간 차이, TankSpeed는 속도
+	AddActorLocalOffset(DeltaLocation);
 	UE_LOG(LogTemp, Warning, TEXT("Move Value: %f"), Value);
 }
 

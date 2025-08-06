@@ -28,7 +28,10 @@ private:
 	
 
 	void Move(float Value);
+public:
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Speed")
+	float TankSpeed = 200.0f;
 
 
 };
