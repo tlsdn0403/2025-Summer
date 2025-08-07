@@ -2157,6 +2157,12 @@
     <ClCompile Include="..\..\Source\S1\ClientPacketHandler.h">
       <Filter>Source\S1</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\S1\MyActor.cpp">
+      <Filter>Source\S1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\S1\MyActor.h">
+      <Filter>Source\S1</Filter>
+    </ClCompile>
     <None Include="..\..\Source\S1\S1.Build.cs">
       <Filter>Source\S1</Filter>
     </None>
