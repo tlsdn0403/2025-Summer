@@ -28,10 +28,13 @@ private:
 	
 
 	void Move(float Value);
+	void Turn(float Value);
 public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Speed")
-	float TankSpeed = 200.0f;
+	float TankSpeed = 400.0f;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Speed")
+	float TurnSpeed = 100.0f;
 
 };
