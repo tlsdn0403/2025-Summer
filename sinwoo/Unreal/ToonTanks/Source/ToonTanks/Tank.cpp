@@ -24,6 +24,37 @@ void ATank::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 	PlayerInputComponent->BindAxis(TEXT("MoveForward"), this, &ATank::Move);
 	PlayerInputComponent->BindAxis(TEXT("Turn"), this, &ATank::Turn);
 }
+
+// Called every frame
+void ATank::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+
+	if (PlayerControllerRef)
+	{
+		FHitResult HitResult;
+		PlayerControllerRef->GetHitResultUnderCursor(ECollisionChannel::ECC_Visibility, false, HitResult); //라인 트레이스에 대한 결과가 HItResult에 저장됨
+
+		DrawDebugSphere(GetWorld(), HitResult.ImpactPoint,
+			24.f,
+			12,
+			FColor::Red,
+			false,
+			-1.0f
+			);
+	}
+}
+
+// Called when the game starts or when spawned
+void ATank::BeginPlay()
+{
+	Super::BeginPlay();
+
+	PlayerControllerRef = Cast<APlayerController>(GetController( )); // 플레이어 컨트롤러를 가져옴
+
+
+}
+
 void ATank::Move(float Value)
 {
 	FVector DeltaLocation(0.f);
@@ -39,4 +70,5 @@ void ATank::Turn(float Value)
 	DeltaRotation.Yaw = Value * ATank::TurnSpeed * UGameplayStatics::GetWorldDeltaSeconds(this); // Yaw 회전값 계산
 	AddActorLocalRotation(DeltaRotation, true); // 회전 적용, Sweep 옵션 활성화
 }
+
 
