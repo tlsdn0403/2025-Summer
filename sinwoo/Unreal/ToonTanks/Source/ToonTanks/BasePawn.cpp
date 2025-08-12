@@ -5,6 +5,7 @@
 #include "Components/CapsuleComponent.h"
 #include "Components/StaticMeshComponent.h"
 #include "Components/SceneComponent.h"
+#include "Kismet/GameplayStatics.h"
 
 // Sets default values
 ABasePawn::ABasePawn()
@@ -26,6 +27,28 @@ ABasePawn::ABasePawn()
 
 	ProjectileSpawnPoint = CreateDefaultSubobject<USceneComponent>(TEXT("Projectile Spawn Point"));
 	ProjectileSpawnPoint->SetupAttachment(TurretMesh);								// ProjectileSpawnPoint를 TurretMesh에 연결	
+}
+
+void ABasePawn::RotateTurret(FVector LookAtTarget)
+{
+	FVector ToTarget = LookAtTarget - TurretMesh->GetComponentLocation(); // 타겟과 터렛의 위치 차이를 구함
+
+
+	FRotator LookAtRotation(0.f, ToTarget.Rotation().Yaw, 0.f); // 피치와 롤을 0으로 설정하여 수평 회전만 적용
+
+	TurretMesh->SetWorldRotation(FMath::RInterpTo(TurretMesh->GetComponentRotation(), LookAtRotation, UGameplayStatics::GetWorldDeltaSeconds(this), 5.f)); // 보간을 이용
+}
+
+void ABasePawn::Fire()
+{
+	FVector SpawnLocation = ProjectileSpawnPoint->GetComponentLocation(); // 발사 지점의 위치를 가져옴
+	DrawDebugSphere(GetWorld(), SpawnLocation,
+		24.f,
+		12,
+		FColor::Red,
+		false,
+		-1.0f
+	); // 디버그용 구체를 그려서 발사 지점을 시각화
 }
 
 

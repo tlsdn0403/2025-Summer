@@ -23,6 +23,8 @@ void ATank::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 
 	PlayerInputComponent->BindAxis(TEXT("MoveForward"), this, &ATank::Move);
 	PlayerInputComponent->BindAxis(TEXT("Turn"), this, &ATank::Turn);
+
+	PlayerInputComponent->BindAction(TEXT("Fire"), IE_Pressed ,this , &ATank::Fire); // Fire 액션을 바인딩	
 }
 
 // Called every frame
@@ -42,6 +44,8 @@ void ATank::Tick(float DeltaTime)
 			false,
 			-1.0f
 			);
+
+		this->RotateTurret(HitResult.ImpactPoint); // 타겟의 위치를 가져와서 터렛을 회전시킴
 	}
 }
 

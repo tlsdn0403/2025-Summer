@@ -21,6 +21,10 @@ public:
 	UPROPERTY(EditAnywhere , BlueprintReadWrite)
 	float Speed = 400.0f;
 
+protected:
+	void RotateTurret(FVector LookAtTarget);
+
+	void Fire();
 private:
 
 	UPROPERTY(VisibleAnywhere, meta = (AllowPrivateAccess = "true"), Category = "Collision Component")
