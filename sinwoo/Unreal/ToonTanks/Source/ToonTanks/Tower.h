@@ -25,4 +25,12 @@ private:
 
 	UPROPERTY(EditAnywhere , Category = "Fire")
 	float FireRange = 500.0f; // 공격 범위
+
+	FTimerHandle FireRateTimerHandle; // 발사 속도 타이머 핸들
+
+	float FireRate = 2.0f; // 발사 속도 (초 단위)
+
+	void CheckFireCondition(); // 발사 조건을 확인하는 함수	
+
+	bool CheckTargetInRange(); // 타겟이 범위 내에 있는지 확인하는 함수
 };

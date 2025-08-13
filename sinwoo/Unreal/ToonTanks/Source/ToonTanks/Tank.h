@@ -46,4 +46,5 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Speed")
 	float TurnSpeed = 100.0f;
 
+	
 };
