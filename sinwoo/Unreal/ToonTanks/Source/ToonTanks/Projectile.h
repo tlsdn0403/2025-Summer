@@ -23,10 +23,6 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 private:
-	UPROPERTY(VisibleAnywhere, meta = (AllowPrivateAccess = "true"), Category = "Collision Component")
-	class UCapsuleComponent* CapsuleComp;
-
-
 
 	UPROPERTY(VisibleAnywhere, meta = (AllowPrivateAccess = "true"), Category = "Component")
 	class UStaticMeshComponent* BaseMesh;

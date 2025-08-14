@@ -2,6 +2,7 @@
 
 
 #include "BasePawn.h"
+#include "Projectile.h"
 #include "Components/CapsuleComponent.h"
 #include "Components/StaticMeshComponent.h"
 #include "Components/SceneComponent.h"
@@ -42,13 +43,7 @@ void ABasePawn::RotateTurret(FVector LookAtTarget)
 void ABasePawn::Fire()
 {
 	FVector SpawnLocation = ProjectileSpawnPoint->GetComponentLocation(); // 발사 지점의 위치를 가져옴
-	DrawDebugSphere(GetWorld(), SpawnLocation,
-		24.f,
-		12,
-		FColor::Red,
-		false,
-		-1.0f
-	); // 디버그용 구체를 그려서 발사 지점을 시각화
+	GetWorld()->SpawnActor<AProjectile>(ProjectileClass, SpawnLocation, ProjectileSpawnPoint->GetComponentRotation()); // ProjectileClass를 사용하여 발사체를 생성
 }
 
 

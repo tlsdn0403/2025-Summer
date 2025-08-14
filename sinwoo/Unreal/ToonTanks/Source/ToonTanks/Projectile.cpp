@@ -12,9 +12,6 @@ AProjectile::AProjectile()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
-	CapsuleComp = CreateDefaultSubobject<UCapsuleComponent>(TEXT("Capsule Collidor"));
-	RootComponent = CapsuleComp;													// 캡슐 컴포넌트를 루트 컴포넌트로 설정
-
 	// 정적 메시 컴포넌트들을 생성
 	BaseMesh = CreateDefaultSubobject< UStaticMeshComponent>(TEXT("Base Mesh"));
 	RootComponent = BaseMesh;							

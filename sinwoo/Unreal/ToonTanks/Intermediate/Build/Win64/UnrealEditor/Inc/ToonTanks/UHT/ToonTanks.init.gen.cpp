@@ -17,7 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeToonTanks_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0x48AD00B4,
+				0xA552BB96,
 				0xC2DBEA97,
 				METADATA_PARAMS(0, nullptr)
 			};
@@ -25,5 +25,5 @@ void EmptyLinkFunctionForGeneratedCodeToonTanks_init() {}
 		}
 		return Z_Registration_Info_UPackage__Script_ToonTanks.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_ToonTanks(Z_Construct_UPackage__Script_ToonTanks, TEXT("/Script/ToonTanks"), Z_Registration_Info_UPackage__Script_ToonTanks, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x48AD00B4, 0xC2DBEA97));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_ToonTanks(Z_Construct_UPackage__Script_ToonTanks, TEXT("/Script/ToonTanks"), Z_Registration_Info_UPackage__Script_ToonTanks, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xA552BB96, 0xC2DBEA97));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
