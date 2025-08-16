@@ -16,7 +16,15 @@
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
+class AActor;
+class UPrimitiveComponent;
+struct FHitResult;
+
 // ********** Begin Class AProjectile **************************************************************
+#define FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_ToonTanks_Source_ToonTanks_Projectile_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execOnHit);
+
+
 TOONTANKS_API UClass* Z_Construct_UClass_AProjectile_NoRegister();
 
 #define FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_ToonTanks_Source_ToonTanks_Projectile_h_12_INCLASS_NO_PURE_DECLS \
@@ -44,6 +52,7 @@ public: \
 #define FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_ToonTanks_Source_ToonTanks_Projectile_h_12_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
+	FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_ToonTanks_Source_ToonTanks_Projectile_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
 	FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_ToonTanks_Source_ToonTanks_Projectile_h_12_INCLASS_NO_PURE_DECLS \
 	FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_ToonTanks_Source_ToonTanks_Projectile_h_12_ENHANCED_CONSTRUCTORS \
 private: \

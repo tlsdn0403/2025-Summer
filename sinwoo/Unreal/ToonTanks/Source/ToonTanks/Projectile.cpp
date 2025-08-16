@@ -4,6 +4,7 @@
 #include "Projectile.h"
 #include "Components/CapsuleComponent.h"
 #include "Components/StaticMeshComponent.h"
+#include "GameFramework/ProjectileMovementComponent.h"
 
 
 // Sets default values
@@ -14,14 +15,26 @@ AProjectile::AProjectile()
 
 	// 정적 메시 컴포넌트들을 생성
 	BaseMesh = CreateDefaultSubobject< UStaticMeshComponent>(TEXT("Base Mesh"));
-	RootComponent = BaseMesh;							
+	RootComponent = BaseMesh;	
+
+	ProjectileMovementComponent = CreateDefaultSubobject<UProjectileMovementComponent>(TEXT("Projectile Movement Component"));
+
+	ProjectileMovementComponent->MaxSpeed = 1300.f; // 최대 속도
+	ProjectileMovementComponent->InitialSpeed = 1300.f; //초기 속도
 }
 
 // Called when the game starts or when spawned
 void AProjectile::BeginPlay()
 {
 	Super::BeginPlay();
-	
+
+	//생성자에서 부르는 것은 너무 빨라서 BeginPlay에서 호출해야 함
+	BaseMesh->OnComponentHit.AddDynamic(this, &AProjectile::OnHit);  // BaseMesh가 충돌했을 때 OnHit 함수를 호출하도록 이벤트를 바인딩
+}
+
+void AProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit)
+{
+	UE_LOG(LogTemp, Warning, TEXT("Projectile Hit: %s"), *OtherActor->GetName());
 }
 
 // Called every frame

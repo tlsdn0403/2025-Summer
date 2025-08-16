@@ -35,16 +35,7 @@ void ATank::Tick(float DeltaTime)
 	if (PlayerControllerRef)
 	{
 		FHitResult HitResult;
-		PlayerControllerRef->GetHitResultUnderCursor(ECollisionChannel::ECC_Visibility, false, HitResult); //라인 트레이스에 대한 결과가 HItResult에 저장됨
-
-		DrawDebugSphere(GetWorld(), HitResult.ImpactPoint,
-			24.f,
-			12,
-			FColor::Red,
-			false,
-			-1.0f
-			);
-
+		PlayerControllerRef->GetHitResultUnderCursor(ECollisionChannel::ECC_Visibility, false, HitResult); //라인 트레이스에 대한 결과가 HItResult에 저장
 		this->RotateTurret(HitResult.ImpactPoint); // 타겟의 위치를 가져와서 터렛을 회전시킴
 	}
 }
@@ -65,7 +56,6 @@ void ATank::Move(float Value)
 	double DeltaTime = UGameplayStatics::GetWorldDeltaSeconds(this); // 현재 월드의 델타 시간을 가져옴
 	DeltaLocation.X = Value * DeltaTime * ATank::TankSpeed;  // Value는 입력 값, DeltaTime은 프레임 간 시간 차이, TankSpeed는 속도
 	AddActorLocalOffset(DeltaLocation , true);					// Sweep
-	UE_LOG(LogTemp, Warning, TEXT("Move Value: %f"), Value);
 }
 void ATank::Turn(float Value)
 {
