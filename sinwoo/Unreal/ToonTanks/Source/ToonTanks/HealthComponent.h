@@ -27,7 +27,7 @@ private:
 	float Health = 0.f;
 
 	UFUNCTION()
-	void DamageTaken(AActor* DamagedActor, float Damage, const UDamageType* DamageType, class AController* Instigater, AActor* DamageCauser);
+	void DamageTaken(AActor* DamagedActor, float Damage, const UDamageType* DamageType, class AController* Instigater, AActor* DamageCauser); // 발사체의 OnHit 함수에서 호출됨
 
 public:	
 	// Called every frame

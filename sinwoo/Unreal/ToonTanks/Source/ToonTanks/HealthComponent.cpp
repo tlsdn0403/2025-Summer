@@ -27,7 +27,9 @@ void UHealthComponent::BeginPlay()
 
 void UHealthComponent::DamageTaken(AActor* DamagedActor, float Damage, const UDamageType* DamageType, AController* Instigater, AActor* DamageCauser)
 {
-
+	if (Damage <= 0.f || Health <= 0.f) return; // 데미지가 0 이하이거나 체력이 0 이하이면 함수 종료
+	Health -= Damage; // 체력 감소
+	UE_LOG(LogTemp, Warning, TEXT("Health: %f"), Health); // 현재 체력 로그 출력
 }
 
 // Called every frame

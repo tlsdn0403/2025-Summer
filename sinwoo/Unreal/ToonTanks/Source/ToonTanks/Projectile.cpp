@@ -5,6 +5,9 @@
 #include "Components/CapsuleComponent.h"
 #include "Components/StaticMeshComponent.h"
 #include "GameFramework/ProjectileMovementComponent.h"
+#include "Kismet/GameplayStatics.h"
+#include "GameFramework/DamageType.h"
+
 
 
 // Sets default values
@@ -34,7 +37,19 @@ void AProjectile::BeginPlay()
 
 void AProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit)
 {
-	UE_LOG(LogTemp, Warning, TEXT("Projectile Hit: %s"), *OtherActor->GetName());
+	auto MyOwner = GetOwner(); // 발사체의 소유자를 가져옴
+
+	if (MyOwner == nullptr)return;  // 소유자가 없으면 함수 종료
+	
+	auto MyOwnerInstigator = MyOwner->GetInstigatorController(); // 소유자의 인스티게이터 컨트롤러를 가져옴
+
+	auto DamageType = UDamageType::StaticClass(); // 데미지 타입을 가져옴
+
+	if(OtherActor && OtherActor != this && OtherActor != MyOwner) // 충돌한 액터가 유효하고, 자기 자신이나 소유자가 아니면
+	{
+		UGameplayStatics::ApplyDamage(OtherActor, Damage, MyOwnerInstigator, this, DamageType); // 데미지를 적용 , HealthComponent의 DamageTaken 함수가 호출됨
+		Destroy(); // 발사체를 파괴
+	}
 }
 
 // Called every frame

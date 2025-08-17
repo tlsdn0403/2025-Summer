@@ -43,7 +43,8 @@ void ABasePawn::RotateTurret(FVector LookAtTarget)
 void ABasePawn::Fire()
 {
 	FVector SpawnLocation = ProjectileSpawnPoint->GetComponentLocation(); // 발사 지점의 위치를 가져옴
-	GetWorld()->SpawnActor<AProjectile>(ProjectileClass, SpawnLocation, ProjectileSpawnPoint->GetComponentRotation()); // ProjectileClass를 사용하여 발사체를 생성
+	auto Projectile = GetWorld()->SpawnActor<AProjectile>(ProjectileClass, SpawnLocation, ProjectileSpawnPoint->GetComponentRotation()); // ProjectileClass를 사용하여 발사체를 생성
+	Projectile->SetOwner(this); // 발사체의 소유자를 현재 Pawn으로 설정
 }
 
 
