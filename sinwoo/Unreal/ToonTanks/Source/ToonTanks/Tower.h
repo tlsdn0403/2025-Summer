@@ -15,7 +15,7 @@ class TOONTANKS_API ATower : public ABasePawn
 	GENERATED_BODY()
 public:
 	virtual void Tick(float DeltaTime) override;
-
+	virtual void HandleDestruction() override; // 파괴 처리 함수 오버라이드, 부모 클래스의 HandleDestruction 호출
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -33,4 +33,6 @@ private:
 	void CheckFireCondition(); // 발사 조건을 확인하는 함수	
 
 	bool CheckTargetInRange(); // 타겟이 범위 내에 있는지 확인하는 함수
+
+
 };

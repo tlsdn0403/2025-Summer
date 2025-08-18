@@ -52,3 +52,12 @@ bool ATower::CheckTargetInRange()
 	}
 	return true; // 타겟이 범위 내에 있으면 true 반환
 }
+
+void ATower::HandleDestruction()
+{
+	Super::HandleDestruction(); // 부모 클래스의 HandleDestruction 호출 (조부모 클래스가 있어도 부모 클래스를 부름) 
+
+	// 음향과 이펙트를 처리한 다음 개별적인 파괴를 핸들
+
+	Destroy(); // 타워를 파괴
+}

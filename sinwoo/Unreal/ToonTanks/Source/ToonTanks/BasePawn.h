@@ -25,6 +25,8 @@ protected:
 	void RotateTurret(FVector LookAtTarget);
 
 	void Fire();
+
+	virtual void HandleDestruction(); // 폰들 파괴 처리 함수
 private:
 
 	UPROPERTY(VisibleAnywhere, meta = (AllowPrivateAccess = "true"), Category = "Collision Component")

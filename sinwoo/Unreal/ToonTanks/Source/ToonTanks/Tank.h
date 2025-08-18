@@ -19,6 +19,9 @@ public:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+
+	APlayerController* GetTankPlayerController() const { return TankPlayerController; } // 플레이어 컨트롤러를 가져오는 함수
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -35,8 +38,9 @@ private:
 
 	void Move(float Value);
 	void Turn(float Value);
+	
 
-	APlayerController* PlayerControllerRef;  // 플레이어 컨트롤러를 참조 함
+	APlayerController* TankPlayerController;  // 플레이어 컨트롤러를 참조 함
 public:
 
 
@@ -46,5 +50,5 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Speed")
 	float TurnSpeed = 100.0f;
 
-	
+	void HandleDestruction() override; // 부모 클래스의 HandleDestruction을 오버라이드
 };

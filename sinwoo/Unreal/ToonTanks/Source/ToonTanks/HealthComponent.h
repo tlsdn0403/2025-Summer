@@ -29,6 +29,8 @@ private:
 	UFUNCTION()
 	void DamageTaken(AActor* DamagedActor, float Damage, const UDamageType* DamageType, class AController* Instigater, AActor* DamageCauser); // 발사체의 OnHit 함수에서 호출됨
 
+
+	class AToonTankGameMode* ToonTankGameModeRef; // 게임 모드 참조 변수	
 public:	
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;

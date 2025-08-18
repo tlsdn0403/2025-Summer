@@ -32,10 +32,10 @@ void ATank::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	if (PlayerControllerRef)
+	if (TankPlayerController)
 	{
 		FHitResult HitResult;
-		PlayerControllerRef->GetHitResultUnderCursor(ECollisionChannel::ECC_Visibility, false, HitResult); //라인 트레이스에 대한 결과가 HItResult에 저장
+		TankPlayerController->GetHitResultUnderCursor(ECollisionChannel::ECC_Visibility, false, HitResult); //라인 트레이스에 대한 결과가 HItResult에 저장
 		this->RotateTurret(HitResult.ImpactPoint); // 타겟의 위치를 가져와서 터렛을 회전시킴
 	}
 }
@@ -45,7 +45,7 @@ void ATank::BeginPlay()
 {
 	Super::BeginPlay();
 
-	PlayerControllerRef = Cast<APlayerController>(GetController( )); // 플레이어 컨트롤러를 가져옴
+	TankPlayerController = Cast<APlayerController>(GetController( )); // 플레이어 컨트롤러를 가져옴
 
 
 }
@@ -63,6 +63,14 @@ void ATank::Turn(float Value)
 
 	DeltaRotation.Yaw = Value * ATank::TurnSpeed * UGameplayStatics::GetWorldDeltaSeconds(this); // Yaw 회전값 계산
 	AddActorLocalRotation(DeltaRotation, true); // 회전 적용, Sweep 옵션 활성화
+}
+
+void ATank::HandleDestruction()
+{
+	Super::HandleDestruction(); // 부모 클래스의 HandleDestruction 호출
+
+	SetActorHiddenInGame(true); // 게임에서 탱크를 숨김
+	SetActorTickEnabled(false); // 탱크의 Tick을 비활성화하여 업데이트를 중지
 }
 
 

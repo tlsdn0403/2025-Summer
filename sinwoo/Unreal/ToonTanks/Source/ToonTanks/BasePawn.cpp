@@ -47,6 +47,11 @@ void ABasePawn::Fire()
 	Projectile->SetOwner(this); // 발사체의 소유자를 현재 Pawn으로 설정
 }
 
+void ABasePawn::HandleDestruction()
+{
+	// 죽었을 때 시각과 음향 효과
+}
+
 
 
 
