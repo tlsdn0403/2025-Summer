@@ -31,17 +31,28 @@ void AToonTankGameMode::ActorDied(AActor* DeadActor)
 		{
 			PlayerController->SetPlayerEnabledState(false); // 플레이어 컨트롤러의 입력 비활성화	
 		}
+		GameOver(false);  // 게임 패배
 	}
 
 	else if(ATower* DestroyedTower = Cast<ATower>(DeadActor))
 	{
 		DestroyedTower->HandleDestruction(); // 타워가 죽었을 때	
+		--TargetTowers; // 타워의 수를 감소시킴
+		if(TargetTowers == 0) // 타워가 모두 파괴되었을 때
+		{
+			if(PlayerController)
+			{
+				PlayerController->SetPlayerEnabledState(false); // 플레이어 컨트롤러의 입력 비활성화	
+			}
+			GameOver(true); // 게임 승리
+		}
 	}
+	
 }
 
 void AToonTankGameMode::HandleGameStart()
 {
-
+	TargetTowers = GetTargetTowerCount();																 // 게임 안의 적군 타워의 수를 가져옴
 	Tank = Cast<ATank>(UGameplayStatics::GetPlayerPawn(this, 0));										 // 플레이어 탱크를 가져옴
 	PlayerController = Cast<AToonTanksPlayerController>(UGameplayStatics::GetPlayerController(this, 0)); // 플레이어 컨트롤러를 가져옴
 
@@ -68,4 +79,14 @@ void AToonTankGameMode::HandleGameStart()
 	}
 
 
+}
+
+
+
+int32 AToonTankGameMode::GetTargetTowerCount()
+{
+	TArray<AActor*> Towers; // 타워를 저장할 배열
+	UGameplayStatics::GetAllActorsOfClass(this, ATower::StaticClass(), Towers); // Towers 배열에 게임안의 타워들의 정보를 저장함
+	
+	return Towers.Num();   // 타워의 수를 반환
 }

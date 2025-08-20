@@ -18,6 +18,53 @@ TOONTANKS_API UClass* Z_Construct_UClass_AToonTankGameMode_NoRegister();
 UPackage* Z_Construct_UPackage__Script_ToonTanks();
 // ********** End Cross Module References **********************************************************
 
+// ********** Begin Class AToonTankGameMode Function GameOver **************************************
+struct ToonTankGameMode_eventGameOver_Parms
+{
+	bool bWonGame;
+};
+static FName NAME_AToonTankGameMode_GameOver = FName(TEXT("GameOver"));
+void AToonTankGameMode::GameOver(bool bWonGame)
+{
+	ToonTankGameMode_eventGameOver_Parms Parms;
+	Parms.bWonGame=bWonGame ? true : false;
+	UFunction* Func = FindFunctionChecked(NAME_AToonTankGameMode_GameOver);
+	ProcessEvent(Func,&Parms);
+}
+struct Z_Construct_UFunction_AToonTankGameMode_GameOver_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "ToonTankGameMode.h" },
+	};
+#endif // WITH_METADATA
+	static void NewProp_bWonGame_SetBit(void* Obj);
+	static const UECodeGen_Private::FBoolPropertyParams NewProp_bWonGame;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+void Z_Construct_UFunction_AToonTankGameMode_GameOver_Statics::NewProp_bWonGame_SetBit(void* Obj)
+{
+	((ToonTankGameMode_eventGameOver_Parms*)Obj)->bWonGame = 1;
+}
+const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AToonTankGameMode_GameOver_Statics::NewProp_bWonGame = { "bWonGame", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(ToonTankGameMode_eventGameOver_Parms), &Z_Construct_UFunction_AToonTankGameMode_GameOver_Statics::NewProp_bWonGame_SetBit, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AToonTankGameMode_GameOver_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AToonTankGameMode_GameOver_Statics::NewProp_bWonGame,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AToonTankGameMode_GameOver_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AToonTankGameMode_GameOver_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AToonTankGameMode, nullptr, "GameOver", Z_Construct_UFunction_AToonTankGameMode_GameOver_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AToonTankGameMode_GameOver_Statics::PropPointers), sizeof(ToonTankGameMode_eventGameOver_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08080800, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AToonTankGameMode_GameOver_Statics::Function_MetaDataParams), Z_Construct_UFunction_AToonTankGameMode_GameOver_Statics::Function_MetaDataParams)},  };
+static_assert(sizeof(ToonTankGameMode_eventGameOver_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_AToonTankGameMode_GameOver()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AToonTankGameMode_GameOver_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+// ********** End Class AToonTankGameMode Function GameOver ****************************************
+
 // ********** Begin Class AToonTankGameMode Function StartGame *************************************
 static FName NAME_AToonTankGameMode_StartGame = FName(TEXT("StartGame"));
 void AToonTankGameMode::StartGame()
@@ -100,6 +147,7 @@ struct Z_Construct_UClass_AToonTankGameMode_Statics
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
+		{ &Z_Construct_UFunction_AToonTankGameMode_GameOver, "GameOver" }, // 2048613556
 		{ &Z_Construct_UFunction_AToonTankGameMode_StartGame, "StartGame" }, // 1778218892
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
@@ -145,10 +193,10 @@ AToonTankGameMode::~AToonTankGameMode() {}
 struct Z_CompiledInDeferFile_FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_ToonTanks_Source_ToonTanks_ToonTankGameMode_h__Script_ToonTanks_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AToonTankGameMode, AToonTankGameMode::StaticClass, TEXT("AToonTankGameMode"), &Z_Registration_Info_UClass_AToonTankGameMode, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AToonTankGameMode), 1705549548U) },
+		{ Z_Construct_UClass_AToonTankGameMode, AToonTankGameMode::StaticClass, TEXT("AToonTankGameMode"), &Z_Registration_Info_UClass_AToonTankGameMode, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AToonTankGameMode), 1079643654U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_ToonTanks_Source_ToonTanks_ToonTankGameMode_h__Script_ToonTanks_4102296360(TEXT("/Script/ToonTanks"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_ToonTanks_Source_ToonTanks_ToonTankGameMode_h__Script_ToonTanks_14080619(TEXT("/Script/ToonTanks"),
 	Z_CompiledInDeferFile_FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_ToonTanks_Source_ToonTanks_ToonTankGameMode_h__Script_ToonTanks_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_ToonTanks_Source_ToonTanks_ToonTankGameMode_h__Script_ToonTanks_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
