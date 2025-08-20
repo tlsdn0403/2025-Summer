@@ -23,7 +23,7 @@ public:
 protected:
 	virtual void BeginPlay() override;
 	
-	UFUNCTION(BlueprintImplementableEvent)
+	UFUNCTION(BlueprintImplementableEvent) //블루프린트에서 구현할 수 있다
 	void StartGame();
 private:
 	class ATank* Tank;									// 플레이어 탱크를 저장할 변수
