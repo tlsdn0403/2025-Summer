@@ -14,12 +14,22 @@ class TOONTANKS_API AToonTankGameMode : public AGameModeBase
 {
 	GENERATED_BODY()
 
-protected:
-	virtual void BeginPlay() override;
+
 
 public:
 	void ActorDied(AActor* DeadActor);
 
+
+protected:
+	virtual void BeginPlay() override;
+	
+	UFUNCTION(BlueprintImplementableEvent)
+	void StartGame();
 private:
-	class ATank* Tank; // 플레이어 탱크를 저장할 변수
+	class ATank* Tank;									// 플레이어 탱크를 저장할 변수
+	class AToonTanksPlayerController* PlayerController; // 플레이어 컨트롤러를 저장할 변수
+
+	float StartDelay = 3.0f;							// 게임 시작 전 대기 시간
+
+	void HandleGameStart();								// 게임 시작을 처리하는 함수	
 };

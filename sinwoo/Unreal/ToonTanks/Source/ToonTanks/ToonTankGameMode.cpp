@@ -5,11 +5,13 @@
 #include "Kismet/GameplayStatics.h"
 #include "Tank.h"
 #include "Tower.h"
+#include "ToonTanksPlayerController.h"
 
 void AToonTankGameMode::BeginPlay()
 {
+	Super::BeginPlay();		// 부모 클래스의 BeginPlay 호출
+	HandleGameStart();		// 게임 시작을 처리하는 함수 호출
 
-	Tank = Cast<ATank>(UGameplayStatics::GetPlayerPawn(this, 0)); // 플레이어 탱크를 가져옴
 }
 
 void AToonTankGameMode::ActorDied(AActor* DeadActor)
@@ -20,10 +22,9 @@ void AToonTankGameMode::ActorDied(AActor* DeadActor)
 	{
 		Tank->HandleDestruction();								// 탱크의 HandleDestruction 호출
 
-		if(Tank->GetTankPlayerController())
+		if(PlayerController)
 		{
-			Tank->DisableInput(Tank->GetTankPlayerController()); // 플레이어 컨트롤러 입력 비활성화	
-			Tank->GetTankPlayerController()->bShowMouseCursor = false; // 마우스 커서 숨김
+			PlayerController->SetPlayerEnabledState(false); // 플레이어 컨트롤러의 입력 비활성화	
 		}
 	}
 
@@ -31,4 +32,35 @@ void AToonTankGameMode::ActorDied(AActor* DeadActor)
 	{
 		DestroyedTower->HandleDestruction(); // 타워가 죽었을 때	
 	}
+}
+
+void AToonTankGameMode::HandleGameStart()
+{
+
+	Tank = Cast<ATank>(UGameplayStatics::GetPlayerPawn(this, 0));										 // 플레이어 탱크를 가져옴
+	PlayerController = Cast<AToonTanksPlayerController>(UGameplayStatics::GetPlayerController(this, 0)); // 플레이어 컨트롤러를 가져옴
+
+	StartGame(); // 블루프린트에서 구현된 StartGame 이벤트 호출
+
+	if(PlayerController)
+	{
+		PlayerController->SetPlayerEnabledState(false); // 게임 시작 시 플레이어 컨트롤러의 입력 비활성화
+
+		FTimerHandle StartGameTimer; // 게임 시작 타이머 핸들
+
+		FTimerDelegate InputDelegate= FTimerDelegate::CreateUObject(
+			PlayerController ,
+			&AToonTanksPlayerController::SetPlayerEnabledState ,	// 시간이 지나면 이 함수가 호출됨
+			true													//true 는 2번째 인수 함수의 매개변수
+		); 
+
+		GetWorldTimerManager().SetTimer(
+			StartGameTimer,			
+			InputDelegate, 
+			StartDelay,              //딜레이 시간
+			false					 // 다시 타이머를 반복할 것인지
+		);
+	}
+
+
 }
