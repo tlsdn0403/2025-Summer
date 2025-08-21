@@ -7,6 +7,8 @@
 #include "GameFramework/ProjectileMovementComponent.h"
 #include "Kismet/GameplayStatics.h"
 #include "GameFramework/DamageType.h"
+#include "Particles/ParticleSystemComponent.h"
+
 
 
 
@@ -20,10 +22,13 @@ AProjectile::AProjectile()
 	BaseMesh = CreateDefaultSubobject< UStaticMeshComponent>(TEXT("Base Mesh"));
 	RootComponent = BaseMesh;	
 
-	ProjectileMovementComponent = CreateDefaultSubobject<UProjectileMovementComponent>(TEXT("Projectile Movement Component"));
 
+	ProjectileMovementComponent = CreateDefaultSubobject<UProjectileMovementComponent>(TEXT("Projectile Movement Component"));
 	ProjectileMovementComponent->MaxSpeed = 1300.f; // 최대 속도
 	ProjectileMovementComponent->InitialSpeed = 1300.f; //초기 속도
+
+	TrailParticle = CreateDefaultSubobject<UParticleSystemComponent>(TEXT("Smoke Trail")); // 발사체의 흔적 파티클	
+	TrailParticle->SetupAttachment(RootComponent); // BaseMesh에 TrailParticle을 연결
 }
 
 // Called when the game starts or when spawned
@@ -56,7 +61,13 @@ void AProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimi
 		UGameplayStatics::ApplyDamage(OtherActor, Damage, MyOwnerInstigator, this, DamageType); // 데미지를 적용 , HealthComponent의 DamageTaken 함수가 호출됨
 		if(HitParticle) // 히트 파티클이 설정되어 있으면
 		{
-			UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), HitParticle, GetActorLocation(), GetActorRotation()); // 히트 파티클을 생성
+			// 히트 파티클을 생성
+			UGameplayStatics::SpawnEmitterAtLocation(
+				GetWorld(),
+				HitParticle,
+				GetActorLocation(),
+				GetActorRotation()
+			); 
 		}
 
 		

@@ -8,6 +8,7 @@
 #include "Components/SceneComponent.h"
 #include "Kismet/GameplayStatics.h"
 
+
 // Sets default values
 ABasePawn::ABasePawn()
 {
@@ -28,6 +29,8 @@ ABasePawn::ABasePawn()
 
 	ProjectileSpawnPoint = CreateDefaultSubobject<USceneComponent>(TEXT("Projectile Spawn Point"));
 	ProjectileSpawnPoint->SetupAttachment(TurretMesh);								// ProjectileSpawnPoint를 TurretMesh에 연결	
+						// DeathParticle를 RootComponent에 연결
+
 }
 
 void ABasePawn::RotateTurret(FVector LookAtTarget)
@@ -49,7 +52,13 @@ void ABasePawn::Fire()
 
 void ABasePawn::HandleDestruction()
 {
-	// 죽었을 때 시각과 음향 효과
+	// 사망 파티클 생성
+	UGameplayStatics::SpawnEmitterAtLocation(
+		GetWorld(),
+		DeathParticle,
+		GetActorLocation(),
+		GetActorRotation()
+	);
 }
 
 
