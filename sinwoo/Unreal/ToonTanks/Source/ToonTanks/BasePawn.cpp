@@ -7,7 +7,7 @@
 #include "Components/StaticMeshComponent.h"
 #include "Components/SceneComponent.h"
 #include "Kismet/GameplayStatics.h"
-
+#include "Sound/SoundBase.h"
 
 // Sets default values
 ABasePawn::ABasePawn()
@@ -52,13 +52,25 @@ void ABasePawn::Fire()
 
 void ABasePawn::HandleDestruction()
 {
+	if(DeathSound) // 사망 사운드가 설정되어 있으면
+	{
+		UGameplayStatics::PlaySoundAtLocation(
+			this,
+			DeathSound,
+			GetActorLocation()
+		); // 사망 사운드 재생
+	}
+
 	// 사망 파티클 생성
-	UGameplayStatics::SpawnEmitterAtLocation(
-		GetWorld(),
-		DeathParticle,
-		GetActorLocation(),
-		GetActorRotation()
-	);
+	if (DeathParticle)
+	{
+		UGameplayStatics::SpawnEmitterAtLocation(
+			GetWorld(),
+			DeathParticle,
+			GetActorLocation(),
+			GetActorRotation()
+		);
+	}
 }
 
 

@@ -38,6 +38,12 @@ private:
 
 	UPROPERTY(VisibleAnywhere, Category = "Combat")
 	class UParticleSystemComponent* TrailParticle;
+
+	UPROPERTY(EditAnywhere, Category = "Combat")
+	class USoundBase* LaunchSound;  // 발사 사운드
+
+	UPROPERTY(EditAnywhere, Category = "Combat")
+	USoundBase* HitSound;			// 히트 사운드 , 앞에서 전방선언을 해놔서 여기선 안해도 ㄱㅊ음
 public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;

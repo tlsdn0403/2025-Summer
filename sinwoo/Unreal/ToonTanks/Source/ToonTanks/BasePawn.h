@@ -49,4 +49,7 @@ private:
 
 	UPROPERTY(EditAnywhere, Category = "Combat")
 	class UParticleSystem* DeathParticle;
+
+	UPROPERTY(EditAnywhere, Category = "Combat")
+	class USoundBase* DeathSound;			//  죽을 떄 나는 소리
 };
