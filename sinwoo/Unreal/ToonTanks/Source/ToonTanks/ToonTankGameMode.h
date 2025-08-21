@@ -24,7 +24,7 @@ protected:
 	virtual void BeginPlay() override;
 	
 	UFUNCTION(BlueprintImplementableEvent) //블루프린트에서 구현할 수 있다
-	void StartGame();
+	void StartGame();					   // 이 함수는 cpp에서 구현을 하면 오류가 뜬다
 
 	UFUNCTION(BlueprintImplementableEvent) 
 	void GameOver(bool bWonGame);

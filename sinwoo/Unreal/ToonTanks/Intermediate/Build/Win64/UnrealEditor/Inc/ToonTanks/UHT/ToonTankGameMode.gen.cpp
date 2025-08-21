@@ -35,7 +35,13 @@ struct Z_Construct_UFunction_AToonTankGameMode_GameOver_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// \xef\xbf\xbd\xef\xbf\xbd \xef\xbf\xbd\xd4\xbc\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd cpp\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd \xef\xbf\xbd\xcf\xb8\xef\xbf\xbd \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\n" },
+#endif
 		{ "ModuleRelativePath", "ToonTankGameMode.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "\xef\xbf\xbd\xef\xbf\xbd \xef\xbf\xbd\xd4\xbc\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd cpp\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd \xef\xbf\xbd\xcf\xb8\xef\xbf\xbd \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd" },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_bWonGame_SetBit(void* Obj);
@@ -147,7 +153,7 @@ struct Z_Construct_UClass_AToonTankGameMode_Statics
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_AToonTankGameMode_GameOver, "GameOver" }, // 2048613556
+		{ &Z_Construct_UFunction_AToonTankGameMode_GameOver, "GameOver" }, // 1555621871
 		{ &Z_Construct_UFunction_AToonTankGameMode_StartGame, "StartGame" }, // 1778218892
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
@@ -193,10 +199,10 @@ AToonTankGameMode::~AToonTankGameMode() {}
 struct Z_CompiledInDeferFile_FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_ToonTanks_Source_ToonTanks_ToonTankGameMode_h__Script_ToonTanks_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AToonTankGameMode, AToonTankGameMode::StaticClass, TEXT("AToonTankGameMode"), &Z_Registration_Info_UClass_AToonTankGameMode, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AToonTankGameMode), 1079643654U) },
+		{ Z_Construct_UClass_AToonTankGameMode, AToonTankGameMode::StaticClass, TEXT("AToonTankGameMode"), &Z_Registration_Info_UClass_AToonTankGameMode, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AToonTankGameMode), 1836522512U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_ToonTanks_Source_ToonTanks_ToonTankGameMode_h__Script_ToonTanks_14080619(TEXT("/Script/ToonTanks"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_ToonTanks_Source_ToonTanks_ToonTankGameMode_h__Script_ToonTanks_3197769264(TEXT("/Script/ToonTanks"),
 	Z_CompiledInDeferFile_FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_ToonTanks_Source_ToonTanks_ToonTankGameMode_h__Script_ToonTanks_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_ToonTanks_Source_ToonTanks_ToonTankGameMode_h__Script_ToonTanks_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

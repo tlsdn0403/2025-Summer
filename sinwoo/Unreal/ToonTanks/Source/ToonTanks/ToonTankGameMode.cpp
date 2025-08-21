@@ -14,10 +14,7 @@ void AToonTankGameMode::BeginPlay()
 
 }
 
-void AToonTankGameMode::StartGame()
-{
-	// 블루 프린트에서 위젯을 연결함
-}
+
 
 void AToonTankGameMode::ActorDied(AActor* DeadActor)
 {
