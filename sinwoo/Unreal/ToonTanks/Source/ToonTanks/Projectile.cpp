@@ -9,7 +9,7 @@
 #include "GameFramework/DamageType.h"
 #include "Particles/ParticleSystemComponent.h"
 #include "Sound/SoundBase.h"
-
+#include "Camera/CameraShakeBase.h"
 
 
 
@@ -92,7 +92,10 @@ void AProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimi
 				GetActorLocation()
 			); // 히트 사운드 재생
 		}	
-
+		if(HitCameraShake) // 히트 카메라 쉐이크가 설정되어 있으면
+		{
+			GetWorld()->GetFirstPlayerController()->ClientStartCameraShake(HitCameraShake); // 플레이어 컨트롤러에 카메라 쉐이크 시작
+		}	
 		
 	}
 	Destroy(); // 발사체를 파괴

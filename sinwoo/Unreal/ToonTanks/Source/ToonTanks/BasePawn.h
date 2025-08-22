@@ -52,4 +52,11 @@ private:
 
 	UPROPERTY(EditAnywhere, Category = "Combat")
 	class USoundBase* DeathSound;			//  죽을 떄 나는 소리
+
+	UPROPERTY(EditAnywhere, Category = "Combat")
+	TSubclassOf<class UCameraShakeBase> DeathCameraShakeClass; // 죽을 때 카메라 흔들림
+
+	bool bAlive = true; // 폰이 살아있는지 체크하는 변수
+public:
+	bool IsAlive() const { return bAlive; } // 폰이 살아있는지 체크하는 함수	
 };

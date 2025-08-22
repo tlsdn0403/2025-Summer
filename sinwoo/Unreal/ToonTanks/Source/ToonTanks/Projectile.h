@@ -44,6 +44,9 @@ private:
 
 	UPROPERTY(EditAnywhere, Category = "Combat")
 	USoundBase* HitSound;			// 히트 사운드 , 앞에서 전방선언을 해놔서 여기선 안해도 ㄱㅊ음
+
+	UPROPERTY(EditAnywhere, Category = "Combat")
+	TSubclassOf<class UCameraShakeBase> HitCameraShake; // 히트 카메라 쉐이크
 public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;

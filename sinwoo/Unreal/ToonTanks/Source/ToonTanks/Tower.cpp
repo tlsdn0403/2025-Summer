@@ -39,7 +39,7 @@ void ATower::CheckFireCondition()
 
 bool ATower::CheckTargetInRange()
 {
-	if (TargetTank == nullptr) // 타겟 탱크가 없으면 함수 종료
+	if (TargetTank == nullptr || !TargetTank->IsAlive()) // 타겟 탱크가 없으면 함수 종료
 	{
 		return false;
 	}

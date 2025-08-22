@@ -8,6 +8,9 @@
 #include "Components/SceneComponent.h"
 #include "Kismet/GameplayStatics.h"
 #include "Sound/SoundBase.h"
+#include "Camera/CameraShakeBase.h"
+
+
 
 // Sets default values
 ABasePawn::ABasePawn()
@@ -71,6 +74,11 @@ void ABasePawn::HandleDestruction()
 			GetActorRotation()
 		);
 	}
+	if(DeathCameraShakeClass) // 사망 카메라 쉐이크가 설정되어 있으면
+	{
+		GetWorld()->GetFirstPlayerController()->ClientStartCameraShake(DeathCameraShakeClass); // 카메라 쉐이크 시작
+	}
+	bAlive = false; // 폰이 죽었음을 표시
 }
 
 
