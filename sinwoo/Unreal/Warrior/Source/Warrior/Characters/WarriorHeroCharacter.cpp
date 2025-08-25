@@ -2,4 +2,10 @@
 
 
 #include "WarriorHeroCharacter.h"
+#include "Warrior/WarriorDebugHelper.h"
 
+void AWarriorHeroCharacter::BeginPlay()
+{
+	Super::BeginPlay();
+	Debug::Print(FString::Printf(TEXT("Hero Character BeginPlay: %s"), *GetName()));
+}
