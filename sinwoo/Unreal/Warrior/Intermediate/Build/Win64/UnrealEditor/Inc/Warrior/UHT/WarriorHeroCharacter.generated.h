@@ -31,8 +31,6 @@ public: \
 
 
 #define FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Warrior_Source_Warrior_Characters_WarriorHeroCharacter_h_15_ENHANCED_CONSTRUCTORS \
-	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API AWarriorHeroCharacter(); \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	AWarriorHeroCharacter(AWarriorHeroCharacter&&) = delete; \
 	AWarriorHeroCharacter(const AWarriorHeroCharacter&) = delete; \
