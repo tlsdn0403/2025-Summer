@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "Warrior/WarriorGameModeBase.h"
+#include "Warrior/GameModes/WarriorGameModeBase.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
@@ -59,8 +59,8 @@ struct Z_Construct_UClass_AWarriorGameModeBase_Statics
 		{ "Comment", "/**\n * \n */" },
 #endif
 		{ "HideCategories", "Info Rendering MovementReplication Replication Actor Input Movement Collision Rendering HLOD WorldPartition DataLayers Transformation" },
-		{ "IncludePath", "WarriorGameModeBase.h" },
-		{ "ModuleRelativePath", "WarriorGameModeBase.h" },
+		{ "IncludePath", "GameModes/WarriorGameModeBase.h" },
+		{ "ModuleRelativePath", "GameModes/WarriorGameModeBase.h" },
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 	};
 #endif // WITH_METADATA
@@ -104,14 +104,14 @@ AWarriorGameModeBase::~AWarriorGameModeBase() {}
 // ********** End Class AWarriorGameModeBase *******************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Warrior_Source_Warrior_WarriorGameModeBase_h__Script_Warrior_Statics
+struct Z_CompiledInDeferFile_FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Warrior_Source_Warrior_GameModes_WarriorGameModeBase_h__Script_Warrior_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AWarriorGameModeBase, AWarriorGameModeBase::StaticClass, TEXT("AWarriorGameModeBase"), &Z_Registration_Info_UClass_AWarriorGameModeBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AWarriorGameModeBase), 2549798560U) },
+		{ Z_Construct_UClass_AWarriorGameModeBase, AWarriorGameModeBase::StaticClass, TEXT("AWarriorGameModeBase"), &Z_Registration_Info_UClass_AWarriorGameModeBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AWarriorGameModeBase), 3541591881U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Warrior_Source_Warrior_WarriorGameModeBase_h__Script_Warrior_2228397831(TEXT("/Script/Warrior"),
-	Z_CompiledInDeferFile_FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Warrior_Source_Warrior_WarriorGameModeBase_h__Script_Warrior_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Warrior_Source_Warrior_WarriorGameModeBase_h__Script_Warrior_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Warrior_Source_Warrior_GameModes_WarriorGameModeBase_h__Script_Warrior_2173125939(TEXT("/Script/Warrior"),
+	Z_CompiledInDeferFile_FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Warrior_Source_Warrior_GameModes_WarriorGameModeBase_h__Script_Warrior_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Warrior_Source_Warrior_GameModes_WarriorGameModeBase_h__Script_Warrior_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

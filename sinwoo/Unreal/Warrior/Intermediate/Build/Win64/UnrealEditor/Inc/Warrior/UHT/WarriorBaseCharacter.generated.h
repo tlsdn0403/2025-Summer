@@ -4,7 +4,7 @@
 	DO NOT modify this manually! Edit the corresponding .h files instead!
 ===========================================================================*/
 
-// IWYU pragma: private, include "WarriorBaseCharacter.h"
+// IWYU pragma: private, include "Characters/WarriorBaseCharacter.h"
 
 #ifdef WARRIOR_WarriorBaseCharacter_generated_h
 #error "WarriorBaseCharacter.generated.h already included, missing '#pragma once' in WarriorBaseCharacter.h"
@@ -19,7 +19,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 // ********** Begin Class AWarriorBaseCharacter ****************************************************
 WARRIOR_API UClass* Z_Construct_UClass_AWarriorBaseCharacter_NoRegister();
 
-#define FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Warrior_Source_Warrior_WarriorBaseCharacter_h_12_INCLASS_NO_PURE_DECLS \
+#define FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Warrior_Source_Warrior_Characters_WarriorBaseCharacter_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAWarriorBaseCharacter(); \
 	friend struct Z_Construct_UClass_AWarriorBaseCharacter_Statics; \
@@ -30,7 +30,7 @@ public: \
 	DECLARE_SERIALIZER(AWarriorBaseCharacter)
 
 
-#define FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Warrior_Source_Warrior_WarriorBaseCharacter_h_12_ENHANCED_CONSTRUCTORS \
+#define FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Warrior_Source_Warrior_Characters_WarriorBaseCharacter_h_12_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	AWarriorBaseCharacter(AWarriorBaseCharacter&&) = delete; \
 	AWarriorBaseCharacter(const AWarriorBaseCharacter&) = delete; \
@@ -40,12 +40,12 @@ public: \
 	NO_API virtual ~AWarriorBaseCharacter();
 
 
-#define FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Warrior_Source_Warrior_WarriorBaseCharacter_h_9_PROLOG
-#define FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Warrior_Source_Warrior_WarriorBaseCharacter_h_12_GENERATED_BODY \
+#define FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Warrior_Source_Warrior_Characters_WarriorBaseCharacter_h_9_PROLOG
+#define FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Warrior_Source_Warrior_Characters_WarriorBaseCharacter_h_12_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Warrior_Source_Warrior_WarriorBaseCharacter_h_12_INCLASS_NO_PURE_DECLS \
-	FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Warrior_Source_Warrior_WarriorBaseCharacter_h_12_ENHANCED_CONSTRUCTORS \
+	FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Warrior_Source_Warrior_Characters_WarriorBaseCharacter_h_12_INCLASS_NO_PURE_DECLS \
+	FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Warrior_Source_Warrior_Characters_WarriorBaseCharacter_h_12_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -55,6 +55,6 @@ class AWarriorBaseCharacter;
 // ********** End Class AWarriorBaseCharacter ******************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Warrior_Source_Warrior_WarriorBaseCharacter_h
+#define CURRENT_FILE_ID FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Warrior_Source_Warrior_Characters_WarriorBaseCharacter_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
