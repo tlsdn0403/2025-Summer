@@ -16,11 +16,11 @@ struct FWarriorInputActionConfig
 	GENERATED_BODY() // 이 코드가 없으면 컴파일이 안됨.
 
 public:
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, meta = (Categories = "InputTag"))
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, meta = (Categories = "InputTag")) // 인풋 테그로 에디터에서 뜸
 	FGameplayTag InputTag;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly)
-	class UInputAction* InputAction;
+	class UInputAction* InputAction; 
 };
 
 
@@ -36,6 +36,6 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, meta = (TitleProperty = "InputTag"))
 	TArray<FWarriorInputActionConfig> NativeInputActions;
 
-	class UInputAction* FindNativeInputActionByTag(const FGameplayTag& InInputTag);
+	class UInputAction* FindNativeInputActionByTag(const FGameplayTag& InInputTag); 
 
 };
