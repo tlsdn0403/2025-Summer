@@ -19,7 +19,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 // ********** Begin Class AWarriorHeroCharacter ****************************************************
 WARRIOR_API UClass* Z_Construct_UClass_AWarriorHeroCharacter_NoRegister();
 
-#define FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Warrior_Source_Warrior_Public_Characters_WarriorHeroCharacter_h_15_INCLASS_NO_PURE_DECLS \
+#define FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Warrior_Source_Warrior_Public_Characters_WarriorHeroCharacter_h_18_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAWarriorHeroCharacter(); \
 	friend struct Z_Construct_UClass_AWarriorHeroCharacter_Statics; \
@@ -30,7 +30,7 @@ public: \
 	DECLARE_SERIALIZER(AWarriorHeroCharacter)
 
 
-#define FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Warrior_Source_Warrior_Public_Characters_WarriorHeroCharacter_h_15_ENHANCED_CONSTRUCTORS \
+#define FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Warrior_Source_Warrior_Public_Characters_WarriorHeroCharacter_h_18_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	AWarriorHeroCharacter(AWarriorHeroCharacter&&) = delete; \
 	AWarriorHeroCharacter(const AWarriorHeroCharacter&) = delete; \
@@ -40,12 +40,12 @@ public: \
 	NO_API virtual ~AWarriorHeroCharacter();
 
 
-#define FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Warrior_Source_Warrior_Public_Characters_WarriorHeroCharacter_h_12_PROLOG
-#define FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Warrior_Source_Warrior_Public_Characters_WarriorHeroCharacter_h_15_GENERATED_BODY \
+#define FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Warrior_Source_Warrior_Public_Characters_WarriorHeroCharacter_h_15_PROLOG
+#define FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Warrior_Source_Warrior_Public_Characters_WarriorHeroCharacter_h_18_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Warrior_Source_Warrior_Public_Characters_WarriorHeroCharacter_h_15_INCLASS_NO_PURE_DECLS \
-	FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Warrior_Source_Warrior_Public_Characters_WarriorHeroCharacter_h_15_ENHANCED_CONSTRUCTORS \
+	FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Warrior_Source_Warrior_Public_Characters_WarriorHeroCharacter_h_18_INCLASS_NO_PURE_DECLS \
+	FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Warrior_Source_Warrior_Public_Characters_WarriorHeroCharacter_h_18_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

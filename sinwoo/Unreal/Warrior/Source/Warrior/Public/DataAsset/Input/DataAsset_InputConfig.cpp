@@ -3,15 +3,16 @@
 
 #include "DataAsset_InputConfig.h"
 
-UInputAction* UDataAsset_InputConfig::FindNativeInputActionByTag(const FGameplayTag& InInputTag) const
+
+UInputAction* UDataAsset_InputConfig::FindNativeInputActionByTag(const FGameplayTag& InInputTag)
 {
-	
-	for(const FWarriorInputActionConfig& Config : NativeInputActions)
+	for (const FWarriorInputActionConfig& InputActionConfig : NativeInputActions)
 	{
-		if(Config.InputTag == InInputTag)
+		if (InputActionConfig.InputTag == InInputTag && InputActionConfig.InputAction)
 		{
-			return Config.InputAction;
+			return InputActionConfig.InputAction;
 		}
 	}
+
 	return nullptr;
 }
