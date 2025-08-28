@@ -42,7 +42,6 @@ void AWarriorHeroCharacter::BeginPlay()
 
 void AWarriorHeroCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
-	Super::SetupPlayerInputComponent(PlayerInputComponent); 
 	checkf(InputConfigDataAsset, TEXT("Forgot to assign a valid data asset as input config"));
 
 	ULocalPlayer* LocalPlayer = GetController<APlayerController>()->GetLocalPlayer();
@@ -60,7 +59,7 @@ void AWarriorHeroCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInp
 }
 void AWarriorHeroCharacter::Input_Move(const FInputActionValue& InputActionValue)
 {
-	Debug::Print("Working");
+	
 	const FVector2D MovementVector = InputActionValue.Get<FVector2D>();
 	const FRotator MovementRotation(0.f, GetControlRotation().Yaw, 0.f);
 
@@ -78,7 +77,6 @@ void AWarriorHeroCharacter::Input_Move(const FInputActionValue& InputActionValue
 void AWarriorHeroCharacter::Input_Look(const FInputActionValue& InputActionValue)
 {
 	const FVector2D LookAxisVector = InputActionValue.Get<FVector2D>();
-
 	if (LookAxisVector.X != 0.f)
 	{
 		AddControllerYawInput(LookAxisVector.X);
@@ -86,6 +84,6 @@ void AWarriorHeroCharacter::Input_Look(const FInputActionValue& InputActionValue
 
 	if (LookAxisVector.Y != 0.f)
 	{
-		AddControllerPitchInput(LookAxisVector.Y);
+		AddControllerPitchInput(LookAxisVector.Y /2);
 	}
 }
