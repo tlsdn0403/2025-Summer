@@ -7,6 +7,8 @@
 #include "Serialization/ArrayWriter.h"
 #include "SocketSubsystem.h"
 #include "PacketSession.h"
+#include "Protocol.pb.h"
+#include "ClientPacketHandler.h"
 
 void US1GameInstance::ConnectToGameServer()
 {
@@ -30,6 +32,13 @@ void US1GameInstance::ConnectToGameServer()
 		// Session
 		GameServerSession = MakeShared<PacketSession>(Socket);
 		GameServerSession->Run();
+
+		// TEMP : LOBY에서 캐릭터 선택창 등
+		{
+			Protocol::C_LOGIN Pkt;
+			SendBufferRef SendBuffer = ClientPacketHandler::MakeSendBuffer(Pkt);
+			SendPacket(SendBuffer);
+		}
 	}
 	else
 	{

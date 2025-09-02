@@ -7,7 +7,7 @@ class Player : public enable_shared_from_this<Player>
 {
 public:
 	Player();
-	virtual ~Player();
+	virtual ~Player();	
 
 public:
 	Protocol::PlayerInfo* playerInfo;
@@ -16,4 +16,3 @@ public:
 public:
 	atomic<weak_ptr<Room>> room;
 };
-

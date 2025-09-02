@@ -64,6 +64,8 @@ int main()
 		//GSessionManager.Broadcast(sendBuffer);
 		this_thread::sleep_for(1s);
 	}
+	Protocol::S_LOGIN pkt;
+	Protocol::PlayerInfo* p = pkt.add_players();
 
 	GThreadManager->Join();
 }
