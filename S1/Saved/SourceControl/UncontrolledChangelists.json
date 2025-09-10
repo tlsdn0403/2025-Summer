@@ -5,7 +5,9 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
-				"C:/Users/0412j/2025-Summer/2025-Summer/S1/Content/Maps/DevMap.umap"
+				"C:/Users/0412j/2025-Summer/2025-Summer/S1/Content/Maps/DevMap.umap",
+				"C:/Users/0412j/2025-Summer/2025-Summer/S1/Content/Blueprints/BP_TestPlayer.uasset",
+				"C:/Users/0412j/2025-Summer/2025-Summer/S1/Content/Blueprints/BP_GameInstance.uasset"
 			]
 		}
 	]
