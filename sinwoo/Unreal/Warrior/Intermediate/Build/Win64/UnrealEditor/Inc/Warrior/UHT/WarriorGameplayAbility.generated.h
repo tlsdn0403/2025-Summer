@@ -19,7 +19,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 // ********** Begin Class UWarriorGameplayAbility **************************************************
 WARRIOR_API UClass* Z_Construct_UClass_UWarriorGameplayAbility_NoRegister();
 
-#define FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Warrior_Source_Warrior_Public_AbilitySystems_Abilitys_WarriorGameplayAbility_h_15_INCLASS_NO_PURE_DECLS \
+#define FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Warrior_Source_Warrior_Public_AbilitySystems_Abilitys_WarriorGameplayAbility_h_22_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUWarriorGameplayAbility(); \
 	friend struct Z_Construct_UClass_UWarriorGameplayAbility_Statics; \
@@ -30,7 +30,7 @@ public: \
 	DECLARE_SERIALIZER(UWarriorGameplayAbility)
 
 
-#define FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Warrior_Source_Warrior_Public_AbilitySystems_Abilitys_WarriorGameplayAbility_h_15_ENHANCED_CONSTRUCTORS \
+#define FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Warrior_Source_Warrior_Public_AbilitySystems_Abilitys_WarriorGameplayAbility_h_22_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UWarriorGameplayAbility(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -42,12 +42,12 @@ public: \
 	NO_API virtual ~UWarriorGameplayAbility();
 
 
-#define FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Warrior_Source_Warrior_Public_AbilitySystems_Abilitys_WarriorGameplayAbility_h_12_PROLOG
-#define FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Warrior_Source_Warrior_Public_AbilitySystems_Abilitys_WarriorGameplayAbility_h_15_GENERATED_BODY \
+#define FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Warrior_Source_Warrior_Public_AbilitySystems_Abilitys_WarriorGameplayAbility_h_19_PROLOG
+#define FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Warrior_Source_Warrior_Public_AbilitySystems_Abilitys_WarriorGameplayAbility_h_22_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Warrior_Source_Warrior_Public_AbilitySystems_Abilitys_WarriorGameplayAbility_h_15_INCLASS_NO_PURE_DECLS \
-	FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Warrior_Source_Warrior_Public_AbilitySystems_Abilitys_WarriorGameplayAbility_h_15_ENHANCED_CONSTRUCTORS \
+	FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Warrior_Source_Warrior_Public_AbilitySystems_Abilitys_WarriorGameplayAbility_h_22_INCLASS_NO_PURE_DECLS \
+	FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Warrior_Source_Warrior_Public_AbilitySystems_Abilitys_WarriorGameplayAbility_h_22_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -58,5 +58,15 @@ class UWarriorGameplayAbility;
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Warrior_Source_Warrior_Public_AbilitySystems_Abilitys_WarriorGameplayAbility_h
+
+// ********** Begin Enum EWarriorAbilityActivationPolicy *******************************************
+#define FOREACH_ENUM_EWARRIORABILITYACTIVATIONPOLICY(op) \
+	op(EWarriorAbilityActivationPolicy::OnTriggered) \
+	op(EWarriorAbilityActivationPolicy::OnGiven) 
+
+enum class EWarriorAbilityActivationPolicy : uint8;
+template<> struct TIsUEnumClass<EWarriorAbilityActivationPolicy> { enum { Value = true }; };
+template<> WARRIOR_API UEnum* StaticEnum<EWarriorAbilityActivationPolicy>();
+// ********** End Enum EWarriorAbilityActivationPolicy *********************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

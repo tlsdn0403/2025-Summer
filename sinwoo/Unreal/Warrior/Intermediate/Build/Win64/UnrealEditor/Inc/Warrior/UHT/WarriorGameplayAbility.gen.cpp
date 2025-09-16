@@ -16,7 +16,60 @@ GAMEPLAYABILITIES_API UClass* Z_Construct_UClass_UGameplayAbility();
 UPackage* Z_Construct_UPackage__Script_Warrior();
 WARRIOR_API UClass* Z_Construct_UClass_UWarriorGameplayAbility();
 WARRIOR_API UClass* Z_Construct_UClass_UWarriorGameplayAbility_NoRegister();
+WARRIOR_API UEnum* Z_Construct_UEnum_Warrior_EWarriorAbilityActivationPolicy();
 // ********** End Cross Module References **********************************************************
+
+// ********** Begin Enum EWarriorAbilityActivationPolicy *******************************************
+static FEnumRegistrationInfo Z_Registration_Info_UEnum_EWarriorAbilityActivationPolicy;
+static UEnum* EWarriorAbilityActivationPolicy_StaticEnum()
+{
+	if (!Z_Registration_Info_UEnum_EWarriorAbilityActivationPolicy.OuterSingleton)
+	{
+		Z_Registration_Info_UEnum_EWarriorAbilityActivationPolicy.OuterSingleton = GetStaticEnum(Z_Construct_UEnum_Warrior_EWarriorAbilityActivationPolicy, (UObject*)Z_Construct_UPackage__Script_Warrior(), TEXT("EWarriorAbilityActivationPolicy"));
+	}
+	return Z_Registration_Info_UEnum_EWarriorAbilityActivationPolicy.OuterSingleton;
+}
+template<> WARRIOR_API UEnum* StaticEnum<EWarriorAbilityActivationPolicy>()
+{
+	return EWarriorAbilityActivationPolicy_StaticEnum();
+}
+struct Z_Construct_UEnum_Warrior_EWarriorAbilityActivationPolicy_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
+		{ "BlueprintType", "true" },
+		{ "ModuleRelativePath", "Public/AbilitySystems/Abilitys/WarriorGameplayAbility.h" },
+		{ "OnGiven.Name", "EWarriorAbilityActivationPolicy::OnGiven" },
+		{ "OnTriggered.Name", "EWarriorAbilityActivationPolicy::OnTriggered" },
+	};
+#endif // WITH_METADATA
+	static constexpr UECodeGen_Private::FEnumeratorParam Enumerators[] = {
+		{ "EWarriorAbilityActivationPolicy::OnTriggered", (int64)EWarriorAbilityActivationPolicy::OnTriggered },
+		{ "EWarriorAbilityActivationPolicy::OnGiven", (int64)EWarriorAbilityActivationPolicy::OnGiven },
+	};
+	static const UECodeGen_Private::FEnumParams EnumParams;
+};
+const UECodeGen_Private::FEnumParams Z_Construct_UEnum_Warrior_EWarriorAbilityActivationPolicy_Statics::EnumParams = {
+	(UObject*(*)())Z_Construct_UPackage__Script_Warrior,
+	nullptr,
+	"EWarriorAbilityActivationPolicy",
+	"EWarriorAbilityActivationPolicy",
+	Z_Construct_UEnum_Warrior_EWarriorAbilityActivationPolicy_Statics::Enumerators,
+	RF_Public|RF_Transient|RF_MarkAsNative,
+	UE_ARRAY_COUNT(Z_Construct_UEnum_Warrior_EWarriorAbilityActivationPolicy_Statics::Enumerators),
+	EEnumFlags::None,
+	(uint8)UEnum::ECppForm::EnumClass,
+	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UEnum_Warrior_EWarriorAbilityActivationPolicy_Statics::Enum_MetaDataParams), Z_Construct_UEnum_Warrior_EWarriorAbilityActivationPolicy_Statics::Enum_MetaDataParams)
+};
+UEnum* Z_Construct_UEnum_Warrior_EWarriorAbilityActivationPolicy()
+{
+	if (!Z_Registration_Info_UEnum_EWarriorAbilityActivationPolicy.InnerSingleton)
+	{
+		UECodeGen_Private::ConstructUEnum(Z_Registration_Info_UEnum_EWarriorAbilityActivationPolicy.InnerSingleton, Z_Construct_UEnum_Warrior_EWarriorAbilityActivationPolicy_Statics::EnumParams);
+	}
+	return Z_Registration_Info_UEnum_EWarriorAbilityActivationPolicy.InnerSingleton;
+}
+// ********** End Enum EWarriorAbilityActivationPolicy *********************************************
 
 // ********** Begin Class UWarriorGameplayAbility **************************************************
 void UWarriorGameplayAbility::StaticRegisterNativesUWarriorGameplayAbility()
@@ -56,18 +109,35 @@ struct Z_Construct_UClass_UWarriorGameplayAbility_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 #if !UE_BUILD_SHIPPING
-		{ "Comment", "/**\n * \n */" },
+		{ "Comment", "/**\n *\n */" },
 #endif
 		{ "IncludePath", "AbilitySystems/Abilitys/WarriorGameplayAbility.h" },
 		{ "ModuleRelativePath", "Public/AbilitySystems/Abilitys/WarriorGameplayAbility.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AbilityActivationPolicy_MetaData[] = {
+		{ "Category", "WarriorAbility" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//~ End UGameplayAbility Interface\n" },
+#endif
+		{ "ModuleRelativePath", "Public/AbilitySystems/Abilitys/WarriorGameplayAbility.h" },
+	};
 #endif // WITH_METADATA
+	static const UECodeGen_Private::FBytePropertyParams NewProp_AbilityActivationPolicy_Underlying;
+	static const UECodeGen_Private::FEnumPropertyParams NewProp_AbilityActivationPolicy;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UWarriorGameplayAbility>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
+const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_UWarriorGameplayAbility_Statics::NewProp_AbilityActivationPolicy_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UWarriorGameplayAbility_Statics::NewProp_AbilityActivationPolicy = { "AbilityActivationPolicy", nullptr, (EPropertyFlags)0x0020080000010001, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UWarriorGameplayAbility, AbilityActivationPolicy), Z_Construct_UEnum_Warrior_EWarriorAbilityActivationPolicy, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AbilityActivationPolicy_MetaData), NewProp_AbilityActivationPolicy_MetaData) }; // 1511635297
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UWarriorGameplayAbility_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UWarriorGameplayAbility_Statics::NewProp_AbilityActivationPolicy_Underlying,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UWarriorGameplayAbility_Statics::NewProp_AbilityActivationPolicy,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UWarriorGameplayAbility_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_UWarriorGameplayAbility_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UGameplayAbility,
 	(UObject* (*)())Z_Construct_UPackage__Script_Warrior,
@@ -79,11 +149,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UWarriorGameplayAbility
 	&StaticCppClassTypeInfo,
 	DependentSingletons,
 	nullptr,
-	nullptr,
+	Z_Construct_UClass_UWarriorGameplayAbility_Statics::PropPointers,
 	nullptr,
 	UE_ARRAY_COUNT(DependentSingletons),
 	0,
-	0,
+	UE_ARRAY_COUNT(Z_Construct_UClass_UWarriorGameplayAbility_Statics::PropPointers),
 	0,
 	0x001000A0u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UWarriorGameplayAbility_Statics::Class_MetaDataParams), Z_Construct_UClass_UWarriorGameplayAbility_Statics::Class_MetaDataParams)
@@ -104,14 +174,17 @@ UWarriorGameplayAbility::~UWarriorGameplayAbility() {}
 // ********** Begin Registration *******************************************************************
 struct Z_CompiledInDeferFile_FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Warrior_Source_Warrior_Public_AbilitySystems_Abilitys_WarriorGameplayAbility_h__Script_Warrior_Statics
 {
+	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
+		{ EWarriorAbilityActivationPolicy_StaticEnum, TEXT("EWarriorAbilityActivationPolicy"), &Z_Registration_Info_UEnum_EWarriorAbilityActivationPolicy, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1511635297U) },
+	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UWarriorGameplayAbility, UWarriorGameplayAbility::StaticClass, TEXT("UWarriorGameplayAbility"), &Z_Registration_Info_UClass_UWarriorGameplayAbility, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UWarriorGameplayAbility), 527347604U) },
+		{ Z_Construct_UClass_UWarriorGameplayAbility, UWarriorGameplayAbility::StaticClass, TEXT("UWarriorGameplayAbility"), &Z_Registration_Info_UClass_UWarriorGameplayAbility, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UWarriorGameplayAbility), 3496827512U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Warrior_Source_Warrior_Public_AbilitySystems_Abilitys_WarriorGameplayAbility_h__Script_Warrior_4208942373(TEXT("/Script/Warrior"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Warrior_Source_Warrior_Public_AbilitySystems_Abilitys_WarriorGameplayAbility_h__Script_Warrior_1927906867(TEXT("/Script/Warrior"),
 	Z_CompiledInDeferFile_FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Warrior_Source_Warrior_Public_AbilitySystems_Abilitys_WarriorGameplayAbility_h__Script_Warrior_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Warrior_Source_Warrior_Public_AbilitySystems_Abilitys_WarriorGameplayAbility_h__Script_Warrior_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	Z_CompiledInDeferFile_FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Warrior_Source_Warrior_Public_AbilitySystems_Abilitys_WarriorGameplayAbility_h__Script_Warrior_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Warrior_Source_Warrior_Public_AbilitySystems_Abilitys_WarriorGameplayAbility_h__Script_Warrior_Statics::EnumInfo));
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
