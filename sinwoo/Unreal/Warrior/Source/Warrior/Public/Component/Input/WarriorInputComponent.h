@@ -32,7 +32,7 @@ inline void UWarriorInputComponent::BindNativeInputAction(const UDataAsset_Input
 
 	if (UInputAction* FoundAction = InInputConfig->FindNativeInputActionByTag(InInputTag))
 	{
-		Debug::Print("Binding Input Action");
+		//Debug::Print("Binding Input Action");
 		BindAction(FoundAction, TrigerEvent, ContextObject, Func);
 	}
 }

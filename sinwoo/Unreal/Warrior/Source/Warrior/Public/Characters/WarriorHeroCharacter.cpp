@@ -7,6 +7,7 @@
 #include "DataAsset/Input/DataAsset_InputConfig.h"
 #include "Component/Input/WarriorInputComponent.h"
 #include "Warrior/Public/WarriorGamePlayTags.h"
+#include "AbilitySystems/WarriorAbilitySystemComponent.h"
 #include "WarriorDebugHelper.h"				// 어떤 파일에 디버그 헬퍼가 있는지 알기위해 맨 아래에 인클루드를 함
 
 
@@ -34,10 +35,25 @@ AWarriorHeroCharacter::AWarriorHeroCharacter()
 	GetCharacterMovement()->BrakingDecelerationWalking = 2000.f;					// 감속 속도
 }
 
+
+void AWarriorHeroCharacter::PossessedBy(AController* NewController)
+{
+	Super::PossessedBy(NewController);
+
+	if (WarriorAbilitySystemComponent && WarriorAttributeSet)
+	{
+		const FString ASCTEXT = FString::Printf(TEXT("OwnerActor : %s , AvatarActor : %s"),
+			*WarriorAbilitySystemComponent->GetOwnerActor()->GetActorLabel(),
+			*WarriorAbilitySystemComponent->GetAvatarActor()->GetActorLabel()
+		);
+		Debug::Print(TEXT("Ability System Component is Valid  ") + ASCTEXT, FColor::Green);
+		Debug::Print(TEXT("Attribute Set is Valid  ") + ASCTEXT, FColor::Green);
+	}
+}
+
 void AWarriorHeroCharacter::BeginPlay()
 {
 	Super::BeginPlay();
-	Debug::Print("Working");
 }
 
 void AWarriorHeroCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
