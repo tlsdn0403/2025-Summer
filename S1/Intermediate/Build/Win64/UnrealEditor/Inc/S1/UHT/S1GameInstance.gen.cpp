@@ -47,6 +47,35 @@ DEFINE_FUNCTION(US1GameInstance::execConnectToGameServer)
 }
 // End Class US1GameInstance Function ConnectToGameServer
 
+// Begin Class US1GameInstance Function DisconnectFromGameServer
+struct Z_Construct_UFunction_US1GameInstance_DisconnectFromGameServer_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "S1GameInstance.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_US1GameInstance_DisconnectFromGameServer_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_US1GameInstance, nullptr, "DisconnectFromGameServer", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_US1GameInstance_DisconnectFromGameServer_Statics::Function_MetaDataParams), Z_Construct_UFunction_US1GameInstance_DisconnectFromGameServer_Statics::Function_MetaDataParams) };
+UFunction* Z_Construct_UFunction_US1GameInstance_DisconnectFromGameServer()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_US1GameInstance_DisconnectFromGameServer_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(US1GameInstance::execDisconnectFromGameServer)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->DisconnectFromGameServer();
+	P_NATIVE_END;
+}
+// End Class US1GameInstance Function DisconnectFromGameServer
+
 // Begin Class US1GameInstance Function DisconnectToGameServer
 struct Z_Construct_UFunction_US1GameInstance_DisconnectToGameServer_Statics
 {
@@ -111,6 +140,7 @@ void US1GameInstance::StaticRegisterNativesUS1GameInstance()
 	UClass* Class = US1GameInstance::StaticClass();
 	static const FNameNativePtrPair Funcs[] = {
 		{ "ConnectToGameServer", &US1GameInstance::execConnectToGameServer },
+		{ "DisconnectFromGameServer", &US1GameInstance::execDisconnectFromGameServer },
 		{ "DisconnectToGameServer", &US1GameInstance::execDisconnectToGameServer },
 		{ "HandleRecvPackets", &US1GameInstance::execHandleRecvPackets },
 	};
@@ -141,6 +171,7 @@ struct Z_Construct_UClass_US1GameInstance_Statics
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
 		{ &Z_Construct_UFunction_US1GameInstance_ConnectToGameServer, "ConnectToGameServer" }, // 1251048783
+		{ &Z_Construct_UFunction_US1GameInstance_DisconnectFromGameServer, "DisconnectFromGameServer" }, // 3849541064
 		{ &Z_Construct_UFunction_US1GameInstance_DisconnectToGameServer, "DisconnectToGameServer" }, // 384657011
 		{ &Z_Construct_UFunction_US1GameInstance_HandleRecvPackets, "HandleRecvPackets" }, // 1532575019
 	};
@@ -196,10 +227,10 @@ US1GameInstance::~US1GameInstance() {}
 struct Z_CompiledInDeferFile_FID_Users_0412j_2025_Summer_2025_Summer_S1_Source_S1_S1GameInstance_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_US1GameInstance, US1GameInstance::StaticClass, TEXT("US1GameInstance"), &Z_Registration_Info_UClass_US1GameInstance, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(US1GameInstance), 2968900232U) },
+		{ Z_Construct_UClass_US1GameInstance, US1GameInstance::StaticClass, TEXT("US1GameInstance"), &Z_Registration_Info_UClass_US1GameInstance, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(US1GameInstance), 3914474285U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_0412j_2025_Summer_2025_Summer_S1_Source_S1_S1GameInstance_h_1016266842(TEXT("/Script/S1"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_0412j_2025_Summer_2025_Summer_S1_Source_S1_S1GameInstance_h_2377179296(TEXT("/Script/S1"),
 	Z_CompiledInDeferFile_FID_Users_0412j_2025_Summer_2025_Summer_S1_Source_S1_S1GameInstance_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_0412j_2025_Summer_2025_Summer_S1_Source_S1_S1GameInstance_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

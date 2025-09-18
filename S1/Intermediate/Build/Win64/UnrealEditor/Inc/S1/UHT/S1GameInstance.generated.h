@@ -16,6 +16,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define FID_Users_0412j_2025_Summer_2025_Summer_S1_Source_S1_S1GameInstance_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execHandleRecvPackets); \
+	DECLARE_FUNCTION(execDisconnectFromGameServer); \
 	DECLARE_FUNCTION(execDisconnectToGameServer); \
 	DECLARE_FUNCTION(execConnectToGameServer);
 

@@ -56,6 +56,22 @@ void US1GameInstance::DisconnectToGameServer()
 	}
 }
 
+void US1GameInstance::DisconnectFromGameServer()
+{
+	if (Socket == nullptr || GameServerSession == nullptr)
+		return;
+
+	Protocol::C_LEAVE_GAME LeavePkt;
+	SEND_PACKET(LeavePkt);
+
+	/*if (Socket)
+	{
+		ISocketSubsystem* SocketSubsystem = ISocketSubsystem::Get();
+		SocketSubsystem->DestroySocket(Socket);
+		Socket = nullptr;
+	}*/
+}
+
 void US1GameInstance::HandleRecvPackets()
 {
 	if (Socket == nullptr || GameServerSession == nullptr)
@@ -102,5 +118,29 @@ void US1GameInstance::HandleSpawn(const Protocol::S_SPAWN& SpawnPkt)
 	for (auto& Player : SpawnPkt.players())
 	{
 		HandleSpawn(Player);
+	}
+}
+
+void US1GameInstance::HandleDespawn(uint64 ObjectId)
+{
+	if (Socket == nullptr || GameServerSession == nullptr)
+		return;
+
+	auto* World = GetWorld();
+	if (World == nullptr)
+		return;
+
+	AActor** FindActor = Players.Find(ObjectId);
+	if (FindActor == nullptr)
+		return;
+
+	World->DestroyActor(*FindActor);
+}
+
+void US1GameInstance::HandleDespawn(const Protocol::S_DESPAWN& DespawnPkt)
+{
+	for (auto& ObjectId : DespawnPkt.object_ids())
+	{
+		HandleDespawn(ObjectId);
 	}
 }

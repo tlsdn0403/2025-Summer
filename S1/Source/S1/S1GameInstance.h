@@ -23,6 +23,9 @@ public:
 	void DisconnectToGameServer();
 
 	UFUNCTION(BlueprintCallable)
+	void DisconnectFromGameServer();
+
+	UFUNCTION(BlueprintCallable)
 	void HandleRecvPackets();
 
 	void SendPacket(SendBufferRef SendBuffer);
@@ -31,6 +34,9 @@ public:
 	void HandleSpawn(const Protocol::PlayerInfo& PlayerInfo);
 	void HandleSpawn(const Protocol::S_ENTER_GAME& EnterGamePkt);
 	void HandleSpawn(const Protocol::S_SPAWN& SpawnPkt);
+
+	void HandleDespawn(uint64 ObjectId);
+	void HandleDespawn(const Protocol::S_DESPAWN& DespawnPkt);
 
 public:
 	// GameServer
