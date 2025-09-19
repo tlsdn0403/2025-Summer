@@ -9,7 +9,7 @@
 
 class UWarriorAbilitySystemComponent;
 class UWarriorAttributeSet;
-
+class UDataAsset_StartUpDataBase;
 UCLASS()
 class WARRIOR_API AWarriorBaseCharacter : public ACharacter, public IAbilitySystemInterface
 {
@@ -33,6 +33,9 @@ protected:
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AbilitySystems", meta = (AllowPrivateAccess = "true"))
 	UWarriorAttributeSet* WarriorAttributeSet;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "CharacterData")
+	TSoftObjectPtr<UDataAsset_StartUpDataBase> CharacterStartUpData;  //소프트 레퍼런스를 만드는 방법
 
 public:
 	// FORCEINLINE 은 inline 함수가 컴파일러에 의해 무시되는 것을 방지합니다. 더욱 강력한 inline 함수 , 코드를 증가시키더라도 속도가 오름

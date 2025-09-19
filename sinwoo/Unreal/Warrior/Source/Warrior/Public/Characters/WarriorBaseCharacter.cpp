@@ -28,6 +28,9 @@ void AWarriorBaseCharacter::PossessedBy(AController* NewController)
 	if (WarriorAbilitySystemComponent)
 	{
 		WarriorAbilitySystemComponent->InitAbilityActorInfo(this, this);  // 소유자 액터와 아바타 액터(실제 세상에 존재하는 엑터)를 채워야 함  , 항상 두 엑터가 동일한 것은 아님
+
+		ensure(!CharacterStartUpData.IsNull()); // 거짓을 반환하면 메크로가 중단점을 트리거
+		ensureMsgf(!CharacterStartUpData.IsNull(), TEXT("CharacterStartUpData is Null in %s"), *GetName());
 	}
 
 }

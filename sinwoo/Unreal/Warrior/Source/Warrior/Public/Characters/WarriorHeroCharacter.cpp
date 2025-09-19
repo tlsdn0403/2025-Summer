@@ -8,6 +8,7 @@
 #include "Component/Input/WarriorInputComponent.h"
 #include "Warrior/Public/WarriorGamePlayTags.h"
 #include "AbilitySystems/WarriorAbilitySystemComponent.h"
+#include "DataAsset/StartUpData/DataAsset_HeroStartUpData.h"
 #include "WarriorDebugHelper.h"				// 어떤 파일에 디버그 헬퍼가 있는지 알기위해 맨 아래에 인클루드를 함
 
 
@@ -40,15 +41,18 @@ void AWarriorHeroCharacter::PossessedBy(AController* NewController)
 {
 	Super::PossessedBy(NewController);
 
-	if (WarriorAbilitySystemComponent && WarriorAttributeSet)
+	if (not CharacterStartUpData.IsNull()) //소프트 레퍼런스가 유효한지 체크
 	{
-		const FString ASCTEXT = FString::Printf(TEXT("OwnerActor : %s , AvatarActor : %s"),
-			*WarriorAbilitySystemComponent->GetOwnerActor()->GetActorLabel(),
-			*WarriorAbilitySystemComponent->GetAvatarActor()->GetActorLabel()
-		);
-		Debug::Print(TEXT("Ability System Component is Valid  ") + ASCTEXT, FColor::Green);
-		Debug::Print(TEXT("Attribute Set is Valid  ") + ASCTEXT, FColor::Green);
+		if (UDataAsset_StartUpDataBase* LoadedData = CharacterStartUpData.LoadSynchronous()) // 동기적으로 로드
+		{
+			LoadedData->GiveToAbilitySystemComponent(WarriorAbilitySystemComponent); // 워리어 어빌리티 시스템 컴포넌트를 인자로
+		}
 	}
+	else
+	{
+		UE_LOG(LogTemp, Warning, TEXT("CharacterStartUpData is not Valid in %s"), *GetName());
+	}
+
 }
 
 void AWarriorHeroCharacter::BeginPlay()
