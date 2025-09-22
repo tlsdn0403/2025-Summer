@@ -11,8 +11,8 @@ void EmptyLinkFunctionForGeneratedCodeS1GameInstance() {}
 
 // Begin Cross Module References
 COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
-ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_UGameInstance();
+S1_API UClass* Z_Construct_UClass_AS1Player_NoRegister();
 S1_API UClass* Z_Construct_UClass_US1GameInstance();
 S1_API UClass* Z_Construct_UClass_US1GameInstance_NoRegister();
 UPackage* Z_Construct_UPackage__Script_S1();
@@ -161,12 +161,12 @@ struct Z_Construct_UClass_US1GameInstance_Statics
 		{ "IncludePath", "S1GameInstance.h" },
 		{ "ModuleRelativePath", "S1GameInstance.h" },
 	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PlayerClass_MetaData[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OtherPlayerClass_MetaData[] = {
 		{ "Category", "S1GameInstance" },
 		{ "ModuleRelativePath", "S1GameInstance.h" },
 	};
 #endif // WITH_METADATA
-	static const UECodeGen_Private::FClassPropertyParams NewProp_PlayerClass;
+	static const UECodeGen_Private::FClassPropertyParams NewProp_OtherPlayerClass;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
@@ -181,9 +181,9 @@ struct Z_Construct_UClass_US1GameInstance_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
-const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_US1GameInstance_Statics::NewProp_PlayerClass = { "PlayerClass", nullptr, (EPropertyFlags)0x0014000000000001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(US1GameInstance, PlayerClass), Z_Construct_UClass_UClass, Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PlayerClass_MetaData), NewProp_PlayerClass_MetaData) };
+const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_US1GameInstance_Statics::NewProp_OtherPlayerClass = { "OtherPlayerClass", nullptr, (EPropertyFlags)0x0014000000000001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(US1GameInstance, OtherPlayerClass), Z_Construct_UClass_UClass, Z_Construct_UClass_AS1Player_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OtherPlayerClass_MetaData), NewProp_OtherPlayerClass_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_US1GameInstance_Statics::PropPointers[] = {
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_US1GameInstance_Statics::NewProp_PlayerClass,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_US1GameInstance_Statics::NewProp_OtherPlayerClass,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_US1GameInstance_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_US1GameInstance_Statics::DependentSingletons[])() = {
@@ -227,10 +227,10 @@ US1GameInstance::~US1GameInstance() {}
 struct Z_CompiledInDeferFile_FID_Users_0412j_2025_Summer_2025_Summer_S1_Source_S1_S1GameInstance_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_US1GameInstance, US1GameInstance::StaticClass, TEXT("US1GameInstance"), &Z_Registration_Info_UClass_US1GameInstance, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(US1GameInstance), 3914474285U) },
+		{ Z_Construct_UClass_US1GameInstance, US1GameInstance::StaticClass, TEXT("US1GameInstance"), &Z_Registration_Info_UClass_US1GameInstance, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(US1GameInstance), 75172316U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_0412j_2025_Summer_2025_Summer_S1_Source_S1_S1GameInstance_h_2377179296(TEXT("/Script/S1"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_0412j_2025_Summer_2025_Summer_S1_Source_S1_S1GameInstance_h_2517686260(TEXT("/Script/S1"),
 	Z_CompiledInDeferFile_FID_Users_0412j_2025_Summer_2025_Summer_S1_Source_S1_S1GameInstance_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_0412j_2025_Summer_2025_Summer_S1_Source_S1_S1GameInstance_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
