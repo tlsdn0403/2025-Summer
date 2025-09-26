@@ -73,7 +73,6 @@ template<> S1_API UClass* StaticClass<AS1Player>()
 	return AS1Player::StaticClass();
 }
 DEFINE_VTABLE_PTR_HELPER_CTOR(AS1Player);
-AS1Player::~AS1Player() {}
 // End Class AS1Player
 
 // Begin Registration

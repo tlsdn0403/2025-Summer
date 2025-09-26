@@ -112,12 +112,14 @@ void US1GameInstance::HandleSpawn(const Protocol::PlayerInfo& PlayerInfo, bool I
 		if (Player == nullptr)
 			return;
 
+		Player->SetPlayerInfo(PlayerInfo);
 		MyPlayer = Player;
 		Players.Add(PlayerInfo.object_id(), Player);
 	}
 	else
 	{
 		AS1Player* Player = Cast<AS1Player>(World->SpawnActor(OtherPlayerClass, &SpawnLocation));
+		Player->SetPlayerInfo(PlayerInfo);
 		Players.Add(PlayerInfo.object_id(), Player);
 	}
 
@@ -159,4 +161,26 @@ void US1GameInstance::HandleDespawn(const Protocol::S_DESPAWN& DespawnPkt)
 	{
 		HandleDespawn(ObjectId);
 	}
+}
+
+void US1GameInstance::HandleMove(const Protocol::S_MOVE& MovePkt)
+{
+	if (Socket == nullptr || GameServerSession == nullptr)
+		return;
+
+	auto* World = GetWorld();
+	if (World == nullptr)
+		return;
+
+	const uint64 ObjectId = MovePkt.info().object_id();
+	AS1Player** FindActor = Players.Find(ObjectId);
+	if (FindActor == nullptr)
+		return;
+
+	AS1Player* Player = (*FindActor);
+	if (Player->IsMyPlayer())
+		return;
+
+	const Protocol::PlayerInfo& Info = MovePkt.info();
+	Player->SetPlayerInfo(Info);
 }
