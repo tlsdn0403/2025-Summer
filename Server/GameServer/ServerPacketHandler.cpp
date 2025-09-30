@@ -37,10 +37,22 @@ bool Handle_C_LOGIN(PacketSessionRef& session, Protocol::C_LOGIN& pkt)
 	return true;
 }
 
+//class Functor	// 함수의 주소뿐만 아니라 데이터까지 가져올 수 있어서 포인터의 상위호환임.
+//{
+//public:
+//	void Execute();
+//};
+
 bool Handle_C_ENTER_GAME(PacketSessionRef& session, Protocol::C_ENTER_GAME& pkt)
 {
 	// 플레이어 생성
 	PlayerRef player = ObjectUtils::CreatePlayer(static_pointer_cast<GameSession>(session));
+
+	//// lambda를 사용하는 것이 가장 최신 문법에 어울림.
+	//auto job = [player]()
+	//{
+	//	GRoom->HandleEnterPlayerLocked(player);
+	//};
 
 	// 방에 입장
 	GRoom->HandleEnterPlayerLocked(player);

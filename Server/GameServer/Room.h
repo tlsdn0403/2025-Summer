@@ -11,6 +11,8 @@ public:
 
 	void HandleMoveLocked(Protocol::C_MOVE& pkt);
 
+	void Update() {}
+
 private:
 	bool EnterPlayer(PlayerRef player);
 	bool LeavePlayer(uint64 objectId);
