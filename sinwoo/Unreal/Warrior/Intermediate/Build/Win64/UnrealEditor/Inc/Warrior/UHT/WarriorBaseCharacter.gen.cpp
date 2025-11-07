@@ -1,0 +1,154 @@
+// Copyright Epic Games, Inc. All Rights Reserved.
+/*===========================================================================
+	Generated code exported from UnrealHeaderTool.
+	DO NOT modify this manually! Edit the corresponding .h files instead!
+===========================================================================*/
+
+#include "UObject/GeneratedCppIncludes.h"
+#include "Characters/WarriorBaseCharacter.h"
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+
+void EmptyLinkFunctionForGeneratedCodeWarriorBaseCharacter() {}
+
+// ********** Begin Cross Module References ********************************************************
+ENGINE_API UClass* Z_Construct_UClass_ACharacter();
+GAMEPLAYABILITIES_API UClass* Z_Construct_UClass_UAbilitySystemInterface_NoRegister();
+UPackage* Z_Construct_UPackage__Script_Warrior();
+WARRIOR_API UClass* Z_Construct_UClass_AWarriorBaseCharacter();
+WARRIOR_API UClass* Z_Construct_UClass_AWarriorBaseCharacter_NoRegister();
+WARRIOR_API UClass* Z_Construct_UClass_UDataAsset_StartUpDataBase_NoRegister();
+WARRIOR_API UClass* Z_Construct_UClass_UWarriorAbilitySystemComponent_NoRegister();
+WARRIOR_API UClass* Z_Construct_UClass_UWarriorAttributeSet_NoRegister();
+// ********** End Cross Module References **********************************************************
+
+// ********** Begin Class AWarriorBaseCharacter ****************************************************
+void AWarriorBaseCharacter::StaticRegisterNativesAWarriorBaseCharacter()
+{
+}
+FClassRegistrationInfo Z_Registration_Info_UClass_AWarriorBaseCharacter;
+UClass* AWarriorBaseCharacter::GetPrivateStaticClass()
+{
+	using TClass = AWarriorBaseCharacter;
+	if (!Z_Registration_Info_UClass_AWarriorBaseCharacter.InnerSingleton)
+	{
+		GetPrivateStaticClassBody(
+			StaticPackage(),
+			TEXT("WarriorBaseCharacter"),
+			Z_Registration_Info_UClass_AWarriorBaseCharacter.InnerSingleton,
+			StaticRegisterNativesAWarriorBaseCharacter,
+			sizeof(TClass),
+			alignof(TClass),
+			TClass::StaticClassFlags,
+			TClass::StaticClassCastFlags(),
+			TClass::StaticConfigName(),
+			(UClass::ClassConstructorType)InternalConstructor<TClass>,
+			(UClass::ClassVTableHelperCtorCallerType)InternalVTableHelperCtorCaller<TClass>,
+			UOBJECT_CPPCLASS_STATICFUNCTIONS_FORCLASS(TClass),
+			&TClass::Super::StaticClass,
+			&TClass::WithinClass::StaticClass
+		);
+	}
+	return Z_Registration_Info_UClass_AWarriorBaseCharacter.InnerSingleton;
+}
+UClass* Z_Construct_UClass_AWarriorBaseCharacter_NoRegister()
+{
+	return AWarriorBaseCharacter::GetPrivateStaticClass();
+}
+struct Z_Construct_UClass_AWarriorBaseCharacter_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+		{ "HideCategories", "Navigation" },
+		{ "IncludePath", "Characters/WarriorBaseCharacter.h" },
+		{ "ModuleRelativePath", "Public/Characters/WarriorBaseCharacter.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WarriorAbilitySystemComponent_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "AbilitySystems" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//~ End APawn Interface\n" },
+#endif
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Characters/WarriorBaseCharacter.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WarriorAttributeSet_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "AbilitySystems" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Characters/WarriorBaseCharacter.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CharacterStartUpData_MetaData[] = {
+		{ "Category", "CharacterData" },
+		{ "ModuleRelativePath", "Public/Characters/WarriorBaseCharacter.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_WarriorAbilitySystemComponent;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_WarriorAttributeSet;
+	static const UECodeGen_Private::FSoftObjectPropertyParams NewProp_CharacterStartUpData;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static UObject* (*const DependentSingletons[])();
+	static const UECodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
+	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
+		TCppClassTypeTraits<AWarriorBaseCharacter>::IsAbstract,
+	};
+	static const UECodeGen_Private::FClassParams ClassParams;
+};
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AWarriorBaseCharacter_Statics::NewProp_WarriorAbilitySystemComponent = { "WarriorAbilitySystemComponent", nullptr, (EPropertyFlags)0x00200800000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AWarriorBaseCharacter, WarriorAbilitySystemComponent), Z_Construct_UClass_UWarriorAbilitySystemComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WarriorAbilitySystemComponent_MetaData), NewProp_WarriorAbilitySystemComponent_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AWarriorBaseCharacter_Statics::NewProp_WarriorAttributeSet = { "WarriorAttributeSet", nullptr, (EPropertyFlags)0x00200800000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AWarriorBaseCharacter, WarriorAttributeSet), Z_Construct_UClass_UWarriorAttributeSet_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WarriorAttributeSet_MetaData), NewProp_WarriorAttributeSet_MetaData) };
+const UECodeGen_Private::FSoftObjectPropertyParams Z_Construct_UClass_AWarriorBaseCharacter_Statics::NewProp_CharacterStartUpData = { "CharacterStartUpData", nullptr, (EPropertyFlags)0x0024080000010015, UECodeGen_Private::EPropertyGenFlags::SoftObject, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AWarriorBaseCharacter, CharacterStartUpData), Z_Construct_UClass_UDataAsset_StartUpDataBase_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CharacterStartUpData_MetaData), NewProp_CharacterStartUpData_MetaData) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AWarriorBaseCharacter_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWarriorBaseCharacter_Statics::NewProp_WarriorAbilitySystemComponent,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWarriorBaseCharacter_Statics::NewProp_WarriorAttributeSet,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWarriorBaseCharacter_Statics::NewProp_CharacterStartUpData,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AWarriorBaseCharacter_Statics::PropPointers) < 2048);
+UObject* (*const Z_Construct_UClass_AWarriorBaseCharacter_Statics::DependentSingletons[])() = {
+	(UObject* (*)())Z_Construct_UClass_ACharacter,
+	(UObject* (*)())Z_Construct_UPackage__Script_Warrior,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AWarriorBaseCharacter_Statics::DependentSingletons) < 16);
+const UECodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_AWarriorBaseCharacter_Statics::InterfaceParams[] = {
+	{ Z_Construct_UClass_UAbilitySystemInterface_NoRegister, (int32)VTABLE_OFFSET(AWarriorBaseCharacter, IAbilitySystemInterface), false },  // 1199015870
+};
+const UECodeGen_Private::FClassParams Z_Construct_UClass_AWarriorBaseCharacter_Statics::ClassParams = {
+	&AWarriorBaseCharacter::StaticClass,
+	"Game",
+	&StaticCppClassTypeInfo,
+	DependentSingletons,
+	nullptr,
+	Z_Construct_UClass_AWarriorBaseCharacter_Statics::PropPointers,
+	InterfaceParams,
+	UE_ARRAY_COUNT(DependentSingletons),
+	0,
+	UE_ARRAY_COUNT(Z_Construct_UClass_AWarriorBaseCharacter_Statics::PropPointers),
+	UE_ARRAY_COUNT(InterfaceParams),
+	0x009001A4u,
+	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AWarriorBaseCharacter_Statics::Class_MetaDataParams), Z_Construct_UClass_AWarriorBaseCharacter_Statics::Class_MetaDataParams)
+};
+UClass* Z_Construct_UClass_AWarriorBaseCharacter()
+{
+	if (!Z_Registration_Info_UClass_AWarriorBaseCharacter.OuterSingleton)
+	{
+		UECodeGen_Private::ConstructUClass(Z_Registration_Info_UClass_AWarriorBaseCharacter.OuterSingleton, Z_Construct_UClass_AWarriorBaseCharacter_Statics::ClassParams);
+	}
+	return Z_Registration_Info_UClass_AWarriorBaseCharacter.OuterSingleton;
+}
+DEFINE_VTABLE_PTR_HELPER_CTOR(AWarriorBaseCharacter);
+AWarriorBaseCharacter::~AWarriorBaseCharacter() {}
+// ********** End Class AWarriorBaseCharacter ******************************************************
+
+// ********** Begin Registration *******************************************************************
+struct Z_CompiledInDeferFile_FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Warrior_Source_Warrior_Public_Characters_WarriorBaseCharacter_h__Script_Warrior_Statics
+{
+	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
+		{ Z_Construct_UClass_AWarriorBaseCharacter, AWarriorBaseCharacter::StaticClass, TEXT("AWarriorBaseCharacter"), &Z_Registration_Info_UClass_AWarriorBaseCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AWarriorBaseCharacter), 664443376U) },
+	};
+};
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Warrior_Source_Warrior_Public_Characters_WarriorBaseCharacter_h__Script_Warrior_3782639078(TEXT("/Script/Warrior"),
+	Z_CompiledInDeferFile_FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Warrior_Source_Warrior_Public_Characters_WarriorBaseCharacter_h__Script_Warrior_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Warrior_Source_Warrior_Public_Characters_WarriorBaseCharacter_h__Script_Warrior_Statics::ClassInfo),
+	nullptr, 0,
+	nullptr, 0);
+// ********** End Registration *********************************************************************
+
+PRAGMA_ENABLE_DEPRECATION_WARNINGS

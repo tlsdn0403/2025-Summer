@@ -7,7 +7,8 @@ public class Warrior : ModuleRules
 	public Warrior(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
-	
+		
+		//모듈들을 여기다가 추가해줘야 함
 		PublicDependencyModuleNames.AddRange(new string[] {
 			"Core",
 			"CoreUObject",
@@ -15,7 +16,8 @@ public class Warrior : ModuleRules
 			"InputCore",
 			"EnhancedInput",
             "GameplayTags",
-            "EnhancedInput"
+            "EnhancedInput",
+            "GameplayTasks"
         });
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
