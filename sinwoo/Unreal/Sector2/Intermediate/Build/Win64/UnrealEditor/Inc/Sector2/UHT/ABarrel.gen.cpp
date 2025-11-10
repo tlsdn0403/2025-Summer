@@ -314,14 +314,14 @@ ABarrel::~ABarrel() {}
 // ********** End Class ABarrel ********************************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Sector2_Source_Sector2_ABarrel_h__Script_Sector2_Statics
+struct Z_CompiledInDeferFile_FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Sector2_Source_Sector2_ABarrel_h__Script_Sector2_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_ABarrel, ABarrel::StaticClass, TEXT("ABarrel"), &Z_Registration_Info_UClass_ABarrel, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABarrel), 3847137869U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Sector2_Source_Sector2_ABarrel_h__Script_Sector2_2344580947(TEXT("/Script/Sector2"),
-	Z_CompiledInDeferFile_FID_Sector2_Source_Sector2_ABarrel_h__Script_Sector2_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Sector2_Source_Sector2_ABarrel_h__Script_Sector2_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Sector2_Source_Sector2_ABarrel_h__Script_Sector2_2344580947(TEXT("/Script/Sector2"),
+	Z_CompiledInDeferFile_FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Sector2_Source_Sector2_ABarrel_h__Script_Sector2_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Sector2_Source_Sector2_ABarrel_h__Script_Sector2_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

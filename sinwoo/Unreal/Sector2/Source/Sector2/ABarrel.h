@@ -52,4 +52,8 @@ public:
 
     // StaticMesh를 ProceduralMesh로 변환하는 헬퍼 함수
     void InitializeProceduralMesh();
+
+    void VisualizeVertices(float Duration, float PointSize);
+
+    TArray<FVector> Vertices;
 };

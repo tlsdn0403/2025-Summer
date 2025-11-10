@@ -21,14 +21,14 @@ class UPrimitiveComponent;
 struct FHitResult;
 
 // ********** Begin Class ABarrel ******************************************************************
-#define FID_Sector2_Source_Sector2_ABarrel_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Sector2_Source_Sector2_ABarrel_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execDeformMesh); \
 	DECLARE_FUNCTION(execOnHit);
 
 
 SECTOR2_API UClass* Z_Construct_UClass_ABarrel_NoRegister();
 
-#define FID_Sector2_Source_Sector2_ABarrel_h_14_INCLASS_NO_PURE_DECLS \
+#define FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Sector2_Source_Sector2_ABarrel_h_14_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesABarrel(); \
 	friend struct Z_Construct_UClass_ABarrel_Statics; \
@@ -39,7 +39,7 @@ public: \
 	DECLARE_SERIALIZER(ABarrel)
 
 
-#define FID_Sector2_Source_Sector2_ABarrel_h_14_ENHANCED_CONSTRUCTORS \
+#define FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Sector2_Source_Sector2_ABarrel_h_14_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	ABarrel(ABarrel&&) = delete; \
 	ABarrel(const ABarrel&) = delete; \
@@ -49,13 +49,13 @@ public: \
 	NO_API virtual ~ABarrel();
 
 
-#define FID_Sector2_Source_Sector2_ABarrel_h_11_PROLOG
-#define FID_Sector2_Source_Sector2_ABarrel_h_14_GENERATED_BODY \
+#define FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Sector2_Source_Sector2_ABarrel_h_11_PROLOG
+#define FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Sector2_Source_Sector2_ABarrel_h_14_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Sector2_Source_Sector2_ABarrel_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Sector2_Source_Sector2_ABarrel_h_14_INCLASS_NO_PURE_DECLS \
-	FID_Sector2_Source_Sector2_ABarrel_h_14_ENHANCED_CONSTRUCTORS \
+	FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Sector2_Source_Sector2_ABarrel_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Sector2_Source_Sector2_ABarrel_h_14_INCLASS_NO_PURE_DECLS \
+	FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Sector2_Source_Sector2_ABarrel_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -65,6 +65,6 @@ class ABarrel;
 // ********** End Class ABarrel ********************************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Sector2_Source_Sector2_ABarrel_h
+#define CURRENT_FILE_ID FID_Users_tlsdn_Desktop_2025_Summer_sinwoo_Unreal_Sector2_Source_Sector2_ABarrel_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
