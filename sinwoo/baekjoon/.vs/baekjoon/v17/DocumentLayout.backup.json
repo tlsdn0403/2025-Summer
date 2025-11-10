@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\baekjoon\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7BE46255-DEB5-4BE2-AC47-559E15633D71}|baekjoon.vcxproj|C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\baekjoon\\feature_development.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7BE46255-DEB5-4BE2-AC47-559E15633D71}|baekjoon.vcxproj|solutionrelative:feature_development.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7BE46255-DEB5-4BE2-AC47-559E15633D71}|baekjoon.vcxproj|C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\baekjoon\\baekjoon_16956.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{7BE46255-DEB5-4BE2-AC47-559E15633D71}|baekjoon.vcxproj|solutionrelative:baekjoon_16956.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BE46255-DEB5-4BE2-AC47-559E15633D71}|baekjoon.vcxproj|C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\baekjoon\\baekjoon14719.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7BE46255-DEB5-4BE2-AC47-559E15633D71}|baekjoon.vcxproj|solutionrelative:baekjoon14719.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7BE46255-DEB5-4BE2-AC47-559E15633D71}|baekjoon.vcxproj|C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\baekjoon\\baekhoon11399.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -18,11 +26,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 17,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "baekhoon11399.cpp",
               "DocumentMoniker": "C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\baekjoon\\baekhoon11399.cpp",
               "RelativeDocumentMoniker": "baekhoon11399.cpp",
@@ -31,7 +39,36 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-07-11T08:06:52.91Z",
-              "IsPinned": true,
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "feature_development.cpp",
+              "DocumentMoniker": "C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\baekjoon\\feature_development.cpp",
+              "RelativeDocumentMoniker": "feature_development.cpp",
+              "ToolTip": "C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\baekjoon\\feature_development.cpp*",
+              "RelativeToolTip": "feature_development.cpp*",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAUwA8AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-02T15:13:30.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "baekjoon14719.cpp",
+              "DocumentMoniker": "C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\baekjoon\\baekjoon14719.cpp",
+              "RelativeDocumentMoniker": "baekjoon14719.cpp",
+              "ToolTip": "C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\baekjoon\\baekjoon14719.cpp",
+              "RelativeToolTip": "baekjoon14719.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-16T14:43:57.888Z",
               "EditorCaption": ""
             },
             {
@@ -95,18 +132,14 @@
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "baekjoon_16956.cpp",
               "DocumentMoniker": "C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\baekjoon\\baekjoon_16956.cpp",
               "RelativeDocumentMoniker": "baekjoon_16956.cpp",
               "ToolTip": "C:\\Users\\tlsdn\\Desktop\\2025-Summer\\sinwoo\\baekjoon\\baekjoon_16956.cpp",
               "RelativeToolTip": "baekjoon_16956.cpp",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAuwDYAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAuwC8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-09-04T10:14:15.229Z",
               "EditorCaption": ""

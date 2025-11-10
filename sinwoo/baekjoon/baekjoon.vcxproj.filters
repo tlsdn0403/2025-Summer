@@ -22,6 +22,9 @@
     <Filter Include="소스 파일\sorting">
       <UniqueIdentifier>{9a9fad71-379b-47f6-9896-4cabe8563a29}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\stack,queue">
+      <UniqueIdentifier>{a669d824-a7e9-43ea-ae5a-65aed2b53dd8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="baekjoon15977.cpp">
@@ -44,6 +47,9 @@
     </ClCompile>
     <ClCompile Include="baekjoon14719.cpp">
       <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="feature_development.cpp">
+      <Filter>소스 파일\stack,queue</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
